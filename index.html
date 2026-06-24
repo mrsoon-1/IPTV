@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>IPTV by Stefano</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0b0f14;
+    color: #e6edf3;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #4db8ff;
+}
+
+/* CONTAINER */
+.container {
+    padding: 15px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* CARD */
+.card {
+    background: #121821;
+    border-radius: 18px;
+    padding: 18px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+/* TITOLI */
+.card h2 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #9fb3c8;
+    font-weight: 500;
+}
+
+/* BOTTONE PRINCIPALE */
+.main-btn {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 14px;
+    border: none;
+    background: linear-gradient(90deg, #007aff, #00c6ff);
+    color: white;
+    font-weight: 600;
+}
+
+/* BOTTONI SECONDARI */
+.btn {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    background: #1c2532;
+    color: #dce3ea;
+    margin-top: 8px;
+}
+
+/* COPY BOX */
+.copy-box {
+    background: #1a222e;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* COPY BUTTON */
+.copy-btn {
+    background: #007aff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+/* LINK BUTTON */
+.link-btn {
+    display: block;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">📺 IPTV by Stefano</div>
+
+<div class="container">
+
+    <!-- AVVIO RAPIDO -->
+    <div class="card">
+        <h2>Avvio rapido</h2>
+        <button class="main-btn" onclick="openTV()">▶ Apri TV</button>
+    </div>
+
+    <!-- URL -->
+    <div class="card">
+        <h2>Lista canali</h2>
+        <div class="copy-box">
+            <span>iptvitaplus.m3u</span>
+            <button class="copy-btn" onclick="copyURL()">Copia</button>
+        </div>
+    </div>
+
+    <!-- AZIONI -->
+    <div class="card">
+        <h2>Gestione</h2>
+
+        <a href="https://m3u-ip.tv/browser/settings/index.html#add_playlist" class="link-btn">
+            <button class="btn">➕ Aggiungi playlist</button>
+        </a>
+
+        <a href="https://m3u-ip.tv/browser/settings/" class="link-btn">
+            <button class="btn">⚙️ Impostazioni</button>
+        </a>
+
+        <a href="https://m3u-ip.tv/browser/player/index.html" class="link-btn">
+            <button class="btn">▶️ Apri Player</button>
+        </a>
+    </div>
+
+</div>
+
+<script>
+const playlist = "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u";
+
+function copyURL() {
+    navigator.clipboard.writeText(playlist).then(() => {
+        alert("✅ URL copiato");
+    });
+}
+
+function openTV() {
+    const url = "https://m3u-ip.tv/browser/?url=" + encodeURIComponent(playlist);
+    window.location.href = url;
+}
+</script>
+
+</body>
+</html>
