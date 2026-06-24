@@ -29,7 +29,7 @@ body {
     margin: auto;
 }
 
-/* CARD */
+/* CARD BASE */
 .card {
     background: #121821;
     border-radius: 18px;
@@ -46,55 +46,105 @@ body {
     font-weight: 500;
 }
 
-/* BOTTONE PRINCIPALE */
+/* BOTTONE PRINCIPALE: ACCENDI LA TV */
 .main-btn {
     width: 100%;
-    padding: 20px;
-    font-size: 20px;
+    padding: 22px;
+    font-size: 22px;
     border-radius: 14px;
     border: none;
-    background: linear-gradient(90deg, #007aff, #00c6ff);
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
     color: white;
-    font-weight: 600;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(255, 75, 43, 0.4);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 }
 
-/* BOTTONI SECONDARI */
-.btn {
+.main-btn:hover {
+    background: linear-gradient(90deg, #ff4b2b, #ff416c);
+    box-shadow: 0 0 25px rgba(255, 75, 43, 0.7);
+    transform: translateY(-2px);
+}
+
+/* LAYOUT AFFIANCATO (LISTA + GESTIONE) */
+.split-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.split-row .card {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+/* SEZIONE GESTIONE INTERNA */
+.btn-row {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-row .link-btn {
+    flex: 1;
+}
+
+/* BOTTONI SECONDARI PIÙ COMPATTI */
+.btn-small {
     width: 100%;
-    padding: 16px;
-    font-size: 16px;
-    border-radius: 12px;
+    padding: 12px 2px;
+    font-size: 13px;
+    border-radius: 10px;
     border: none;
     background: #1c2532;
     color: #dce3ea;
-    margin-top: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.btn-small:hover {
+    background: #253346;
 }
 
 /* COPY BOX */
 .copy-box {
     background: #1a222e;
     border-radius: 12px;
-    padding: 12px;
-    font-size: 13px;
+    padding: 10px;
+    font-size: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* COPY BUTTON */
 .copy-btn {
     background: #007aff;
     border: none;
-    padding: 10px 14px;
-    border-radius: 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
     color: white;
-    font-size: 14px;
+    font-size: 13px;
+    cursor: pointer;
 }
 
-/* LINK BUTTON */
 .link-btn {
-    display: block;
     text-decoration: none;
+    display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 580px) {
+    .split-row {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 </style>
 </head>
@@ -108,33 +158,35 @@ body {
     <!-- AVVIO RAPIDO -->
     <div class="card">
         <h2>Avvio rapido</h2>
-        <button class="main-btn" onclick="openTV()">▶ Apri TV</button>
+        <button class="main-btn" onclick="openTV()">
+            <span>📺</span> Accendi la TV
+        </button>
     </div>
 
-    <!-- URL -->
-    <div class="card">
-        <h2>Lista canali</h2>
-        <div class="copy-box">
-            <span>iptvitaplus.m3u</span>
-            <button class="copy-btn" onclick="copyURL()">Copia</button>
+    <!-- RIGA CON LISTA CANALI E GESTIONE AFFIANCATI -->
+    <div class="split-row">
+        <!-- URL LISTA -->
+        <div class="card">
+            <h2>Lista canali</h2>
+            <div class="copy-box">
+                <span>iptvitaplus.m3u</span>
+                <button class="copy-btn" onclick="copyURL()">Copia</button>
+            </div>
         </div>
-    </div>
 
-    <!-- AZIONI -->
-    <div class="card">
-        <h2>Gestione</h2>
+        <!-- AZIONI DI GESTIONE -->
+        <div class="card">
+            <h2>Gestione</h2>
+            <div class="btn-row">
+                <a href="https://m3u-ip.tv/browser/settings/index.html#add_playlist" class="link-btn">
+                    <button class="btn-small">➕ Playlist</button>
+                </a>
 
-        <a href="https://m3u-ip.tv/browser/settings/index.html#add_playlist" class="link-btn">
-            <button class="btn">➕ Aggiungi playlist</button>
-        </a>
-
-        <a href="https://m3u-ip.tv/browser/settings/" class="link-btn">
-            <button class="btn">⚙️ Impostazioni</button>
-        </a>
-
-        <a href="https://m3u-ip.tv/browser/player/index.html" class="link-btn">
-            <button class="btn">▶️ Apri Player</button>
-        </a>
+                <a href="https://m3u-ip.tv/browser/settings/" class="link-btn">
+                    <button class="btn-small">⚙️ Impostazioni</button>
+                </a>
+            </div>
+        </div>
     </div>
 
 </div>
