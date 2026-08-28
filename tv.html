@@ -58,17 +58,42 @@
       .catch(() => { listEl.innerText = "Errore nel caricamento della lista."; });
 
     function play(url) {
-      if (Hls.isSupported()) {
-        if (hls) hls.destroy();
-        hls = new Hls();
-        hls.loadSource(url);
-        hls.attachMedia(video);
-        hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
-      } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-        video.src = url;
-        video.play();
+  if (Hls.isSupported()) {
+    if (hls) hls.destroy();
+    
+    hls = new Hls({
+      // Configurazione per superare i controlli dei server Rai / Mediaset
+      xhrSetup: function (xhr, url) {
+        xhr.withCredentials = false;
       }
-    }
+    });
+    
+    hls.loadSource(url);
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED, () => video.play().catch(e => console.log("Autoplay bloccato dal browser")));
+    
+    // Gestione degli errori di caricamento dei segmenti
+    hls.on(Hls.Events.ERROR, function (event, data) {
+      if (data.fatal) {
+        switch (data.type) {
+          case Hls.ErrorTypes.NETWORK_ERROR:
+            console.log("Errore di rete sul canale Rai/TV, tentativo di ricaricare...");
+            hls.startLoad();
+            break;
+          case Hls.ErrorTypes.MEDIA_ERROR:
+            hls.recoverMediaError();
+            break;
+          default:
+            hls.destroy();
+            break;
+        }
+      }
+    });
+  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = url;
+    video.play();
+  }
+}
   </script>
 </body>
 </html>
