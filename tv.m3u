@@ -1,7 +1,7 @@
 #EXTM3U tvg-name="Lista TV Stefano"
 
 #EXTINF:-1 tvg-id="Rai1.it" tvg-chno="1" tvg-logo="https://i.imgur.com/CAx7yRm.png",Rai 1
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803&output=7&forceUserAgent=raiplayappletv
+http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803&output=7&forceUserAgent=raiplayappletv
 
 #EXTINF:-1 tvg-id="Rai2.it" tvg-chno="2" tvg-logo="https://i.imgur.com/zA0PTcs.png",Rai 2
 http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718&output=7&forceUserAgent=raiplayappletv
