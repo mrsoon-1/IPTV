@@ -1,13 +1,13 @@
 #EXTM3U tvg-name="Lista TV Stefano"
 
 #EXTINF:-1 tvg-id="Rai1.it" tvg-chno="1" tvg-logo="https://i.imgur.com/CAx7yRm.png",Rai 1
-http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803&output=7&forceUserAgent=raiplayappletv
+https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
 
 #EXTINF:-1 tvg-id="Rai2.it" tvg-chno="2" tvg-logo="https://i.imgur.com/zA0PTcs.png",Rai 2
-http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718&output=7&forceUserAgent=raiplayappletv
+https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8
 
 #EXTINF:-1 tvg-id="Rai3.it" tvg-chno="3" tvg-logo="https://i.imgur.com/9kuQCIi.png",Rai 3
-http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308709&output=7&forceUserAgent=raiplayappletv
+https://d3k8wzt41aflvx.cloudfront.net/RAI3/Live.m3u8
 
 #EXTINF:-1 tvg-id="Rete.4.it" tvg-chno="4" tvg-logo="https://i.imgur.com/GWx2Fkl.png",Rete 4
 https://live02-seg.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/index.m3u8
@@ -63,19 +63,19 @@ https://livetr.teleromagna.it/mia/live/playlist.m3u8
 https://live02-seg.msf.cdn.mediaset.net/live/ch-lb/lb-clr.isml/index.m3u8
 
 #EXTINF:-1 tvg-id="Rai4.it" tvg-chno="21" tvg-logo="https://i.imgur.com/XFkZRfv.png",Rai 4
-http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966&output=7&forceUserAgent=raiplayappletv
+https://d3k8wzt41aflvx.cloudfront.net/RAI4/Live.m3u8
 
 #EXTINF:-1 tvg-id="Iris.it" tvg-chno="22" tvg-logo="https://i.imgur.com/Ixz1BY3.png",Iris
 https://live02-seg.msf.cdn.mediaset.net/live/ch-ki/ki-clr.isml/index.m3u8
 
 #EXTINF:-1 tvg-id="Rai5.it" tvg-chno="23" tvg-logo="https://i.imgur.com/Leu2zTO.png",Rai 5
-http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=395276&output=7&forceUserAgent=raiplayappletv
+https://d3k8wzt41aflvx.cloudfront.net/RAI5/Live.m3u8
 
 #EXTINF:-1 tvg-id="RaiMovie.it" tvg-chno="24" tvg-logo="https://i.imgur.com/RKpO8CE.png",Rai Movie
-http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747002&output=7&forceUserAgent=raiplayappletv
+https://d3k8wzt41aflvx.cloudfront.net/RAIMovie/Live.m3u8
 
 #EXTINF:-1 tvg-id="RaiPremium.it" tvg-chno="25" tvg-logo="https://i.imgur.com/RKI4nFy.png",Rai Premium
-http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746992&output=7&forceUserAgent=raiplayappletv
+https://d3k8wzt41aflvx.cloudfront.net/RAIPremium/Live.m3u8
 
 #EXTINF:-1 tvg-id="cielo.it" tvg-chno="26" tvg-logo="https://i.imgur.com/cPluF03.png",Cielo
 https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11219/cieloweb/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
@@ -127,10 +127,10 @@ https://live02-seg.msf.cdn.mediaset.net/live/ch-kb/kb-clr.isml/index.m3u8
 https://amg16146-wbdi-amg16146c6-samsung-it-1839.playouts.now.amagi.tv/playlist/amg16146-warnerbrosdiscoveryitalia-k2-samsungit/playlist.m3u8
 
 #EXTINF:-1 tvg-id="RaiGulp.it" tvg-chno="42" tvg-logo="https://i.imgur.com/lu1DPVb.png",Rai Gulp
-https://www.rai.it/dl/RaiParlamento/diretta.html?videoURL=https://mediapolis.rai.it/relinker/relinkerServlet.htm&cont=746953&autoplay=true&muted=false
+https://d3k8wzt41aflvx.cloudfront.net/RAIGulp/Live.m3u8
 
 #EXTINF:-1 tvg-id="RaiYoyo.it" tvg-chno="43" tvg-logo="https://i.imgur.com/DRSa3ys.png",Rai YoYo
-http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746899&output=7&forceUserAgent=raiplayappletv
+https://d3k8wzt41aflvx.cloudfront.net/RAIYoyo/Live.m3u8
 
 #EXTINF:-1 tvg-id="Frisbee.it" tvg-chno="44" tvg-logo="https://i.imgur.com/9y1zIAe.png",Frisbee
 https://d6m7lubks416z.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zmbstsedxme9s/Frisbee_IT.m3u8
@@ -147,7 +147,7 @@ https://live02-seg.msf.cdn.mediaset.net/live/ch-la/la-clr.isml/index.m3u8
 https://vimnitaly.akamaized.net/hls/live/2094034/super/master.m3u8
 
 #EXTINF:-1 tvg-id="RaiNews24.it" tvg-chno="48" tvg-logo="https://i.imgur.com/gdzGwB6.png",Rai News 24
-http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1&output=7&forceUserAgent=raiplayappletv
+https://d3k8wzt41aflvx.cloudfront.net/RAINEWS24/Live.m3u8
 
 #EXTINF:-1 tvg-id="Italia.2.it" tvg-chno="49" tvg-logo="https://i.imgur.com/nq48sjO.png",Italia 2
 https://live02-seg.msf.cdn.mediaset.net/live/ch-i2/i2-clr.isml/index.m3u8
@@ -165,7 +165,7 @@ https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out
 https://liveac915ha.streamcloud.it/channel09/playlist.m3u8
 
 #EXTINF:-1 tvg-id="RaiStoria.it" tvg-chno="54" tvg-logo="https://i.imgur.com/K8y5q8x.png",Rai Storia
-http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746990&output=7&forceUserAgent=raiplayappletv
+https://d3k8wzt41aflvx.cloudfront.net/RAIStoria/Live.m3u8
 
 #EXTINF:-1 tvg-id="Mediaset.Extra.it" tvg-chno="55" tvg-logo="https://i.imgur.com/mM8lopo.png",Mediaset Extra
 https://live02-seg.msf.cdn.mediaset.net/live/ch-kq/kq-clr.isml/index.m3u8
@@ -174,10 +174,10 @@ https://live02-seg.msf.cdn.mediaset.net/live/ch-kq/kq-clr.isml/index.m3u8
 https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/HGTV/CMAF/index.m3u8
 
 #EXTINF:-1 tvg-id="RaiScuola.it" tvg-chno="57" tvg-logo="https://i.imgur.com/tmtJW6s.png",Rai Scuola
-http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747011&output=7&forceUserAgent=raiplayappletv
+https://d3k8wzt41aflvx.cloudfront.net/RAIScuola/Live.m3u8
 
 #EXTINF:-1 tvg-id="RaiSport.it" tvg-chno="58" tvg-logo="https://i.imgur.com/xsGljsb.png",Rai Sport
-http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=358025&output=7&forceUserAgent=raiplayappletv
+https://d3k8wzt41aflvx.cloudfront.net/RAISPORT/Live.m3u8
 
 #EXTINF:-1 tvg-id="Motor.Trend.it" tvg-chno="59" tvg-logo="https://i.imgur.com/TjjVjV0.png",Turbo
 https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/TURBO/CMAF/index.m3u8
