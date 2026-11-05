@@ -3,33 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Il Mio Player IPTV</title>
+  <title>Il Mio Player IPTV (Frame Fisso)</title>
+  <!-- Libreria HLS.js per flussi .m3u8 -->
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <!-- Libreria Dash.js per flussi .mpd -->
+  <script src="https://cdn.jsdelivr.net/npm/dashjs@latest/dist/dash.all.min.js"></script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { display: flex; height: 100vh; background: #111; color: #fff; font-family: sans-serif; }
-    #sidebar { width: 320px; background: #1a1a1a; overflow-y: auto; border-right: 1px solid #333; }
+    body { display: flex; height: 100vh; background: #111; color: #fff; font-family: sans-serif; overflow: hidden; }
+    
+    /* SIDEBAR FISSA A SINISTRA */
+    #sidebar {
+      width: 320px;
+      height: 100vh;
+      background: #1a1a1a;
+      overflow-y: auto;
+      border-right: 1px solid #333;
+      flex-shrink: 0;
+    }
+
+    /* CONTENITORE PLAYER A DESTRA */
+    #player-container {
+      flex: 1;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* STILE LISTA CANALI */
     .item { display: flex; align-items: center; padding: 12px; cursor: pointer; border-bottom: 1px solid #282828; }
     .item:hover { background: #2a2a2a; }
     .item img { width: 40px; height: 40px; object-fit: contain; margin-right: 12px; background: #000; border-radius: 4px; }
-    #player-container { flex: 1; display: flex; justify-content: center; align-items: center; background: #000; }
-    video { width: 100%; height: 100%; }
   </style>
 </head>
 <body>
+
+  <!-- SIDEBAR FISSA -->
   <div id="sidebar">
-    <div style="padding: 15px; font-weight: bold; background: #222; border-bottom: 1px solid #333;">I miei canali</div>
+    <div style="padding: 15px; font-weight: bold; background: #222; border-bottom: 1px solid #333; position: sticky; top: 0; z-index: 2;">I miei canali</div>
     <div id="list">Caricamento lista in corso...</div>
   </div>
+
+  <!-- PLAYER -->
   <div id="player-container">
     <video id="video" controls autoplay></video>
   </div>
+
   <script>
     const m3uUrl = "https://raw.githubusercontent.com/mrsoon-1/IPTV/refs/heads/main/tv2.m3u";
     const video = document.getElementById('video');
-    const listEl = document.getElementById('channel-list') || document.getElementById('list');
+    const listEl = document.getElementById('list');
     let hls = null;
+    let dashPlayer = null;
 
+    // Fetch e Parsing M3U
     fetch(m3uUrl)
       .then(r => r.text())
       .then(text => {
@@ -58,8 +93,26 @@
       .catch(() => { listEl.innerText = "Errore nel caricamento della lista."; });
 
     function play(url) {
-      if (Hls.isSupported()) {
-        if (hls) hls.destroy();
+      if (hls) { hls.destroy(); hls = null; }
+      if (dashPlayer) { dashPlayer.reset(); dashPlayer = null; }
+      video.pause();
+      video.src = "";
+
+      // Gestione nativa per i link relinker Rai (seguono il redirect HTTP 302 in automatico)
+      if (url.includes('mediapolis.rai.it') || url.includes('relinkerServlet')) {
+        video.src = url;
+        video.load();
+        video.play().catch(e => console.log("Autoplay bloccato o errore nativo:", e));
+        return;
+      }
+
+      // Gestione flussi DASH (.mpd)
+      if (url.includes('.mpd')) {
+        dashPlayer = dashjs.MediaPlayer().create();
+        dashPlayer.initialize(video, url, true);
+      } 
+      // Gestione flussi HLS standard (.m3u8)
+      else if (Hls.isSupported()) {
         hls = new Hls();
         hls.loadSource(url);
         hls.attachMedia(video);
