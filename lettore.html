@@ -130,7 +130,7 @@ header{background:#fff;border-bottom:1px solid #d0d7de;padding:10px 20px;display
     <div id="urlBar">
       <input id="urlInput" type="url" spellcheck="false" autocomplete="off"
         placeholder="Paste M3U/M3U8 URL here…"
-        value="https://raw.githubusercontent.com/mrsoon-1/IPTV/refs/heads/main/tv.m3u">
+        value="https://raw.githubusercontent.com/mrsoon-1/IPTV/refs/heads/main/tv2.m3u">
       <button class="btn btn-primary" id="loadBtn" onclick="Player.load()">▶ Load</button>
       <label class="btn btn-sm" title="Load from local .m3u file" style="cursor:pointer;">
         📁 File<input type="file" id="fileInput" accept=".m3u,.m3u8,.txt" style="display:none">
@@ -677,7 +677,7 @@ const Player = (() => {
     $('playlistBadge').style.display = 'none';
     $('clearBtn').style.display = 'none';
     $('favToggleBtn').style.display = 'none';
-    $('urlInput').value = 'https://raw.githubusercontent.com/mrsoon-1/IPTV/refs/heads/main/tv.m3u';
+    $('urlInput').value = 'https://raw.githubusercontent.com/mrsoon-1/IPTV/refs/heads/main/tv2.m3u';
 
     toast('Playlist cleared', 'info', 2000);
   }
