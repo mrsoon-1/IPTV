@@ -63,19 +63,19 @@ https://livetr.teleromagna.it/mia/live/playlist.m3u8
 https://live02-seg.msf.cdn.mediaset.net/live/ch-lb/lb-clr.isml/index.m3u8
 
 #EXTINF:-1 tvg-id="Rai4.it" tvg-chno="21" tvg-logo="https://i.imgur.com/XFkZRfv.png",Rai 4
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966&output=7&forceUserAgent=rainet/4.0.5
+https://raiquattro1-push.cdn.netrw.it/@syna-token=st=1793888787~hmac=f9e57027e721169a08fd798cd5e4a7d3df6d01ee67a596fb4d54a6d6895f8080/rai/hls-enc/quattro/rai4/playlist_ma.m3u8
 
 #EXTINF:-1 tvg-id="Iris.it" tvg-chno="22" tvg-logo="https://i.imgur.com/Ixz1BY3.png",Iris
 https://live02-seg.msf.cdn.mediaset.net/live/ch-ki/ki-clr.isml/index.m3u8
 
 #EXTINF:-1 tvg-id="Rai5.it" tvg-chno="23" tvg-logo="https://i.imgur.com/Leu2zTO.png",Rai 5
-https://raicinque1-push.cdn.netrw.it/@syna-token=st=1792765246~hmac=b84fe6ae39f066830dd32794c5ac28996d4cfbca07ba748620d76f0976c8746e/rai/hls-enc/cinque/rai5/playlist_ma.m3u8
+https://raicinque1-push.cdn.netrw.it/@syna-token=st=1793888832~hmac=4d8e86fb3a578e62d11b68a8f653d8617cbfe03a9c0c2a84ef6bd12607937690/rai/hls-enc/cinque/rai5/playlist_ma.m3u8
 
 #EXTINF:-1 tvg-id="RaiMovie.it" tvg-chno="24" tvg-logo="https://i.imgur.com/RKpO8CE.png",Rai Movie
-https://raimovie1-push.cdn.netrw.it/@syna-token=st=1792765324~hmac=e5cbd5ed1235b2c86d9170b0b647e642d347df7c1ff75afbeb380f937eb17767/rai/hls-enc/movie/raimovie/playlist_ma.m3u8
+https://raimovie1-push.cdn.netrw.it/@syna-token=st=1793888856~hmac=1dafbc76bc0b4024f5eb8b8df52996de0793f99bba24e13d151a8bfef8fcee79/rai/hls-enc/movie/raimovie/playlist_ma.m3u8
 
 #EXTINF:-1 tvg-id="RaiPremium.it" tvg-chno="25" tvg-logo="https://i.imgur.com/RKI4nFy.png",Rai Premium
-https://raipremium1-push.cdn.netrw.it/@syna-token=st=1792765399~hmac=b9e32e92b1c1a2d88aa8bb4cbc1726f89279b13c9bc522d23d7fad9dfbf1f16d/rai/hls-enc/premium/raipremium/playlist_ma.m3u8
+https://raipremium1-push.cdn.netrw.it/@syna-token=st=1793888900~hmac=a9dfed41d588a641537ece291aa89c4e4b97379e3cc28fe655f8d8cc3c366f69/rai/hls-enc/premium/raipremium/playlist_ma.m3u8
 
 #EXTINF:-1 tvg-id="cielo.it" tvg-chno="26" tvg-logo="https://i.imgur.com/cPluF03.png",Cielo
 https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11219/cieloweb/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
@@ -131,7 +131,7 @@ https://d1pmpe0hs35ka5.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 https://raigulp3-live.akamaized.net/hls/live/2018015/raigulp3/raigulp3/playlist.m3u8
 
 #EXTINF:-1 tvg-id="RaiYoyo.it" tvg-chno="43" tvg-logo="https://i.imgur.com/DRSa3ys.png",Rai YoYo
-https://raiyoyo1-push.cdn.netrw.it/@syna-token=st=1792765581~hmac=943190d0a459807ded607d8b4a92c5b8b04ae5624f882f0304e09f197647e8ae/rai/hls-enc/yoyo/raiyoyo/playlist_ma.m3u8
+https://raiyoyo1-push.cdn.netrw.it/@syna-token=st=1793888964~hmac=f34a5246ff442561dd57b73bd3108c9c76a84c61edd0d6e90445a27697c6dece/rai/hls-enc/yoyo/raiyoyo/playlist_ma.m3u8
 
 #EXTINF:-1 tvg-id="Frisbee.it" tvg-chno="44" tvg-logo="https://i.imgur.com/9y1zIAe.png",Frisbee
 https://d6m7lubks416z.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zmbstsedxme9s/Frisbee_IT.m3u8
@@ -176,7 +176,7 @@ https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out
 https://d3k8wzt41aflvx.cloudfront.net/RAIScuola/Live.m3u8
 
 #EXTINF:-1 tvg-id="RaiSport.it" tvg-chno="58" tvg-logo="https://i.imgur.com/xsGljsb.png",Rai Sport
-https://raisport1-push.cdn.netrw.it/@syna-token=st=1792765742~hmac=050fa331435bc2bebfe3c845e208f096789b28027d1eb3d2b3234219f2caa19e/rai/hls-enc/sport/raisport/playlist_mo_1800-5000.m3u8
+https://raisport1-push.cdn.netrw.it/@syna-token=st=1793889008~hmac=109235a8ec9c8a0712e4ed6884a799b1a6430d8b88c79d448d33b3479d6cb145/rai/hls-enc/sport/raisport/playlist_mo.m3u8
 
 #EXTINF:-1 tvg-id="Motor.Trend.it" tvg-chno="59" tvg-logo="https://i.imgur.com/TjjVjV0.png",Turbo
 https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/TURBO/CMAF/index.m3u8
