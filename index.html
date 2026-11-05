@@ -118,10 +118,20 @@ body {
     background: #1a222e;
     border-radius: 12px;
     padding: 10px;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
+    gap: 8px;
+}
+
+.copy-box:last-child {
+    margin-bottom: 0;
+}
+
+.copy-box span {
+    word-break: break-all;
 }
 
 .copy-btn {
@@ -130,8 +140,9 @@ body {
     padding: 8px 12px;
     border-radius: 8px;
     color: white;
-    font-size: 13px;
+    font-size: 12px;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .link-btn {
@@ -165,12 +176,16 @@ body {
 
     <!-- RIGA CON LISTA CANALI E GESTIONE AFFIANCATI -->
     <div class="split-row">
-        <!-- URL LISTA -->
+        <!-- URL LISTE -->
         <div class="card">
-            <h2>Lista canali</h2>
+            <h2>Liste canali</h2>
             <div class="copy-box">
                 <span>https://raw.githubusercontent.com/mrsoon-1/IPTV/refs/heads/main/tv.m3u</span>
-                <button class="copy-btn" onclick="copyURL()">Copia</button>
+                <button class="copy-btn" onclick="copyURL('https://raw.githubusercontent.com/mrsoon-1/IPTV/refs/heads/main/tv.m3u')">Copia</button>
+            </div>
+            <div class="copy-box">
+                <span>https://raw.githubusercontent.com/mrsoon-1/IPTV/refs/heads/main/tv2.m3u</span>
+                <button class="copy-btn" onclick="copyURL('https://raw.githubusercontent.com/mrsoon-1/IPTV/refs/heads/main/tv2.m3u')">Copia</button>
             </div>
         </div>
 
@@ -200,22 +215,26 @@ body {
             <a href="https://mrsoon-1.github.io/IPTV/lettore.html" class="link-btn">
                 <button class="btn-small">▶️ X-M3U Player</button>
             </a>
+
+            <a href="https://mrsoon-1.github.io/IPTV/tv.html" class="link-btn">
+                <button class="btn-small">▶️ Custom IPTV</button>
+            </a>
         </div>
     </div>
 
 </div>
 
 <script>
-const playlist = "https://raw.githubusercontent.com/mrsoon-1/IPTV/refs/heads/main/tv.m3u";
+const defaultPlaylist = "https://raw.githubusercontent.com/mrsoon-1/IPTV/refs/heads/main/tv.m3u";
 
-function copyURL() {
-    navigator.clipboard.writeText(playlist).then(() => {
-        alert("✅ URL copiato");
+function copyURL(url) {
+    navigator.clipboard.writeText(url).then(() => {
+        alert("✅ URL copiato negli appunti");
     });
 }
 
 function openTV() {
-    const url = "https://m3u-ip.tv/browser/?url=" + encodeURIComponent(playlist);
+    const url = "https://m3u-ip.tv/browser/?url=" + encodeURIComponent(defaultPlaylist);
     window.location.href = url;
 }
 </script>
