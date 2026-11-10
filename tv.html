@@ -41,7 +41,7 @@
       pointer-events: none;
     }
 
-    /* MESSAGGIO DI BENVENUTO STILE ISTRUZIONI */
+    /* MESSAGGIO DI BENVENUTO ALLARGATO E STILIZZATO */
     #welcome-message {
       position: absolute;
       color: #e0e0e0;
@@ -50,9 +50,9 @@
       text-align: left;
       z-index: 10;
       width: 90%;
-      max-width: 480px;
-      padding: 30px;
-      background: rgba(18, 18, 18, 0.85);
+      max-width: 580px;
+      padding: 35px;
+      background: rgba(18, 18, 18, 0.88);
       border: 1px solid rgba(255, 255, 255, 0.15);
       border-radius: 14px;
       backdrop-filter: blur(12px);
@@ -62,8 +62,8 @@
 
     #welcome-message h2 {
       color: #fff;
-      font-size: 20px;
-      margin-bottom: 16px;
+      font-size: 22px;
+      margin-bottom: 18px;
       text-align: center;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       padding-bottom: 12px;
@@ -214,22 +214,32 @@
         
         <div class="instruction-step">
           <span>1</span>
-          <p><strong>Seleziona un canale</strong> dalla barra a sinistra per iniziare la riproduzione.</p>
+          <p><strong>Comandi al volante:</strong> Usa i tasti traccia avanti/indietro del volante dell'auto per cambiare canale, aggiornare il logo sul cockpit e visualizzare le informazioni.</p>
+        </div>
+
+        <div class="instruction-step">
+          <span>2</span>
+          <p><strong>Seleziona un canale</strong> dalla barra o fai uno <strong>swipe da sinistra a destra</strong> sullo schermo per aprirla.</p>
+        </div>
+
+        <div class="instruction-step">
+          <span>3</span>
+          <p><strong>Swipe in alto o in basso</strong> sul video per cambiare canale (su = indietro, giù = avanti).</p>
         </div>
         
         <div class="instruction-step">
-          <span>2</span>
+          <span>4</span>
           <p><strong>Doppio click o doppio tap</strong> sullo schermo per attivare o uscire dalla modalità a tutto schermo.</p>
         </div>
         
         <div class="instruction-step">
-          <span>3</span>
-          <p><strong>Gestisci la barra:</strong> Togli la spunta sulla barra dei canali (📌) per nasconderla. Si riattiverà posizionando il mouse o tenendo premuto il tap per un secondo sul bordo sinistro dello schermo.</p>
+          <span>5</span>
+          <p><strong>Gestisci la barra:</strong> Togli la spunta (📌) per nasconderla. Si riattiva con uno swipe da sinistra o tenendo premuto 1s sul bordo.</p>
         </div>
 
         <div class="instruction-step">
-          <span>4</span>
-          <p>Il pulsante <strong>❓</strong> in alto a sinistra nella barra ti permette di ritornare in qualsiasi momento a questo messaggio.</p>
+          <span>6</span>
+          <p>Il pulsante (❓) ti permette di ritornare a questo messaggio</p>
         </div>
 
         <div class="footer-text">Buona visione !</div>
@@ -271,23 +281,22 @@
     }
 
     function showWelcome() {
-      // Ferma e resetta il video per far "sparire" la visione
       if (hls) { hls.destroy(); hls = null; }
       if (dashPlayer) { dashPlayer.reset(); dashPlayer = null; }
       video.pause();
       video.src = "";
       currentIndex = -1;
-
-      // Rimuove la selezione attiva dai canali nella lista
       channelElements.forEach(el => el.classList.remove('active'));
-
-      // Mostra il messaggio di benvenuto
       welcomeMsg.style.display = 'block';
+
+      if ('mediaSession' in navigator) {
+        navigator.mediaSession.metadata = null;
+      }
     }
 
     function openDrawer() {
       drawerMenu.classList.add('open');
-      if (isTouchDevice) startTouchCloseTimer();
+      if (isTouchDevice && !isPinned) startTouchCloseTimer();
     }
 
     function closeDrawerInstant() {
@@ -371,18 +380,90 @@
       toggleFullScreen();
     });
 
+    let touchStartX = 0;
+    let touchStartY = 0;
     let lastTapTime = 0;
+
+    container.addEventListener('touchstart', (e) => {
+      if (drawerMenu.contains(e.target) || e.target === touchZone) return;
+      touchStartX = e.changedTouches[0].screenX;
+      touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
     container.addEventListener('touchend', (e) => {
       if (drawerMenu.contains(e.target) || e.target === touchZone) return;
-      const now = Date.now();
-      if (now - lastTapTime < 300 && now - lastTapTime > 0) {
-        e.preventDefault();
-        toggleFullScreen();
-        lastTapTime = 0;
+      
+      const touchEndX = e.changedTouches[0].screenX;
+      const touchEndY = e.changedTouches[0].screenY;
+      
+      const diffX = touchEndX - touchStartX;
+      const diffY = touchEndY - touchStartY;
+
+      if (Math.abs(diffX) > 50 || Math.abs(diffY) > 50) {
+        if (Math.abs(diffX) > Math.abs(diffY)) {
+          if (diffX > 50) {
+            openDrawer();
+          }
+        } else {
+          if (channels.length > 0 && currentIndex !== -1) {
+            let nextIndex = diffY > 0 ? currentIndex - 1 : currentIndex + 1;
+            if (nextIndex >= channels.length) nextIndex = 0;
+            if (nextIndex < 0) nextIndex = channels.length - 1;
+            selectAndPlay(nextIndex);
+          }
+        }
       } else {
-        lastTapTime = now;
+        const now = Date.now();
+        if (now - lastTapTime < 300 && now - lastTapTime > 0) {
+          e.preventDefault();
+          toggleFullScreen();
+          lastTapTime = 0;
+        } else {
+          lastTapTime = now;
+        }
       }
     });
+
+    function setupMediaSession() {
+      if ('mediaSession' in navigator) {
+        navigator.mediaSession.setActionHandler('previoustrack', () => {
+          if (channels.length === 0) return;
+          let prevIndex = currentIndex - 1;
+          if (prevIndex < 0) prevIndex = channels.length - 1;
+          selectAndPlay(prevIndex);
+        });
+
+        navigator.mediaSession.setActionHandler('nexttrack', () => {
+          if (channels.length === 0) return;
+          let nextIndex = currentIndex + 1;
+          if (nextIndex >= channels.length) nextIndex = 0;
+          selectAndPlay(nextIndex);
+        });
+
+        navigator.mediaSession.setActionHandler('play', () => video.play());
+        navigator.mediaSession.setActionHandler('pause', () => video.pause());
+      }
+    }
+
+    function updateMediaSessionMetadata(channel) {
+      if ('mediaSession' in navigator) {
+        const artwork = channel.logo ? [
+          { src: channel.logo, sizes: '96x96', type: 'image/png' },
+          { src: channel.logo, sizes: '128x128', type: 'image/png' },
+          { src: channel.logo, sizes: '192x192', type: 'image/png' },
+          { src: channel.logo, sizes: '512x512', type: 'image/png' }
+        ] : [];
+
+        navigator.mediaSession.metadata = new MediaMetadata({
+          title: channel.name,
+          artist: 'IPTV Live',
+          album: 'La TV di Stefano',
+          artwork: artwork
+        });
+      }
+    }
+
+    setupMediaSession();
 
     fetch(m3uUrl)
       .then(r => r.text())
@@ -429,7 +510,9 @@
         if (active) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       });
 
-      play(channels[currentIndex].url);
+      const currentChannel = channels[currentIndex];
+      updateMediaSessionMetadata(currentChannel);
+      play(currentChannel.url);
     }
 
     function play(url) {
