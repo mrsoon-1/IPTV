@@ -45,9 +45,12 @@ for programme in root.findall("programme"):
     except Exception:
       continue
 
+# Aggiunge il timestamp dell'ultimo aggiornamento per garantire il commit su Git
+epg_dict["_ultimo_aggiornamento"] = now_rome.strftime("%Y-%m-%d %H:%M:%S")
+
 with open("epg.json", "w", encoding="utf-8") as f:
     json.dump(epg_dict, f, ensure_ascii=False, indent=2)
 
 print(
-    f"File epg.json generato con successo! {len(epg_dict)} canali aggiornati."
+    f"File epg.json generato con successo! {len(epg_dict) - 1} canali aggiornati."
 )
