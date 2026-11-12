@@ -13,8 +13,8 @@ xml_data = req.read()
 print("Analisi del file XML...")
 root = ET.fromstring(xml_data)
 
-# Ora attuale in Italia
-now_rome = datetime.now(ZoneInfo("Europe/Rome")).replace(tzinfo=None)
+# Ottiene l'orario attuale italiano con fuso orario consapevole (aware)
+now_rome = datetime.now(ZoneInfo("Europe/Rome"))
 
 epg_dict = {}
 
@@ -26,16 +26,18 @@ for programme in root.findall("programme"):
 
   if channel_id and start_str and stop_str and title_elem is not None:
     try:
-      start_clean = start_str.split(" ")[0]
-      stop_clean = stop_str.split(" ")[0]
+      # Legge l'orario completo includendo il fuso orario dell'XML (es. "+0100")
+      start_time = datetime.strptime(start_str.strip(), "%Y%m%d%H%M%S %z")
+      stop_time = datetime.strptime(stop_str.strip(), "%Y%m%d%H%M%S %z")
 
-      # Legge l'orario direttamente come ora locale pura
-      start_time = datetime.strptime(start_clean, "%Y%m%d%H%M%S")
-      stop_time = datetime.strptime(stop_clean, "%Y%m%d%H%M%S")
-
+      # Confronto temporale preciso al millisecondo
       if start_time <= now_rome <= stop_time:
-        start_formatted = start_time.strftime("%H:%M")
-        stop_formatted = stop_time.strftime("%H:%M")
+        # Converte nell'orario locale italiano per la visualizzazione
+        start_local = start_time.astimezone(ZoneInfo("Europe/Rome"))
+        stop_local = stop_time.astimezone(ZoneInfo("Europe/Rome"))
+
+        start_formatted = start_local.strftime("%H:%M")
+        stop_formatted = stop_local.strftime("%H:%M")
 
         epg_dict[channel_id.strip()] = (
             f"{start_formatted} - {stop_formatted}: {title_elem.text}"
