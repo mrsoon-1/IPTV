@@ -1,13 +1,18 @@
+import gzip
 import json
 from datetime import datetime, timezone
 import xml.etree.ElementTree as ET
 import urllib.request
 
-xml_url = "https://www.open-epg.com/files/italy8.xml"
+# Nuovo link del file EPG compresso in .gz
+xml_url = "https://www.free-epg.de/api/epg/m3u/f1745819.xml.gz"
 
-print("Scaricamento EPG in corso...")
+print("Scaricamento EPG .gz in corso...")
 req = urllib.request.urlopen(xml_url)
-xml_data = req.read()
+compressed_data = req.read()
+
+print("Decompressione del file XML...")
+xml_data = gzip.decompress(compressed_data)
 
 print("Analisi del file XML...")
 root = ET.fromstring(xml_data)
