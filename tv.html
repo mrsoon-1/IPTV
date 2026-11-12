@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -237,7 +237,7 @@
       <div id="welcome-message">
         <h2>Benvenuto nella TV di Stefano</h2>
         <div class="instruction-step"><span>1</span><p><strong>Comandi al volante:</strong> Usa i tasti traccia avanti/indietro del volante dell'auto per cambiare canale, aggiornare il logo sul cockpit e visualizzare le informazioni.</p></div>
-        <div class="instruction-step"><span>2</span><p><strong>Seleziona un canale</strong> dalla barra o fai uno <strong>swipe da sinistra a destra</strong> sullo schermo per aprirla.</p></div>
+        <div class="instruction-step"><span>2</span><p><strong>Seleziona un canale</strong> dalla barra o fai uno <strong>swipe da sinistra a destra</strong> sullo schermo per aprirla (e da destra a sinistra per chiuderla).</p></div>
         <div class="instruction-step"><span>3</span><p><strong>Swipe in alto o in basso</strong> sul video per cambiare canale (su = indietro, giù = avanti).</p></div>
         <div class="instruction-step"><span>4</span><p><strong>Doppio click o doppio tap</strong> sullo schermo per attivare o uscire dalla modalità a tutto schermo.</p></div>
         <div class="instruction-step"><span>5</span><p><strong>Gestisci la barra:</strong> Togli la spunta (📌) per nasconderla. Si riattiva con uno swipe da sinistra o tenendo premuto 1s sul bordo.</p></div>
@@ -398,7 +398,11 @@
 
       if (Math.abs(diffX) > 50 || Math.abs(diffY) > 50) {
         if (Math.abs(diffX) > Math.abs(diffY)) {
-          if (diffX > 50) openDrawer();
+          if (diffX > 50) {
+            openDrawer(); // Swipe da sinistra a destra (apre)
+          } else if (diffX < -50 && !isPinned) {
+            closeDrawerInstant(); // Swipe da destra a sinistra (chiude se non pinnata)
+          }
         } else {
           stepChannel(diffY > 0 ? -1 : 1);
         }
@@ -426,7 +430,7 @@
       const sizes = ['96x96', '128x128', '192x192', '512x512'];
       navigator.mediaSession.metadata = new MediaMetadata({
         title: channel.name,
-        artist: channel.program,
+        artist: channel.currentProgramTitle || 'In diretta',
         album: 'La TV di Stefano',
         artwork: channel.logo ? sizes.map(s => ({ src: channel.logo, sizes: s, type: 'image/png' })) : []
       });
@@ -440,46 +444,51 @@
       if (!isPinned) closeDrawerInstant();
     });
 
-    function parseEPGInfo(programText) {
-      const match = programText.match(/^(\d{2}:\d{2})\s*-\s*(\d{2}:\d{2}):\s*(.*)$/);
-      if (!match) return { start: '', end: '', title: programText, percent: 0 };
-
-      const startTimeStr = match[1];
-      const endTimeStr = match[2];
-      const title = match[3];
-
-      const now = new Date();
-      const [startH, startM] = startTimeStr.split(':').map(Number);
-      const [endH, endM] = endTimeStr.split(':').map(Number);
-
-      const startTime = new Date(now);
-      startTime.setHours(startH, startM, 0, 0);
-
-      const endTime = new Date(now);
-      endTime.setHours(endH, endM, 0, 0);
-
-      if (endTime < startTime) {
-        if (now < startTime) startTime.setDate(startTime.getDate() - 1);
-        else endTime.setDate(endTime.getDate() + 1);
+    function getActiveProgramData(programsArray) {
+      if (!programsArray || !Array.isArray(programsArray) || programsArray.length === 0) {
+        return { start: '', end: '', title: 'In diretta', percent: 0 };
       }
-
-      const total = endTime - startTime;
-      const elapsed = now - startTime;
+      
+      const now = new Date();
+      let currentProg = null;
+      
+      for (let p of programsArray) {
+        const start = new Date(p.start);
+        const stop = new Date(p.stop);
+        if (start <= now && now <= stop) {
+          currentProg = { start, stop, title: p.title };
+          break;
+        }
+      }
+      
+      if (!currentProg) {
+        const fallback = programsArray.find(p => new Date(p.stop) > now) || programsArray[0];
+        if (!fallback) return { start: '', end: '', title: 'In diretta', percent: 0 };
+        currentProg = { start: new Date(fallback.start), stop: new Date(fallback.stop), title: fallback.title };
+      }
+      
+      const startFormatted = String(currentProg.start.getHours()).padStart(2, '0') + ':' + String(currentProg.start.getMinutes()).padStart(2, '0');
+      const endFormatted = String(currentProg.stop.getHours()).padStart(2, '0') + ':' + String(currentProg.stop.getMinutes()).padStart(2, '0');
+      
+      const total = currentProg.stop - currentProg.start;
+      const elapsed = now - currentProg.start;
       let percent = total > 0 ? (elapsed / total) * 100 : 0;
       percent = Math.min(Math.max(percent, 0), 100);
-
-      return { start: startTimeStr, end: endTimeStr, title: title, percent: percent };
+      
+      return { start: startFormatted, end: endFormatted, title: currentProg.title, percent: percent };
     }
 
-    // Aggiornamento fluido delle barre e degli orari ogni minuto
     function tickProgressBars() {
       channels.forEach((ch, index) => {
-        const epgData = parseEPGInfo(ch.program);
+        const epgData = getActiveProgramData(ch.programs);
+        ch.currentProgramTitle = epgData.title;
         const el = channelElements[index];
         if (el) {
           const fill = el.querySelector('.item-progress-fill');
           const times = el.querySelectorAll('.item-time-container span');
+          const progTitleEl = el.querySelector('.item-program');
           
+          if (progTitleEl) progTitleEl.textContent = epgData.title;
           if (fill) fill.style.width = `${epgData.percent}%`;
           if (times.length >= 2 && epgData.start && epgData.end) {
             times[0].textContent = epgData.start;
@@ -496,22 +505,11 @@
         const epg = await res.json();
 
         channels.forEach((ch, index) => {
-          const rawProg = epg[ch.tvgId] || 'In diretta';
-          if (ch.program !== rawProg) {
-            ch.program = rawProg;
-            const epgData = parseEPGInfo(ch.program);
-            const el = channelElements[index];
-            if (el) {
-              el.querySelector('.item-program').textContent = epgData.title;
-              const times = el.querySelectorAll('.item-time-container span');
-              if (times.length >= 2) {
-                times[0].textContent = epgData.start;
-                times[1].textContent = epgData.end;
-              }
-              el.querySelector('.item-progress-fill').style.width = `${epgData.percent}%`;
-            }
+          if (epg[ch.tvgId]) {
+            ch.programs = epg[ch.tvgId];
           }
         });
+        tickProgressBars();
 
         if (currentIndex !== -1 && channels[currentIndex]) {
           updateMediaSessionMetadata(channels[currentIndex]);
@@ -521,11 +519,9 @@
       }
     }
 
-    Promise.all([
-      fetch(M3U_URL).then(r => r.text()),
-      fetch(`${EPG_URL}?t=${Date.now()}`).then(r => r.json()).catch(() => ({}))
-    ])
-    .then(([m3uText, epg]) => {
+    fetch(M3U_URL)
+    .then(r => r.text())
+    .then(m3uText => {
       let cur = null;
       for (const rawLine of m3uText.split('\n')) {
         const line = rawLine.trim();
@@ -533,12 +529,7 @@
           const name = line.split(',').pop().trim() || 'Canale';
           const logo = (line.match(/tvg-logo="([^"]+)"/) || [])[1] || '';
           const tvgId = ((line.match(/tvg-id="([^"]+)"/) || [])[1] || '').trim();
-          cur = {
-            name,
-            logo,
-            tvgId,
-            program: epg[tvgId] || 'In diretta'
-          };
+          cur = { name, logo, tvgId, programs: [] };
         } else if (line && !line.startsWith('#') && cur) {
           cur.url = line;
           channels.push(cur);
@@ -548,7 +539,6 @@
 
       const frag = document.createDocumentFragment();
       channels.forEach((ch, index) => {
-        const epgData = parseEPGInfo(ch.program);
         const div = document.createElement('div');
         div.className = 'item';
         div.dataset.index = index;
@@ -556,13 +546,13 @@
           ${ch.logo ? `<img src="${ch.logo}" loading="lazy">` : ''}
           <div class="item-info">
             <span class="item-name">${ch.name}</span>
-            <span class="item-program">${epgData.title}</span>
+            <span class="item-program">In diretta</span>
             <div class="item-time-container">
-              <span>${epgData.start}</span>
-              <span>${epgData.end}</span>
+              <span>--:--</span>
+              <span>--:--</span>
             </div>
             <div class="item-progress-bar">
-              <div class="item-progress-fill" style="width: ${epgData.percent}%;"></div>
+              <div class="item-progress-fill" style="width: 0%;"></div>
             </div>
           </div>
         `;
@@ -573,16 +563,15 @@
       listEl.innerHTML = '';
       listEl.appendChild(frag);
 
-      // FORZA UN AGGIORNAMENTO FRESCO DELL'EPG SUBITO ALL'AVVIO
       updateEPGData();
 
-      // Timer per il fetch dell'EPG da GitHub ogni 10 minuti
-      setInterval(updateEPGData, 10 * 60 * 1000);
-
-      // Timer per l'avanzamento fluido della barretta ogni 1 minuto
+      setInterval(updateEPGData, 30 * 60 * 1000);
       setInterval(tickProgressBars, 60 * 1000);
     })
-    .catch(() => { listEl.textContent = "Errore caricamento lista."; });
+    .catch(err => {
+      console.error("Errore critico M3U:", err);
+      listEl.textContent = "Errore caricamento lista M3U.";
+    });
 
     function selectAndPlay(index) {
       if (index < 0 || index >= channels.length) return;
@@ -596,8 +585,11 @@
       });
 
       const ch = channels[currentIndex];
+      const epgData = getActiveProgramData(ch.programs);
+      ch.currentProgramTitle = epgData.title;
+
       updateMediaSessionMetadata(ch);
-      showOSD(ch.name, ch.program);
+      showOSD(ch.name, ch.currentProgramTitle);
       play(ch.url);
     }
 
