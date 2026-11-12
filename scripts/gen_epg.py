@@ -13,8 +13,8 @@ xml_data = req.read()
 print("Analisi del file XML...")
 root = ET.fromstring(xml_data)
 
-# Ottiene l'ora attuale in Italia (gestisce automaticamente solare/legale)
-now_rome = datetime.now(ZoneInfo("Europe/Rome"))
+# Ora attuale in Italia
+now_rome = datetime.now(ZoneInfo("Europe/Rome")).replace(tzinfo=None)
 
 epg_dict = {}
 
@@ -29,20 +29,13 @@ for programme in root.findall("programme"):
       start_clean = start_str.split(" ")[0]
       stop_clean = stop_str.split(" ")[0]
 
-      # Converte i tempi XML (presunti in UTC) nel fuso orario italiano corretto
-      start_utc = datetime.strptime(start_clean, "%Y%m%d%H%M%S").replace(
-          tzinfo=ZoneInfo("UTC")
-      )
-      stop_utc = datetime.strptime(stop_clean, "%Y%m%d%H%M%S").replace(
-          tzinfo=ZoneInfo("UTC")
-      )
+      # Legge l'orario direttamente come ora locale pura
+      start_time = datetime.strptime(start_clean, "%Y%m%d%H%M%S")
+      stop_time = datetime.strptime(stop_clean, "%Y%m%d%H%M%S")
 
-      start_rome = start_utc.astimezone(ZoneInfo("Europe/Rome"))
-      stop_rome = stop_utc.astimezone(ZoneInfo("Europe/Rome"))
-
-      if start_rome <= now_rome <= stop_rome:
-        start_formatted = start_rome.strftime("%H:%M")
-        stop_formatted = stop_rome.strftime("%H:%M")
+      if start_time <= now_rome <= stop_time:
+        start_formatted = start_time.strftime("%H:%M")
+        stop_formatted = stop_time.strftime("%H:%M")
 
         epg_dict[channel_id.strip()] = (
             f"{start_formatted} - {stop_formatted}: {title_elem.text}"
@@ -51,7 +44,7 @@ for programme in root.findall("programme"):
       continue
 
 with open("epg.json", "w", encoding="utf-8") as f:
-  json.dump(epg_dict, f, ensure_ascii=False, indent=2)
+    json.dump(epg_dict, f, ensure_ascii=False, indent=2)
 
 print(
     f"File epg.json generato con successo! {len(epg_dict)} canali aggiornati."
