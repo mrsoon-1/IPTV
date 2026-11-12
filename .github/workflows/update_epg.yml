@@ -2,7 +2,7 @@ name: Aggiorna EPG JSON
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # Ogni 30 minuti
+    - cron: '0 */4 * * *' # Ogni 4 ore
   workflow_dispatch: # Permette sempre l'avvio manuale da GitHub
 
 jobs:
