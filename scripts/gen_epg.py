@@ -13,44 +13,39 @@ xml_data = req.read()
 print("Analisi del file XML...")
 root = ET.fromstring(xml_data)
 
-# Ottiene l'orario attuale italiano con fuso orario consapevole (aware)
 now_rome = datetime.now(ZoneInfo("Europe/Rome"))
-
 epg_dict = {}
 
 for programme in root.findall("programme"):
-  channel_id = programme.get("channel")
-  start_str = programme.get("start")
-  stop_str = programme.get("stop")
-  title_elem = programme.find("title")
+    channel_id = programme.get("channel")
+    start_str = programme.get("start")
+    stop_str = programme.get("stop")
+    title_elem = programme.find("title")
 
-  if channel_id and start_str and stop_str and title_elem is not None:
-    try:
-      # Legge l'orario completo includendo il fuso orario dell'XML (es. "+0100")
-      start_time = datetime.strptime(start_str.strip(), "%Y%m%d%H%M%S %z")
-      stop_time = datetime.strptime(stop_str.strip(), "%Y%m%d%H%M%S %z")
+    if channel_id and start_str and stop_str and title_elem is not None:
+        try:
+            start_time = datetime.strptime(start_str.strip(), "%Y%m%d%H%M%S %z")
+            stop_time = datetime.strptime(stop_str.strip(), "%Y%m%d%H%M%S %z")
 
-      # Confronto temporale preciso al millisecondo
-      if start_time <= now_rome <= stop_time:
-        # Converte nell'orario locale italiano per la visualizzazione
-        start_local = start_time.astimezone(ZoneInfo("Europe/Rome"))
-        stop_local = stop_time.astimezone(ZoneInfo("Europe/Rome"))
+            # Consideriamo i programmi da adesso in poi (o che sono appena iniziati)
+            if stop_time >= now_rome:
+                ch_id = channel_id.strip()
+                if ch_id not in epg_dict:
+                    epg_dict[ch_id] = []
 
-        start_formatted = start_local.strftime("%H:%M")
-        stop_formatted = stop_local.strftime("%H:%M")
+                # Salviamo start, stop in formato ISO/stringa e il titolo
+                epg_dict[ch_id].append({
+                    "start": start_time.astimezone(ZoneInfo("Europe/Rome")).isoformat(),
+                    "stop": stop_time.astimezone(ZoneInfo("Europe/Rome")).isoformat(),
+                    "title": title_elem.text
+                })
+        except Exception:
+            continue
 
-        epg_dict[channel_id.strip()] = (
-            f"{start_formatted} - {stop_formatted}: {title_elem.text}"
-        )
-    except Exception:
-      continue
-
-# Aggiunge il timestamp dell'ultimo aggiornamento per garantire il commit su Git
+# Timestamp dell'ultimo aggiornamento
 epg_dict["_ultimo_aggiornamento"] = now_rome.strftime("%Y-%m-%d %H:%M:%S")
 
 with open("epg.json", "w", encoding="utf-8") as f:
     json.dump(epg_dict, f, ensure_ascii=False, indent=2)
 
-print(
-    f"File epg.json generato con successo! {len(epg_dict) - 1} canali aggiornati."
-)
+print(f"File epg.json generato con successo!")
