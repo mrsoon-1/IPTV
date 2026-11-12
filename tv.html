@@ -185,9 +185,33 @@
     }
     .item:active, .item.active { background: rgba(255, 255, 255, 0.2); }
     .item img { width: 40px; height: 40px; object-fit: contain; margin-right: 12px; background: #000; border-radius: 6px; flex-shrink: 0; }
-    .item-info { display: flex; flex-direction: column; overflow: hidden; }
+    
+    .item-info { display: flex; flex-direction: column; overflow: hidden; flex: 1; }
     .item-name { font-weight: bold; font-size: 15px; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .item-program { font-size: 12px; color: #4da6ff; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    
+    .item-time-container {
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      color: #888;
+      margin-top: 4px;
+      margin-bottom: 2px;
+    }
+
+    .item-progress-bar {
+      width: 100%;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .item-progress-fill {
+      height: 100%;
+      background: #007acc;
+      width: 0%;
+      transition: width 0.5s ease;
+    }
   </style>
 </head>
 <body>
@@ -416,7 +440,55 @@
       if (!isPinned) closeDrawerInstant();
     });
 
-    // Funzione per aggiornare i palinsesti in background senza disturbare la riproduzione
+    function parseEPGInfo(programText) {
+      const match = programText.match(/^(\d{2}:\d{2})\s*-\s*(\d{2}:\d{2}):\s*(.*)$/);
+      if (!match) return { start: '', end: '', title: programText, percent: 0 };
+
+      const startTimeStr = match[1];
+      const endTimeStr = match[2];
+      const title = match[3];
+
+      const now = new Date();
+      const [startH, startM] = startTimeStr.split(':').map(Number);
+      const [endH, endM] = endTimeStr.split(':').map(Number);
+
+      const startTime = new Date(now);
+      startTime.setHours(startH, startM, 0, 0);
+
+      const endTime = new Date(now);
+      endTime.setHours(endH, endM, 0, 0);
+
+      if (endTime < startTime) {
+        if (now < startTime) startTime.setDate(startTime.getDate() - 1);
+        else endTime.setDate(endTime.getDate() + 1);
+      }
+
+      const total = endTime - startTime;
+      const elapsed = now - startTime;
+      let percent = total > 0 ? (elapsed / total) * 100 : 0;
+      percent = Math.min(Math.max(percent, 0), 100);
+
+      return { start: startTimeStr, end: endTimeStr, title: title, percent: percent };
+    }
+
+    // Aggiornamento fluido delle barre e degli orari ogni minuto
+    function tickProgressBars() {
+      channels.forEach((ch, index) => {
+        const epgData = parseEPGInfo(ch.program);
+        const el = channelElements[index];
+        if (el) {
+          const fill = el.querySelector('.item-progress-fill');
+          const times = el.querySelectorAll('.item-time-container span');
+          
+          if (fill) fill.style.width = `${epgData.percent}%`;
+          if (times.length >= 2 && epgData.start && epgData.end) {
+            times[0].textContent = epgData.start;
+            times[1].textContent = epgData.end;
+          }
+        }
+      });
+    }
+
     async function updateEPGData() {
       try {
         const res = await fetch(`${EPG_URL}?t=${Date.now()}`);
@@ -424,15 +496,23 @@
         const epg = await res.json();
 
         channels.forEach((ch, index) => {
-          const newProg = epg[ch.tvgId] || 'In diretta';
-          if (ch.program !== newProg) {
-            ch.program = newProg;
-            const progEl = channelElements[index]?.querySelector('.item-program');
-            if (progEl) progEl.textContent = newProg;
+          const rawProg = epg[ch.tvgId] || 'In diretta';
+          if (ch.program !== rawProg) {
+            ch.program = rawProg;
+            const epgData = parseEPGInfo(ch.program);
+            const el = channelElements[index];
+            if (el) {
+              el.querySelector('.item-program').textContent = epgData.title;
+              const times = el.querySelectorAll('.item-time-container span');
+              if (times.length >= 2) {
+                times[0].textContent = epgData.start;
+                times[1].textContent = epgData.end;
+              }
+              el.querySelector('.item-progress-fill').style.width = `${epgData.percent}%`;
+            }
           }
         });
 
-        // Se un canale è attualmente in riproduzione, aggiorna anche il metadata attivo
         if (currentIndex !== -1 && channels[currentIndex]) {
           updateMediaSessionMetadata(channels[currentIndex]);
         }
@@ -441,7 +521,6 @@
       }
     }
 
-    // Caricamento iniziale parallelo M3U + EPG JSON
     Promise.all([
       fetch(M3U_URL).then(r => r.text()),
       fetch(`${EPG_URL}?t=${Date.now()}`).then(r => r.json()).catch(() => ({}))
@@ -469,6 +548,7 @@
 
       const frag = document.createDocumentFragment();
       channels.forEach((ch, index) => {
+        const epgData = parseEPGInfo(ch.program);
         const div = document.createElement('div');
         div.className = 'item';
         div.dataset.index = index;
@@ -476,7 +556,14 @@
           ${ch.logo ? `<img src="${ch.logo}" loading="lazy">` : ''}
           <div class="item-info">
             <span class="item-name">${ch.name}</span>
-            <span class="item-program">${ch.program}</span>
+            <span class="item-program">${epgData.title}</span>
+            <div class="item-time-container">
+              <span>${epgData.start}</span>
+              <span>${epgData.end}</span>
+            </div>
+            <div class="item-progress-bar">
+              <div class="item-progress-fill" style="width: ${epgData.percent}%;"></div>
+            </div>
           </div>
         `;
         frag.appendChild(div);
@@ -486,8 +573,14 @@
       listEl.innerHTML = '';
       listEl.appendChild(frag);
 
-      // Avvia un timer per aggiornare l'EPG in background ogni 10 minuti
+      // FORZA UN AGGIORNAMENTO FRESCO DELL'EPG SUBITO ALL'AVVIO
+      updateEPGData();
+
+      // Timer per il fetch dell'EPG da GitHub ogni 10 minuti
       setInterval(updateEPGData, 10 * 60 * 1000);
+
+      // Timer per l'avanzamento fluido della barretta ogni 1 minuto
+      setInterval(tickProgressBars, 60 * 1000);
     })
     .catch(() => { listEl.textContent = "Errore caricamento lista."; });
 
