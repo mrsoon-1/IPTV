@@ -1,8 +1,8 @@
+from datetime import datetime, timezone, timedelta
 import gzip
 import json
-from datetime import datetime, timezone
-import xml.etree.ElementTree as ET
 import urllib.request
+import xml.etree.ElementTree as ET
 
 xml_url = "https://www.free-epg.de/api/epg/m3u/f1745819.xml.gz"
 
@@ -15,36 +15,54 @@ xml_data = gzip.decompress(compressed_data)
 
 print("Analisi del file XML...")
 root = ET.fromstring(xml_data)
-now = datetime.now(timezone.utc).replace(tzinfo=None)
+now = datetime.now(timezone.utc)
 
 epg_dict = {}
 
+
+def parse_xml_date(date_str):
+  # Gestisce date in formato "YYYYMMDDHHMMSS +HHMM" o simili
+  parts = date_str.strip().split()
+  dt_naive = datetime.strptime(parts[0], "%Y%m%d%H%M%S")
+  if len(parts) > 1 and (
+      parts[1].startswith("+") or parts[1].startswith("-")
+  ):
+    sign = 1 if parts[1][0] == "+" else -1
+    hours = int(parts[1][1:3])
+    minutes = int(parts[1][3:5])
+    offset = timedelta(hours=hours, minutes=minutes) * sign
+    return dt_naive.replace(tzinfo=timezone(offset))
+  return dt_naive.replace(tzinfo=timezone.utc)
+
+
 for programme in root.findall("programme"):
-    channel_id = programme.get("channel")
-    start_str = programme.get("start")
-    stop_str = programme.get("stop")
-    title_elem = programme.find("title")
+  channel_id = programme.get("channel")
+  start_str = programme.get("start")
+  stop_str = programme.get("stop")
+  title_elem = programme.find("title")
 
-    if channel_id and start_str and stop_str and title_elem is not None:
-        try:
-            # Estrae stringhe pulite (es. 20261112140000 +0100 -> 20261112140000)
-            start_clean = start_str.split(" ")[0]
-            stop_clean = stop_str.split(" ")[0]
+  if channel_id and start_str and stop_str and title_elem is not None:
+    try:
+      start_time = parse_xml_date(start_str)
+      stop_time = parse_xml_date(stop_str)
 
-            start_time = datetime.strptime(start_clean, "%Y%m%d%H%M%S")
-            stop_time = datetime.strptime(stop_clean, "%Y%m%d%H%M%S")
+      if start_time <= now <= stop_time:
+        # Converte nell'orario locale (es. ora italiana) per la visualizzazione
+        local_start = start_time.astimezone()
+        local_stop = stop_time.astimezone()
 
-            if start_time <= now <= stop_time:
-                # Estrae gli orari in formato HH:MM
-                start_formatted = start_time.strftime("%H:%M")
-                stop_formatted = stop_time.strftime("%H:%M")
-                
-                # Unisce orario e titolo (es. "14:00 - 15:30: Nome Programma")
-                epg_dict[channel_id.strip()] = f"{start_formatted} - {stop_formatted}: {title_elem.text}"
-        except Exception:
-            continue
+        start_formatted = local_start.strftime("%H:%M")
+        stop_formatted = local_stop.strftime("%H:%M")
+
+        epg_dict[channel_id.strip()] = (
+            f"{start_formatted} - {stop_formatted}: {title_elem.text}"
+        )
+    except Exception:
+      continue
 
 with open("epg.json", "w", encoding="utf-8") as f:
-    json.dump(epg_dict, f, ensure_ascii=False, indent=2)
+  json.dump(epg_dict, f, ensure_ascii=False, indent=2)
 
-print(f"File epg.json generato con successo! {len(epg_dict)} canali aggiornati.")
+print(
+    f"File epg.json generato con successo! {len(epg_dict)} canali aggiornati."
+)
