@@ -30,9 +30,7 @@
       cursor: pointer;
     }
 
-    #app-container.pinned #player-container {
-      margin-left: 320px;
-    }
+    #app-container.pinned #player-container { margin-left: 320px; }
 
     video {
       width: 100%;
@@ -41,7 +39,25 @@
       pointer-events: none;
     }
 
-    /* MESSAGGIO DI BENVENUTO ALLARGATO E STILIZZATO */
+    #osd-overlay {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      background: rgba(10, 10, 10, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 12px 18px;
+      border-radius: 10px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 15;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    #osd-overlay.visible { opacity: 1; }
+    #osd-title { font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 3px; }
+    #osd-program { font-size: 13px; color: #4da6ff; }
+
     #welcome-message {
       position: absolute;
       color: #e0e0e0;
@@ -91,14 +107,8 @@
       margin-top: 1px;
     }
 
-    .instruction-step p {
-      margin: 0;
-      color: #ccc;
-    }
-
-    .instruction-step p strong {
-      color: #fff;
-    }
+    .instruction-step p { margin: 0; color: #ccc; }
+    .instruction-step p strong { color: #fff; }
 
     #welcome-message .footer-text {
       text-align: center;
@@ -126,11 +136,7 @@
       border-right: 1px solid rgba(255, 255, 255, 0.1);
     }
     #drawer-menu.open { left: 0; }
-
-    #app-container.pinned #drawer-menu {
-      left: 0;
-      background: rgba(15, 15, 15, 0.5);
-    }
+    #app-container.pinned #drawer-menu { left: 0; background: rgba(15, 15, 15, 0.5); }
 
     .drawer-header {
       padding: 16px 20px;
@@ -142,15 +148,8 @@
       align-items: center;
     }
 
-    .header-actions {
-      display: flex;
-      gap: 6px;
-    }
-
-    #list {
-      flex: 1;
-      overflow-y: auto;
-    }
+    .header-actions { display: flex; gap: 6px; }
+    #list { flex: 1; overflow-y: auto; }
 
     #left-touch-zone {
       position: absolute;
@@ -159,10 +158,8 @@
       width: 75px;
       height: 100%;
       z-index: 25;
-      background: transparent;
       cursor: pointer;
     }
-
     #app-container.pinned #left-touch-zone { display: none; }
 
     .ui-btn {
@@ -177,21 +174,20 @@
       touch-action: manipulation;
     }
     .ui-btn:active { background: rgba(80, 80, 80, 0.9); }
+    .pin-btn.active { background: #007acc; border-color: #0099ff; }
 
-    .pin-btn.active {
-      background: #007acc;
-      border-color: #0099ff;
-    }
-
-    .item { 
-      display: flex; 
-      align-items: center; 
-      padding: 16px; 
-      cursor: pointer; 
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    .item {
+      display: flex;
+      align-items: center;
+      padding: 12px 16px;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
     .item:active, .item.active { background: rgba(255, 255, 255, 0.2); }
-    .item img { width: 44px; height: 44px; object-fit: contain; margin-right: 15px; background: #000; border-radius: 6px; }
+    .item img { width: 40px; height: 40px; object-fit: contain; margin-right: 12px; background: #000; border-radius: 6px; flex-shrink: 0; }
+    .item-info { display: flex; flex-direction: column; overflow: hidden; }
+    .item-name { font-weight: bold; font-size: 15px; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .item-program { font-size: 12px; color: #4da6ff; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   </style>
 </head>
 <body>
@@ -201,47 +197,27 @@
       <div class="drawer-header">
         <span>Canali</span>
         <div class="header-actions">
-          <button class="ui-btn" id="help-btn" onclick="showWelcome()" title="Istruzioni">❓</button>
-          <button class="ui-btn pin-btn active" id="pin-btn" onclick="togglePin()" title="Blocca/Sblocca barra">📌</button>
+          <button class="ui-btn" id="help-btn" title="Istruzioni">❓</button>
+          <button class="ui-btn pin-btn active" id="pin-btn" title="Blocca/Sblocca barra">📌</button>
         </div>
       </div>
       <div id="list">Caricamento...</div>
     </div>
 
     <div id="player-container">
+      <div id="osd-overlay">
+        <div id="osd-title">Canale</div>
+        <div id="osd-program">In diretta</div>
+      </div>
+
       <div id="welcome-message">
         <h2>Benvenuto nella TV di Stefano</h2>
-        
-        <div class="instruction-step">
-          <span>1</span>
-          <p><strong>Comandi al volante:</strong> Usa i tasti traccia avanti/indietro del volante dell'auto per cambiare canale, aggiornare il logo sul cockpit e visualizzare le informazioni.</p>
-        </div>
-
-        <div class="instruction-step">
-          <span>2</span>
-          <p><strong>Seleziona un canale</strong> dalla barra o fai uno <strong>swipe da sinistra a destra</strong> sullo schermo per aprirla.</p>
-        </div>
-
-        <div class="instruction-step">
-          <span>3</span>
-          <p><strong>Swipe in alto o in basso</strong> sul video per cambiare canale (su = indietro, giù = avanti).</p>
-        </div>
-        
-        <div class="instruction-step">
-          <span>4</span>
-          <p><strong>Doppio click o doppio tap</strong> sullo schermo per attivare o uscire dalla modalità a tutto schermo.</p>
-        </div>
-        
-        <div class="instruction-step">
-          <span>5</span>
-          <p><strong>Gestisci la barra:</strong> Togli la spunta (📌) per nasconderla. Si riattiva con uno swipe da sinistra o tenendo premuto 1s sul bordo.</p>
-        </div>
-
-        <div class="instruction-step">
-          <span>6</span>
-          <p>Il pulsante (❓) ti permette di ritornare a questo messaggio</p>
-        </div>
-
+        <div class="instruction-step"><span>1</span><p><strong>Comandi al volante:</strong> Usa i tasti traccia avanti/indietro del volante dell'auto per cambiare canale, aggiornare il logo sul cockpit e visualizzare le informazioni.</p></div>
+        <div class="instruction-step"><span>2</span><p><strong>Seleziona un canale</strong> dalla barra o fai uno <strong>swipe da sinistra a destra</strong> sullo schermo per aprirla.</p></div>
+        <div class="instruction-step"><span>3</span><p><strong>Swipe in alto o in basso</strong> sul video per cambiare canale (su = indietro, giù = avanti).</p></div>
+        <div class="instruction-step"><span>4</span><p><strong>Doppio click o doppio tap</strong> sullo schermo per attivare o uscire dalla modalità a tutto schermo.</p></div>
+        <div class="instruction-step"><span>5</span><p><strong>Gestisci la barra:</strong> Togli la spunta (📌) per nasconderla. Si riattiva con uno swipe da sinistra o tenendo premuto 1s sul bordo.</p></div>
+        <div class="instruction-step"><span>6</span><p>Il pulsante (❓) ti permette di ritornare a questo messaggio</p></div>
         <div class="footer-text">Buona visione !</div>
       </div>
 
@@ -251,26 +227,39 @@
   </div>
 
   <script>
-    const m3uUrl = "https://raw.githubusercontent.com/mrsoon-1/IPTV/refs/heads/main/tv2.m3u";
-    const video = document.getElementById('video');
-    const listEl = document.getElementById('list');
-    const appContainer = document.getElementById('app-container');
-    const container = document.getElementById('player-container');
-    const drawerMenu = document.getElementById('drawer-menu');
-    const touchZone = document.getElementById('left-touch-zone');
-    const pinBtn = document.getElementById('pin-btn');
-    const welcomeMsg = document.getElementById('welcome-message');
+    const M3U_URL = "https://raw.githubusercontent.com/mrsoon-1/IPTV/refs/heads/main/tv2.m3u";
+    const EPG_URL = "https://raw.githubusercontent.com/mrsoon-1/IPTV/refs/heads/main/epg.json";
+
+    const $ = id => document.getElementById(id);
+    const video = $('video');
+    const listEl = $('list');
+    const appContainer = $('app-container');
+    const container = $('player-container');
+    const drawerMenu = $('drawer-menu');
+    const touchZone = $('left-touch-zone');
+    const pinBtn = $('pin-btn');
+    const welcomeMsg = $('welcome-message');
+    const osdOverlay = $('osd-overlay');
+    const osdTitle = $('osd-title');
+    const osdProgram = $('osd-program');
 
     let hls = null, dashPlayer = null;
     let channels = [], channelElements = [];
     let currentIndex = -1;
-    let closeTimer = null, holdTimer = null;
-    let isPinned = true;
-    let isTouchDevice = false;
+    let closeTimer = null, holdTimer = null, osdTimer = null;
+    let isPinned = true, isTouchDevice = false;
 
     window.addEventListener('touchstart', () => { isTouchDevice = true; }, { once: true });
 
-    function togglePin() {
+    function destroyPlayers() {
+      if (hls) { hls.destroy(); hls = null; }
+      if (dashPlayer) { dashPlayer.reset(); dashPlayer = null; }
+      video.pause();
+      video.removeAttribute('src');
+      video.load();
+    }
+
+    $('pin-btn').onclick = () => {
       isPinned = !isPinned;
       appContainer.classList.toggle('pinned', isPinned);
       pinBtn.classList.toggle('active', isPinned);
@@ -278,20 +267,23 @@
         drawerMenu.classList.add('open');
         clearTimeout(closeTimer);
       }
-    }
+    };
 
-    function showWelcome() {
-      if (hls) { hls.destroy(); hls = null; }
-      if (dashPlayer) { dashPlayer.reset(); dashPlayer = null; }
-      video.pause();
-      video.src = "";
+    $('help-btn').onclick = () => {
+      destroyPlayers();
       currentIndex = -1;
       channelElements.forEach(el => el.classList.remove('active'));
       welcomeMsg.style.display = 'block';
+      osdOverlay.classList.remove('visible');
+      if ('mediaSession' in navigator) navigator.mediaSession.metadata = null;
+    };
 
-      if ('mediaSession' in navigator) {
-        navigator.mediaSession.metadata = null;
-      }
+    function showOSD(title, program) {
+      osdTitle.textContent = title;
+      osdProgram.textContent = program;
+      osdOverlay.classList.add('visible');
+      clearTimeout(osdTimer);
+      osdTimer = setTimeout(() => osdOverlay.classList.remove('visible'), 4500);
     }
 
     function openDrawer() {
@@ -320,18 +312,11 @@
       holdTimer = setTimeout(openDrawer, 1000);
     }
 
-    function cancelHoldTrigger() { clearTimeout(holdTimer); }
-
     touchZone.addEventListener('mouseenter', startHoldTrigger);
-    touchZone.addEventListener('mouseleave', cancelHoldTrigger);
-
-    touchZone.addEventListener('touchstart', (e) => {
-      isTouchDevice = true;
-      startHoldTrigger();
-    }, { passive: true });
-
-    touchZone.addEventListener('touchend', cancelHoldTrigger);
-    touchZone.addEventListener('touchcancel', cancelHoldTrigger);
+    touchZone.addEventListener('mouseleave', () => clearTimeout(holdTimer));
+    touchZone.addEventListener('touchstart', () => { isTouchDevice = true; startHoldTrigger(); }, { passive: true });
+    touchZone.addEventListener('touchend', () => clearTimeout(holdTimer));
+    touchZone.addEventListener('touchcancel', () => clearTimeout(holdTimer));
 
     drawerMenu.addEventListener('mouseleave', () => {
       if (!isPinned && !isTouchDevice) {
@@ -339,24 +324,20 @@
         closeTimer = setTimeout(closeDrawerInstant, 1000);
       }
     });
+    drawerMenu.addEventListener('mouseenter', () => { if (!isPinned && !isTouchDevice) clearTimeout(closeTimer); });
+    drawerMenu.addEventListener('touchstart', () => { if (isTouchDevice) startTouchCloseTimer(); }, { passive: true });
+    drawerMenu.addEventListener('wheel', e => e.stopPropagation(), { passive: true });
 
-    drawerMenu.addEventListener('mouseenter', () => {
-      if (!isPinned && !isTouchDevice) clearTimeout(closeTimer);
-    });
+    function stepChannel(delta) {
+      if (!channels.length || currentIndex === -1) return;
+      const next = (currentIndex + delta + channels.length) % channels.length;
+      selectAndPlay(next);
+    }
 
-    drawerMenu.addEventListener('touchstart', () => {
-      if (isTouchDevice) startTouchCloseTimer();
-    });
-
-    drawerMenu.addEventListener('wheel', (e) => e.stopPropagation());
-
-    container.addEventListener('wheel', (e) => {
-      if (channels.length === 0 || currentIndex === -1) return;
+    container.addEventListener('wheel', e => {
+      if (!channels.length || currentIndex === -1) return;
       e.preventDefault();
-      let nextIndex = e.deltaY > 0 ? currentIndex + 1 : currentIndex - 1;
-      if (nextIndex >= channels.length) nextIndex = 0;
-      if (nextIndex < 0) nextIndex = channels.length - 1;
-      selectAndPlay(nextIndex);
+      stepChannel(e.deltaY > 0 ? 1 : -1);
     }, { passive: false });
 
     function toggleFullScreen() {
@@ -367,54 +348,39 @@
       }
     }
 
-    container.addEventListener('click', (e) => {
+    container.addEventListener('click', e => {
       if (drawerMenu.contains(e.target) || e.target === touchZone) return;
-      if (!isPinned && drawerMenu.classList.contains('open')) {
-        closeDrawerInstant();
-      }
+      if (!isPinned && drawerMenu.classList.contains('open')) closeDrawerInstant();
     });
 
-    container.addEventListener('dblclick', (e) => {
+    container.addEventListener('dblclick', e => {
       if (drawerMenu.contains(e.target) || e.target === touchZone) return;
       e.preventDefault();
       toggleFullScreen();
     });
 
-    let touchStartX = 0;
-    let touchStartY = 0;
-    let lastTapTime = 0;
+    let touchStartX = 0, touchStartY = 0, lastTapTime = 0;
 
-    container.addEventListener('touchstart', (e) => {
+    container.addEventListener('touchstart', e => {
       if (drawerMenu.contains(e.target) || e.target === touchZone) return;
       touchStartX = e.changedTouches[0].screenX;
       touchStartY = e.changedTouches[0].screenY;
     }, { passive: true });
 
-    container.addEventListener('touchend', (e) => {
+    container.addEventListener('touchend', e => {
       if (drawerMenu.contains(e.target) || e.target === touchZone) return;
-      
-      const touchEndX = e.changedTouches[0].screenX;
-      const touchEndY = e.changedTouches[0].screenY;
-      
-      const diffX = touchEndX - touchStartX;
-      const diffY = touchEndY - touchStartY;
+      const diffX = e.changedTouches[0].screenX - touchStartX;
+      const diffY = e.changedTouches[0].screenY - touchStartY;
 
       if (Math.abs(diffX) > 50 || Math.abs(diffY) > 50) {
         if (Math.abs(diffX) > Math.abs(diffY)) {
-          if (diffX > 50) {
-            openDrawer();
-          }
+          if (diffX > 50) openDrawer();
         } else {
-          if (channels.length > 0 && currentIndex !== -1) {
-            let nextIndex = diffY > 0 ? currentIndex - 1 : currentIndex + 1;
-            if (nextIndex >= channels.length) nextIndex = 0;
-            if (nextIndex < 0) nextIndex = channels.length - 1;
-            selectAndPlay(nextIndex);
-          }
+          stepChannel(diffY > 0 ? -1 : 1);
         }
       } else {
         const now = Date.now();
-        if (now - lastTapTime < 300 && now - lastTapTime > 0) {
+        if (now - lastTapTime < 300 && now > lastTapTime) {
           e.preventDefault();
           toggleFullScreen();
           lastTapTime = 0;
@@ -424,106 +390,129 @@
       }
     });
 
-    function setupMediaSession() {
-      if ('mediaSession' in navigator) {
-        navigator.mediaSession.setActionHandler('previoustrack', () => {
-          if (channels.length === 0) return;
-          let prevIndex = currentIndex - 1;
-          if (prevIndex < 0) prevIndex = channels.length - 1;
-          selectAndPlay(prevIndex);
-        });
-
-        navigator.mediaSession.setActionHandler('nexttrack', () => {
-          if (channels.length === 0) return;
-          let nextIndex = currentIndex + 1;
-          if (nextIndex >= channels.length) nextIndex = 0;
-          selectAndPlay(nextIndex);
-        });
-
-        navigator.mediaSession.setActionHandler('play', () => video.play());
-        navigator.mediaSession.setActionHandler('pause', () => video.pause());
-      }
+    if ('mediaSession' in navigator) {
+      navigator.mediaSession.setActionHandler('previoustrack', () => stepChannel(-1));
+      navigator.mediaSession.setActionHandler('nexttrack', () => stepChannel(1));
+      navigator.mediaSession.setActionHandler('play', () => video.play());
+      navigator.mediaSession.setActionHandler('pause', () => video.pause());
     }
 
     function updateMediaSessionMetadata(channel) {
-      if ('mediaSession' in navigator) {
-        const artwork = channel.logo ? [
-          { src: channel.logo, sizes: '96x96', type: 'image/png' },
-          { src: channel.logo, sizes: '128x128', type: 'image/png' },
-          { src: channel.logo, sizes: '192x192', type: 'image/png' },
-          { src: channel.logo, sizes: '512x512', type: 'image/png' }
-        ] : [];
-
-        navigator.mediaSession.metadata = new MediaMetadata({
-          title: channel.name,
-          artist: 'IPTV Live',
-          album: 'La TV di Stefano',
-          artwork: artwork
-        });
-      }
+      if (!('mediaSession' in navigator)) return;
+      const sizes = ['96x96', '128x128', '192x192', '512x512'];
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: channel.name,
+        artist: channel.program,
+        album: 'La TV di Stefano',
+        artwork: channel.logo ? sizes.map(s => ({ src: channel.logo, sizes: s, type: 'image/png' })) : []
+      });
     }
 
-    setupMediaSession();
+    listEl.addEventListener('click', e => {
+      const item = e.target.closest('.item');
+      if (!item) return;
+      e.stopPropagation();
+      selectAndPlay(Number(item.dataset.index));
+      if (!isPinned) closeDrawerInstant();
+    });
 
-    fetch(m3uUrl)
-      .then(r => r.text())
-      .then(text => {
-        let cur = null;
-        text.split('\n').forEach(line => {
-          line = line.trim();
-          if (line.startsWith('#EXTINF:')) {
-            const name = line.split(',').pop() || 'Canale';
-            const logoMatch = line.match(/tvg-logo="([^"]+)"/);
-            cur = { name, logo: logoMatch ? logoMatch[1] : '' };
-          } else if (line && !line.startsWith('#')) {
-            if (cur) { cur.url = line; channels.push(cur); cur = null; }
+    // Funzione per aggiornare i palinsesti in background senza disturbare la riproduzione
+    async function updateEPGData() {
+      try {
+        const res = await fetch(`${EPG_URL}?t=${Date.now()}`);
+        if (!res.ok) return;
+        const epg = await res.json();
+
+        channels.forEach((ch, index) => {
+          const newProg = epg[ch.tvgId] || 'In diretta';
+          if (ch.program !== newProg) {
+            ch.program = newProg;
+            const progEl = channelElements[index]?.querySelector('.item-program');
+            if (progEl) progEl.textContent = newProg;
           }
         });
 
-        listEl.innerHTML = '';
-        channels.forEach((ch, index) => {
-          const div = document.createElement('div');
-          div.className = 'item';
-          div.innerHTML = `${ch.logo ? `<img src="${ch.logo}">` : ''}<span>${ch.name}</span>`;
-          div.onclick = (e) => {
-            e.stopPropagation();
-            selectAndPlay(index);
-            if (!isPinned) closeDrawerInstant();
+        // Se un canale è attualmente in riproduzione, aggiorna anche il metadata attivo
+        if (currentIndex !== -1 && channels[currentIndex]) {
+          updateMediaSessionMetadata(channels[currentIndex]);
+        }
+      } catch (err) {
+        console.log("Aggiornamento EPG in background saltato:", err);
+      }
+    }
+
+    // Caricamento iniziale parallelo M3U + EPG JSON
+    Promise.all([
+      fetch(M3U_URL).then(r => r.text()),
+      fetch(`${EPG_URL}?t=${Date.now()}`).then(r => r.json()).catch(() => ({}))
+    ])
+    .then(([m3uText, epg]) => {
+      let cur = null;
+      for (const rawLine of m3uText.split('\n')) {
+        const line = rawLine.trim();
+        if (line.startsWith('#EXTINF:')) {
+          const name = line.split(',').pop().trim() || 'Canale';
+          const logo = (line.match(/tvg-logo="([^"]+)"/) || [])[1] || '';
+          const tvgId = ((line.match(/tvg-id="([^"]+)"/) || [])[1] || '').trim();
+          cur = {
+            name,
+            logo,
+            tvgId,
+            program: epg[tvgId] || 'In diretta'
           };
-          listEl.appendChild(div);
-          channelElements.push(div);
-        });
-      })
-      .catch(() => { listEl.innerText = "Errore caricamento lista."; });
+        } else if (line && !line.startsWith('#') && cur) {
+          cur.url = line;
+          channels.push(cur);
+          cur = null;
+        }
+      }
+
+      const frag = document.createDocumentFragment();
+      channels.forEach((ch, index) => {
+        const div = document.createElement('div');
+        div.className = 'item';
+        div.dataset.index = index;
+        div.innerHTML = `
+          ${ch.logo ? `<img src="${ch.logo}" loading="lazy">` : ''}
+          <div class="item-info">
+            <span class="item-name">${ch.name}</span>
+            <span class="item-program">${ch.program}</span>
+          </div>
+        `;
+        frag.appendChild(div);
+        channelElements.push(div);
+      });
+
+      listEl.innerHTML = '';
+      listEl.appendChild(frag);
+
+      // Avvia un timer per aggiornare l'EPG in background ogni 10 minuti
+      setInterval(updateEPGData, 10 * 60 * 1000);
+    })
+    .catch(() => { listEl.textContent = "Errore caricamento lista."; });
 
     function selectAndPlay(index) {
       if (index < 0 || index >= channels.length) return;
       currentIndex = index;
-
-      if (welcomeMsg) {
-        welcomeMsg.style.display = 'none';
-      }
+      welcomeMsg.style.display = 'none';
 
       channelElements.forEach((el, i) => {
-        const active = (i === currentIndex);
+        const active = i === currentIndex;
         el.classList.toggle('active', active);
         if (active) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       });
 
-      const currentChannel = channels[currentIndex];
-      updateMediaSessionMetadata(currentChannel);
-      play(currentChannel.url);
+      const ch = channels[currentIndex];
+      updateMediaSessionMetadata(ch);
+      showOSD(ch.name, ch.program);
+      play(ch.url);
     }
 
     function play(url) {
-      if (hls) { hls.destroy(); hls = null; }
-      if (dashPlayer) { dashPlayer.reset(); dashPlayer = null; }
-      video.pause();
-      video.src = "";
+      destroyPlayers();
 
       if (url.includes('mediapolis.rai.it') || url.includes('relinkerServlet')) {
         video.src = url;
-        video.load();
         video.play().catch(() => {});
         return;
       }
@@ -535,9 +524,7 @@
         hls = new Hls();
         hls.loadSource(url);
         hls.attachMedia(video);
-        hls.on(Hls.Events.MANIFEST_PARSED, () => {
-          video.play().catch(err => console.log("Autoplay impedito dal browser:", err));
-        });
+        hls.on(Hls.Events.MANIFEST_PARSED, () => video.play().catch(() => {}));
       } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
         video.src = url;
         video.play().catch(() => {});
