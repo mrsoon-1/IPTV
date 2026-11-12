@@ -1,13 +1,17 @@
+import gzip
 import json
 from datetime import datetime, timezone
 import xml.etree.ElementTree as ET
 import urllib.request
 
-xml_url = "https://www.open-epg.com/files/italy8.xml"
+xml_url = "https://www.free-epg.de/api/epg/m3u/f1745819.xml.gz"
 
-print("Scaricamento EPG in corso...")
+print("Scaricamento EPG .gz in corso...")
 req = urllib.request.urlopen(xml_url)
-xml_data = req.read()
+compressed_data = req.read()
+
+print("Decompressione del file XML...")
+xml_data = gzip.decompress(compressed_data)
 
 print("Analisi del file XML...")
 root = ET.fromstring(xml_data)
@@ -23,6 +27,7 @@ for programme in root.findall("programme"):
 
     if channel_id and start_str and stop_str and title_elem is not None:
         try:
+            # Estrae stringhe pulite (es. 20261112140000 +0100 -> 20261112140000)
             start_clean = start_str.split(" ")[0]
             stop_clean = stop_str.split(" ")[0]
 
@@ -30,7 +35,12 @@ for programme in root.findall("programme"):
             stop_time = datetime.strptime(stop_clean, "%Y%m%d%H%M%S")
 
             if start_time <= now <= stop_time:
-                epg_dict[channel_id.strip()] = title_elem.text
+                # Estrae gli orari in formato HH:MM
+                start_formatted = start_time.strftime("%H:%M")
+                stop_formatted = stop_time.strftime("%H:%M")
+                
+                # Unisce orario e titolo (es. "14:00 - 15:30: Nome Programma")
+                epg_dict[channel_id.strip()] = f"{start_formatted} - {stop_formatted}: {title_elem.text}"
         except Exception:
             continue
 
