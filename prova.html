@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Web Dashboard Pro</title>
+    <title>Car Web Dashboard Complete</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -27,16 +27,20 @@
 
     <!-- Top Header / Status Bar -->
     <header class="flex justify-between items-center bg-cardbg border border-zinc-800 rounded-2xl px-5 py-2.5 shadow-lg">
-        <div class="flex items-center space-x-3">
-            <div id="connection-dot" class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></div>
-            <span class="text-base font-bold tracking-wider uppercase text-zinc-300">Car Web Dashboard Pro</span>
+        <div class="flex items-center space-x-3 min-w-0">
+            <div id="connection-dot" class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse shrink-0"></div>
+            <div class="truncate">
+                <span id="location-name" class="text-base font-bold tracking-wide text-zinc-200 block truncate">Localizzazione in corso...</span>
+                <span id="road-name" class="text-[11px] text-zinc-400 font-mono block truncate">Strada: rilevamento...</span>
+            </div>
         </div>
-        <div id="clock" class="text-xl font-mono font-semibold text-accent">00:00:00</div>
-        <div class="flex items-center space-x-3">
-            <span id="net-status" class="text-xs px-2.5 py-1 rounded-full bg-zinc-800 text-zinc-400 border border-zinc-700 font-mono">Net: --</span>
-            <span id="wakelock-status" class="text-xs px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">WakeLock Active</span>
+        
+        <div id="clock" class="text-2xl font-mono font-semibold text-accent px-4 shrink-0">00:00:00</div>
+        
+        <div class="flex items-center space-x-2.5 shrink-0">
+            <span id="wakelock-status" class="text-xs px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">WakeLock</span>
             <span id="gps-status" class="text-xs px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30">GPS attesa</span>
-            <button onclick="toggleFullScreen()" class="bg-zinc-800 hover:bg-zinc-700 active:scale-95 text-white px-3 py-1.5 rounded-xl text-xs font-medium transition border border-zinc-700">
+            <button onclick="toggleFullScreen()" class="bg-zinc-800 hover:bg-zinc-700 active:scale-95 text-white px-3.5 py-1.5 rounded-xl text-xs font-medium transition border border-zinc-700">
                 Fullscreen ⛶
             </button>
         </div>
@@ -45,160 +49,167 @@
     <!-- Main Grid Dashboard (6 moduli in griglia 3x2) -->
     <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 my-3 flex-1 overflow-hidden">
         
-        <!-- 1. Telemetria GPS & Velocità -->
+        <!-- 1. Velocità, Limite Stradale & Precisione GPS -->
         <section class="bg-cardbg border border-zinc-800 rounded-2xl p-4 flex flex-col justify-between shadow-xl relative overflow-hidden">
-            <div>
-                <div class="flex justify-between items-center mb-1">
-                    <h2 class="text-[11px] uppercase tracking-widest text-zinc-400 font-semibold">Velocità & GPS</h2>
-                    <div id="heading-badge" class="font-mono text-xs font-bold px-2 py-0.5 rounded bg-zinc-800 text-accent">--° N</div>
+            <div class="flex justify-between items-start">
+                <div>
+                    <h2 class="text-[11px] uppercase tracking-widest text-zinc-400 font-semibold mb-1">Velocità Reale GPS</h2>
+                    <div class="flex items-baseline space-x-2">
+                        <span id="speed" class="text-6xl font-black font-mono tracking-tighter text-white transition-colors">0</span>
+                        <span class="text-lg text-zinc-400 font-bold">km/h</span>
+                    </div>
                 </div>
-                <div class="flex items-baseline space-x-2">
-                    <span id="speed" class="text-6xl font-black font-mono tracking-tighter text-white">0</span>
-                    <span class="text-lg text-zinc-400 font-bold">km/h</span>
+                <!-- Cartello Limite di Velocità (OSM) -->
+                <div id="speed-limit-sign" class="w-14 h-14 rounded-full bg-white border-[5px] border-red-600 flex items-center justify-center shadow-lg shrink-0" title="Limite stimato OpenStreetMap">
+                    <span id="speed-limit" class="text-zinc-900 font-black font-mono text-lg">--</span>
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-2 mt-2 pt-2 border-t border-zinc-800 text-xs">
+            <div class="grid grid-cols-3 gap-2 mt-2 pt-2 border-t border-zinc-800 text-xs">
                 <div>
-                    <span class="text-zinc-500 block text-[10px]">Altitudine GPS</span>
-                    <span id="altitude" class="font-mono font-semibold text-zinc-200">-- m</span>
+                    <span class="text-zinc-500 block text-[10px]">Precisione</span>
+                    <span id="gps-accuracy" class="font-mono font-semibold text-zinc-200">-- m</span>
                 </div>
-                <div>
+                <div class="col-span-2">
                     <span class="text-zinc-500 block text-[10px]">Coordinate</span>
-                    <span id="coords" class="font-mono text-[10px] text-zinc-300 truncate block">--</span>
+                    <span id="coords" class="font-mono text-[11px] text-zinc-300 truncate block">--</span>
                 </div>
             </div>
         </section>
 
-        <!-- 2. Dinamica Inerziale & G-Force (DeviceMotion API) -->
+        <!-- 2. Altimetria & Dislivelli -->
         <section class="bg-cardbg border border-zinc-800 rounded-2xl p-4 flex flex-col justify-between shadow-xl">
-            <div class="flex justify-between items-center mb-1">
-                <h2 class="text-[11px] uppercase tracking-widest text-zinc-400 font-semibold">G-Force & Inerzia</h2>
-                <span id="sensor-mode" class="text-[10px] text-zinc-500">Sensori Browser</span>
+            <div class="flex justify-between items-center">
+                <h2 class="text-[11px] uppercase tracking-widest text-zinc-400 font-semibold">Altimetria & Profilo</h2>
+                <span id="press-val" class="text-xs font-mono text-accent bg-zinc-900 px-2 py-0.5 rounded border border-zinc-800">---- hPa</span>
+            </div>
+            <div class="flex items-baseline space-x-2 my-1">
+                <span id="altitude" class="text-5xl font-black font-mono text-white">--</span>
+                <span class="text-base text-zinc-400 font-bold">m s.l.m.</span>
+            </div>
+            <div class="grid grid-cols-2 gap-2 pt-2 border-t border-zinc-800 text-xs font-mono">
+                <div class="bg-zinc-900/60 px-2.5 py-1.5 rounded-lg border border-zinc-800/80 flex justify-between items-center">
+                    <span class="text-zinc-500 text-[10px]">Ascesa</span>
+                    <span id="elev-gain" class="text-emerald-400 font-bold">+0 m</span>
+                </div>
+                <div class="bg-zinc-900/60 px-2.5 py-1.5 rounded-lg border border-zinc-800/80 flex justify-between items-center">
+                    <span class="text-zinc-500 text-[10px]">Discesa</span>
+                    <span id="elev-loss" class="text-amber-400 font-bold">-0 m</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Meteo Completo & Effemeridi -->
+        <section class="bg-cardbg border border-zinc-800 rounded-2xl p-4 flex flex-col justify-between shadow-xl">
+            <div class="flex justify-between items-center">
+                <h2 class="text-[11px] uppercase tracking-widest text-zinc-400 font-semibold">Meteo & Vento</h2>
+                <span id="sun-status" class="text-[11px] text-amber-400 font-mono">☀️ --:-- | 🌙 --:--</span>
+            </div>
+            <div class="flex items-center justify-between my-1">
+                <div>
+                    <div class="flex items-baseline space-x-2">
+                        <span id="temp" class="text-5xl font-black font-mono text-white">--°C</span>
+                        <span id="humidity" class="text-xs font-mono text-zinc-400">Umid. --%</span>
+                    </div>
+                    <div id="weather-desc" class="text-xs text-zinc-300 mt-0.5 capitalize">Acquisizione...</div>
+                </div>
+                <div id="weather-icon" class="text-4xl">⛅</div>
+            </div>
+            <div class="pt-2 border-t border-zinc-800 text-xs flex justify-between items-center font-mono">
+                <span class="text-zinc-400">Vento: <strong id="wind-speed" class="text-white">-- km/h</strong></span>
+                <span class="text-zinc-500 text-[10px]">Open-Meteo</span>
+            </div>
+        </section>
+
+        <!-- 4. Qualità dell'Aria (Filtro Abitacolo) -->
+        <section class="bg-cardbg border border-zinc-800 rounded-2xl p-4 flex flex-col justify-between shadow-xl">
+            <div class="flex justify-between items-center">
+                <h2 class="text-[11px] uppercase tracking-widest text-zinc-400 font-semibold">Qualità Aria & UV</h2>
+                <span id="recirc-advice" class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-semibold">Aria Pulita</span>
             </div>
             <div class="grid grid-cols-2 gap-3 my-auto">
-                <div class="bg-zinc-900/60 border border-zinc-800 p-2.5 rounded-xl text-center">
-                    <span class="text-[10px] text-zinc-500 uppercase block">Longitudinale</span>
-                    <span id="g-long" class="font-mono font-bold text-base text-accent">0.00 G</span>
-                </div>
-                <div class="bg-zinc-900/60 border border-zinc-800 p-2.5 rounded-xl text-center">
-                    <span class="text-[10px] text-zinc-500 uppercase block">Laterale (Curva)</span>
-                    <span id="g-lat" class="font-mono font-bold text-base text-warning">0.00 G</span>
-                </div>
-            </div>
-            <div class="text-[10px] text-zinc-500 text-center pt-1.5 border-t border-zinc-800">Accelerometro / Giroscopio di bordo</div>
-        </section>
-
-        <!-- 3. Meteo & Luce Solare (Open-Meteo API) -->
-        <section class="bg-cardbg border border-zinc-800 rounded-2xl p-4 flex flex-col justify-between shadow-xl relative overflow-hidden">
-            <div>
-                <div class="flex justify-between items-center mb-1">
-                    <h2 class="text-[11px] uppercase tracking-widest text-zinc-400 font-semibold">Meteo & Sole</h2>
-                    <span id="sun-status" class="text-[10px] text-amber-400 font-mono">Alba: -- | Tramonto: --</span>
-                </div>
-                <div class="flex items-center justify-between mt-1">
-                    <div>
-                        <div id="temp" class="text-4xl font-black font-mono text-white">--°C</div>
-                        <div id="weather-desc" class="text-xs text-zinc-400 mt-0.5 capitalize">Acquisizione...</div>
+                <div class="bg-zinc-900/60 border border-zinc-800 p-2.5 rounded-xl">
+                    <span class="text-[10px] text-zinc-500 uppercase block">Indice Aria (EAQI)</span>
+                    <div class="flex items-baseline space-x-1.5 mt-0.5">
+                        <span id="aqi-val" class="font-mono font-black text-2xl text-white">--</span>
+                        <span id="aqi-label" class="text-xs text-zinc-400">--</span>
                     </div>
-                    <div id="weather-icon" class="text-4xl">⛅</div>
+                </div>
+                <div class="bg-zinc-900/60 border border-zinc-800 p-2.5 rounded-xl">
+                    <span class="text-[10px] text-zinc-500 uppercase block">Indice Raggi UV</span>
+                    <div class="flex items-baseline space-x-1.5 mt-0.5">
+                        <span id="uv-val" class="font-mono font-black text-2xl text-white">--</span>
+                        <span id="uv-label" class="text-xs text-zinc-400">--</span>
+                    </div>
                 </div>
             </div>
-            <div class="pt-2 border-t border-zinc-800 text-[11px] text-zinc-500 flex justify-between">
-                <span>Open-Meteo GPS Sync</span>
-                <span id="weather-update">Aggiornato</span>
+            <div class="text-[10px] text-zinc-500 flex justify-between pt-1.5 border-t border-zinc-800 font-mono">
+                <span id="pm25-val">PM2.5: -- µg/m³</span>
+                <span id="pm10-val">PM10: -- µg/m³</span>
             </div>
         </section>
 
-        <!-- 4. Sistema & Informazioni di Rete -->
+        <!-- 5. Computer di Viaggio Avanzato -->
         <section class="bg-cardbg border border-zinc-800 rounded-2xl p-4 flex flex-col justify-between shadow-xl">
-            <h2 class="text-[11px] uppercase tracking-widest text-zinc-400 font-semibold mb-2">Connettività & Browser</h2>
-            <div class="space-y-2 text-xs">
-                <div class="flex justify-between items-center bg-zinc-900/60 px-3 py-2 rounded-xl border border-zinc-800">
-                    <span class="text-zinc-400">Tipo Rete</span>
-                    <span id="net-type" class="font-mono font-semibold text-accent">--</span>
-                </div>
-                <div class="flex justify-between items-center bg-zinc-900/60 px-3 py-2 rounded-xl border border-zinc-800">
-                    <span class="text-zinc-400">Latenza (RTT)</span>
-                    <span id="net-rtt" class="font-mono font-semibold text-zinc-200">-- ms</span>
-                </div>
-                <div class="flex justify-between items-center bg-zinc-900/60 px-3 py-2 rounded-xl border border-zinc-800">
-                    <span class="text-zinc-400">Uptime Sessione</span>
-                    <span id="uptime" class="font-mono font-semibold text-evgreen">00:00:00</span>
-                </div>
+            <div class="flex justify-between items-center mb-1">
+                <h2 class="text-[11px] uppercase tracking-widest text-zinc-400 font-semibold">Trip Computer</h2>
+                <button onclick="resetTrip()" class="bg-zinc-800 hover:bg-zinc-700 active:scale-95 text-zinc-300 px-2.5 py-0.5 rounded-lg text-[11px] font-medium transition border border-zinc-700">
+                    Reset
+                </button>
             </div>
-        </section>
-
-        <!-- 5. Computer di Viaggio (Persistente) -->
-        <section class="bg-cardbg border border-zinc-800 rounded-2xl p-4 flex flex-col justify-between shadow-xl">
-            <div>
-                <h2 class="text-[11px] uppercase tracking-widest text-zinc-400 font-semibold mb-2">Computer di Viaggio</h2>
-                <div class="grid grid-cols-2 gap-2">
-                    <div>
-                        <span class="text-zinc-500 text-[10px] block">Tempo Viaggio</span>
-                        <span id="trip-time" class="text-xl font-mono font-bold text-accent">00:00</span>
-                    </div>
-                    <div>
-                        <span class="text-zinc-500 text-[10px] block">Velocità Max</span>
-                        <span id="max-speed" class="text-xl font-mono font-bold text-white">0 <span class="text-xs text-zinc-400">km/h</span></span>
-                    </div>
+            <div class="grid grid-cols-2 gap-2">
+                <div>
+                    <span class="text-zinc-500 text-[10px] block">Tempo in Movimento</span>
+                    <span id="moving-time" class="text-xl font-mono font-bold text-accent">00:00</span>
+                </div>
+                <div>
+                    <span class="text-zinc-500 text-[10px] block">Media / Vel. Max</span>
+                    <span class="text-base font-mono font-bold text-white"><span id="avg-speed">0</span> / <span id="max-speed" class="text-amber-400">0</span> <span class="text-[10px] text-zinc-400">km/h</span></span>
                 </div>
             </div>
             <div class="pt-2 border-t border-zinc-800 flex justify-between items-center">
-                <div>
-                    <span class="text-zinc-500 text-[10px] block">Distanza Totale</span>
-                    <span id="trip-distance" class="text-base font-mono font-semibold text-zinc-200">0.00 km</span>
-                </div>
-                <button onclick="resetTrip()" class="bg-zinc-800 hover:bg-zinc-700 active:scale-95 text-zinc-300 px-2.5 py-1 rounded-xl text-xs font-medium transition border border-zinc-700">
-                    Reset Trip
-                </button>
+                <span class="text-zinc-500 text-xs">Distanza Percorsa</span>
+                <span id="trip-distance" class="text-lg font-mono font-bold text-zinc-100">0.00 km</span>
             </div>
         </section>
 
-        <!-- 6. Bussola & Orientamento Principale -->
+        <!-- 6. Bussola & Rotta -->
         <section class="bg-cardbg border border-zinc-800 rounded-2xl p-4 flex flex-col justify-between shadow-xl">
-            <h2 class="text-[11px] uppercase tracking-widest text-zinc-400 font-semibold mb-2">Orientamento Cardinale</h2>
+            <div class="flex justify-between items-center">
+                <h2 class="text-[11px] uppercase tracking-widest text-zinc-400 font-semibold">Bussola & Rotta</h2>
+                <span id="heading-deg" class="font-mono text-xs font-bold text-accent">0°</span>
+            </div>
             <div class="flex items-center justify-center my-auto">
                 <div class="relative w-24 h-24 rounded-full border-2 border-zinc-800 flex items-center justify-center bg-zinc-900/40">
-                    <span class="absolute top-1 text-[10px] text-zinc-500 font-bold">N</span>
+                    <span class="absolute top-1 text-[10px] text-rose-500 font-bold">N</span>
                     <span class="absolute bottom-1 text-[10px] text-zinc-500 font-bold">S</span>
                     <span class="absolute left-2 text-[10px] text-zinc-500 font-bold">W</span>
                     <span class="absolute right-2 text-[10px] text-zinc-500 font-bold">E</span>
-                    <div id="compass-needle" class="w-1 h-12 bg-accent absolute transition-transform duration-300 rounded-full shadow-lg shadow-accent/50 origin-bottom"></div>
-                    <div class="w-3 h-3 rounded-full bg-white z-10"></div>
+                    <div id="compass-needle" class="w-1.5 h-11 bg-accent absolute transition-transform duration-300 rounded-full shadow-lg shadow-accent/50 origin-bottom -translate-y-1/2"></div>
+                    <div class="w-3 h-3 rounded-full bg-white z-10 border-2 border-darkbg"></div>
                 </div>
             </div>
-            <div class="text-center pt-2 border-t border-zinc-800">
-                <span id="cardinal-dir" class="font-mono font-bold text-sm text-zinc-200">Nord (0°)</span>
+            <div class="text-center pt-1.5 border-t border-zinc-800">
+                <span id="cardinal-dir" class="font-mono font-bold text-sm text-zinc-200">Nord</span>
             </div>
         </section>
 
     </main>
 
-    <!-- JavaScript Logica Avanzata -->
+    <!-- JavaScript Logica -->
     <script>
-        // Orologio & Uptime
-        let sessionStart = Date.now();
         setInterval(() => {
             const now = new Date();
             document.getElementById('clock').innerText = now.toTimeString().split(' ')[0];
-            
-            const upSec = Math.floor((Date.now() - sessionStart) / 1000);
-            const h = String(Math.floor(upSec / 3600)).padStart(2, '0');
-            const m = String(Math.floor((upSec % 3600) / 60)).padStart(2, '0');
-            const s = String(upSec % 60).padStart(2, '0');
-            document.getElementById('uptime').innerText = `${h}:${m}:${s}`;
         }, 1000);
 
-        // Screen Wake Lock API (Mantiene lo schermo attivo)
         let wakeLock = null;
         async function requestWakeLock() {
             if ('wakeLock' in navigator) {
                 try {
                     wakeLock = await navigator.wakeLock.request('screen');
-                    document.getElementById('wakelock-status').innerText = 'WakeLock Attivo';
+                    document.getElementById('wakelock-status').innerText = 'WakeLock OK';
                 } catch (err) {
-                    document.getElementById('wakelock-status').innerText = 'WakeLock Non Disponibile';
-                    document.getElementById('wakelock-status').className = 'text-xs px-2.5 py-1 rounded-full bg-rose-500/20 text-rose-400 border border-rose-500/30';
+                    document.getElementById('wakelock-status').style.display = 'none';
                 }
             } else {
                 document.getElementById('wakelock-status').style.display = 'none';
@@ -206,53 +217,57 @@
         }
         requestWakeLock();
         document.addEventListener('visibilitychange', async () => {
-            if (wakeLock !== null && document.visibilityState === 'visible') {
-                await requestWakeLock();
-            }
+            if (wakeLock !== null && document.visibilityState === 'visible') await requestWakeLock();
         });
 
-        // Network Information API
-        function updateNetworkInfo() {
-            const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-            if (connection) {
-                document.getElementById('net-type').innerText = (connection.effectiveType || connection.type || 'unknown').toUpperCase();
-                document.getElementById('net-rtt').innerText = (connection.rtt ? connection.rtt + ' ms' : 'N/D');
-                document.getElementById('net-status').innerText = 'Net: ' + (connection.effectiveType || 'OK').toUpperCase();
-            } else {
-                document.getElementById('net-status').innerText = 'Net: Online';
-                document.getElementById('net-type').innerText = 'Standard';
-            }
-        }
-        updateNetworkInfo();
-
-        // Trip Computer con LocalStorage
-        let tripStartTime = parseInt(localStorage.getItem('trip_start')) || Date.now();
+        let movingSeconds = parseInt(localStorage.getItem('moving_sec')) || 0;
         let maxSpeedRecorded = parseFloat(localStorage.getItem('max_speed')) || 0;
         let estimatedDistance = parseFloat(localStorage.getItem('trip_dist')) || 0;
-        let lastLat = null, lastLon = null;
+        let elevGain = parseFloat(localStorage.getItem('elev_gain')) || 0;
+        let elevLoss = parseFloat(localStorage.getItem('elev_loss')) || 0;
+        let currentSpeed = 0;
+        let currentSpeedLimit = null;
 
-        function updateTripTime() {
-            const elapsed = Math.floor((Date.now() - tripStartTime) / 1000);
-            const mins = String(Math.floor(elapsed / 60)).padStart(2, '0');
-            const secs = String(elapsed % 60).padStart(2, '0');
-            document.getElementById('trip-time').innerText = `${mins}:${secs}`;
-        }
-        setInterval(updateTripTime, 1000);
+        let lastLat = null, lastLon = null, lastAlt = null;
+        let lastApiFetchTime = 0;
+        let lastGeoFetchTime = 0;
+
+        setInterval(() => {
+            if (currentSpeed > 2) {
+                movingSeconds++;
+                localStorage.setItem('moving_sec', movingSeconds);
+            }
+            const mins = String(Math.floor(movingSeconds / 60)).padStart(2, '0');
+            const secs = String(movingSeconds % 60).padStart(2, '0');
+            document.getElementById('moving-time').innerText = `${mins}:${secs}`;
+            if (movingSeconds > 5 && estimatedDistance > 0.01) {
+                const avg = (estimatedDistance / (movingSeconds / 3600)).toFixed(0);
+                document.getElementById('avg-speed').innerText = avg;
+            }
+        }, 1000);
 
         function resetTrip() {
-            tripStartTime = Date.now();
+            movingSeconds = 0;
             maxSpeedRecorded = 0;
             estimatedDistance = 0;
-            localStorage.setItem('trip_start', tripStartTime);
+            elevGain = 0;
+            elevLoss = 0;
+            localStorage.setItem('moving_sec', 0);
             localStorage.setItem('max_speed', 0);
             localStorage.setItem('trip_dist', 0);
-            document.getElementById('max-speed').innerText = '0 km/h';
+            localStorage.setItem('elev_gain', 0);
+            localStorage.setItem('elev_loss', 0);
+            document.getElementById('max-speed').innerText = '0';
+            document.getElementById('avg-speed').innerText = '0';
             document.getElementById('trip-distance').innerText = '0.00 km';
+            document.getElementById('elev-gain').innerText = '+0 m';
+            document.getElementById('elev-loss').innerText = '-0 m';
         }
-        
-        // Carica valori iniziali salvati
-        document.getElementById('max-speed').innerHTML = maxSpeedRecorded.toFixed(0) + ' <span class="text-xs text-zinc-400">km/h</span>';
+
+        document.getElementById('max-speed').innerText = maxSpeedRecorded.toFixed(0);
         document.getElementById('trip-distance').innerText = estimatedDistance.toFixed(2) + ' km';
+        document.getElementById('elev-gain').innerText = '+' + Math.round(elevGain) + ' m';
+        document.getElementById('elev-loss').innerText = '-' + Math.round(elevLoss) + ' m';
 
         function calcDistance(lat1, lon1, lat2, lon2) {
             if (!lat1 || !lon1 || !lat2 || !lon2) return 0;
@@ -270,35 +285,62 @@
             return directions[Math.round(angle / 45) % 8];
         }
 
-        // Geolocation & Weather & Sunrise/Sunset
         if ('geolocation' in navigator) {
             navigator.geolocation.watchPosition((position) => {
                 const lat = position.coords.latitude;
                 const lon = position.coords.longitude;
-                const speedKmH = Math.round((position.coords.speed || 0) * 3.6);
-                const alt = position.coords.altitude ? Math.round(position.coords.altitude) : 0;
+                currentSpeed = Math.round((position.coords.speed || 0) * 3.6);
+                const alt = position.coords.altitude;
                 const heading = position.coords.heading ? Math.round(position.coords.heading) : 0;
+                const accuracy = position.coords.accuracy ? Math.round(position.coords.accuracy) : 0;
 
-                document.getElementById('speed').innerText = speedKmH;
-                document.getElementById('altitude').innerText = alt + ' m';
+                const speedEl = document.getElementById('speed');
+                speedEl.innerText = currentSpeed;
+                if (currentSpeedLimit && currentSpeed > currentSpeedLimit + 3) {
+                    speedEl.className = "text-6xl font-black font-mono tracking-tighter text-rose-500 transition-colors";
+                } else {
+                    speedEl.className = "text-6xl font-black font-mono tracking-tighter text-white transition-colors";
+                }
+
+                document.getElementById('gps-accuracy').innerText = `±${accuracy} m`;
                 document.getElementById('coords').innerText = `${lat.toFixed(4)}, ${lon.toFixed(4)}`;
-                document.getElementById('gps-status').innerText = 'GPS Attivo';
+                document.getElementById('gps-status').innerText = 'GPS OK';
                 document.getElementById('gps-status').className = 'text-xs px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30';
 
-                // Bussola
-                document.getElementById('heading-badge').innerText = heading + '°';
-                document.getElementById('compass-needle').style.transform = `rotate(${heading}deg)`;
-                document.getElementById('cardinal-dir').innerText = `${getCardinalDirection(heading)} (${heading}°)`;
+                if (alt !== null) {
+                    document.getElementById('altitude').innerText = Math.round(alt);
+                    if (lastAlt !== null) {
+                        const diff = alt - lastAlt;
+                        if (Math.abs(diff) >= 3 && Math.abs(diff) < 50) {
+                            if (diff > 0) {
+                                elevGain += diff;
+                                localStorage.setItem('elev_gain', elevGain);
+                                document.getElementById('elev-gain').innerText = '+' + Math.round(elevGain) + ' m';
+                            } else {
+                                elevLoss += Math.abs(diff);
+                                localStorage.setItem('elev_loss', elevLoss);
+                                document.getElementById('elev-loss').innerText = '-' + Math.round(elevLoss) + ' m';
+                            }
+                            lastAlt = alt;
+                        }
+                    } else {
+                        lastAlt = alt;
+                    }
+                }
 
-                if (speedKmH > maxSpeedRecorded) {
-                    maxSpeedRecorded = speedKmH;
+                document.getElementById('heading-deg').innerText = heading + '°';
+                document.getElementById('compass-needle').style.transform = `translateY(-50%) rotate(${heading}deg)`;
+                document.getElementById('cardinal-dir').innerText = getCardinalDirection(heading);
+
+                if (currentSpeed > maxSpeedRecorded) {
+                    maxSpeedRecorded = currentSpeed;
                     localStorage.setItem('max_speed', maxSpeedRecorded);
-                    document.getElementById('max-speed').innerHTML = maxSpeedRecorded + ' <span class="text-xs text-zinc-400">km/h</span>';
+                    document.getElementById('max-speed').innerText = maxSpeedRecorded;
                 }
 
                 if (lastLat !== null && lastLon !== null) {
                     const dist = calcDistance(lastLat, lastLon, lat, lon);
-                    if (dist < 5) {
+                    if (dist > 0.005 && dist < 2) {
                         estimatedDistance += dist;
                         localStorage.setItem('trip_dist', estimatedDistance);
                         document.getElementById('trip-distance').innerText = estimatedDistance.toFixed(2) + ' km';
@@ -307,33 +349,100 @@
                 lastLat = lat;
                 lastLon = lon;
 
-                fetchWeatherData(lat, lon);
+                const now = Date.now();
+                if (now - lastApiFetchTime > 300000) {
+                    lastApiFetchTime = now;
+                    fetchWeatherAndAir(lat, lon);
+                }
+                if (now - lastGeoFetchTime > 15000) {
+                    lastGeoFetchTime = now;
+                    fetchRoadAndCity(lat, lon);
+                }
+
             }, () => {
                 document.getElementById('gps-status').innerText = 'GPS Off';
                 document.getElementById('gps-status').className = 'text-xs px-2.5 py-1 rounded-full bg-rose-500/20 text-rose-400 border border-rose-500/30';
             }, { enableHighAccuracy: true, maximumAge: 1000, timeout: 10000 });
         }
 
-        async function fetchWeatherData(lat, lon) {
+        async function fetchWeatherAndAir(lat, lon) {
             try {
-                const res = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&daily=sunrise,sunset&timezone=auto`);
-                const data = await res.json();
-                if (data && data.current) {
-                    document.getElementById('temp').innerText = Math.round(data.current.temperature_2m) + '°C';
-                    document.getElementById('weather-desc').innerText = getWeatherDescription(data.current.weather_code);
-                    document.getElementById('weather-icon').innerText = getWeatherIcon(data.current.weather_code);
-                    document.getElementById('weather-update').innerText = 'Aggiornato';
+                const weatherRes = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,relative_humidity_2m,surface_pressure,weather_code,wind_speed_10m&daily=sunrise,sunset&timezone=auto`);
+                const wData = await weatherRes.json();
+                if (wData && wData.current) {
+                    document.getElementById('temp').innerText = Math.round(wData.current.temperature_2m) + '°C';
+                    document.getElementById('humidity').innerText = `Umid. ${wData.current.relative_humidity_2m}%`;
+                    document.getElementById('press-val').innerText = `${Math.round(wData.current.surface_pressure)} hPa`;
+                    document.getElementById('wind-speed').innerText = `${Math.round(wData.current.wind_speed_10m)} km/h`;
+                    document.getElementById('weather-desc').innerText = getWeatherDescription(wData.current.weather_code);
+                    document.getElementById('weather-icon').innerText = getWeatherIcon(wData.current.weather_code);
                 }
-                if (data && data.daily && data.daily.sunrise && data.daily.sunset) {
-                    const sunrise = data.daily.sunrise[0].split('T')[1];
-                    const sunset = data.daily.sunset[0].split('T')[1];
-                    document.getElementById('sun-status').innerText = `Alba: ${sunrise} | Tramonto: ${sunset}`;
+                if (wData && wData.daily && wData.daily.sunrise) {
+                    const sr = wData.daily.sunrise[0].split('T')[1];
+                    const ss = wData.daily.sunset[0].split('T')[1];
+                    document.getElementById('sun-status').innerText = `☀️ ${sr} | 🌙 ${ss}`;
+                }
+
+                const airRes = await fetch(`https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${lat}&longitude=${lon}&current=european_aqi,pm10,pm2_5,uv_index`);
+                const aData = await airRes.json();
+                if (aData && aData.current) {
+                    const aqi = aData.current.european_aqi;
+                    const uv = aData.current.uv_index;
+                    document.getElementById('aqi-val').innerText = aqi;
+                    document.getElementById('uv-val').innerText = uv.toFixed(1);
+                    document.getElementById('pm25-val').innerText = `PM2.5: ${aData.current.pm2_5} µg/m³`;
+                    document.getElementById('pm10-val').innerText = `PM10: ${aData.current.pm10} µg/m³`;
+
+                    const aqiLabel = document.getElementById('aqi-label');
+                    const advice = document.getElementById('recirc-advice');
+                    if (aqi <= 20) { aqiLabel.innerText = 'Ottima'; advice.innerText = 'Aria Pulita'; advice.className = 'text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-semibold'; }
+                    else if (aqi <= 40) { aqiLabel.innerText = 'Discreta'; advice.innerText = 'Aria OK'; advice.className = 'text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-semibold'; }
+                    else if (aqi <= 60) { aqiLabel.innerText = 'Moderata'; advice.innerText = 'Filtro Attivo'; advice.className = 'text-[10px] px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 font-semibold'; }
+                    else { aqiLabel.innerText = 'Scarsa'; advice.innerText = 'Attiva Ricircolo'; advice.className = 'text-[10px] px-2 py-0.5 rounded bg-rose-500/20 text-rose-400 font-semibold'; }
+
+                    document.getElementById('uv-label').innerText = uv < 3 ? 'Basso' : (uv < 6 ? 'Moderato' : 'Alto');
+                }
+            } catch (e) {}
+        }
+
+        async function fetchRoadAndCity(lat, lon) {
+            try {
+                const nomRes = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}&zoom=16`);
+                const nomData = await nomRes.json();
+                if (nomData && nomData.address) {
+                    const addr = nomData.address;
+                    const city = addr.city || addr.town || addr.village || addr.municipality || '';
+                    const county = addr.county || addr.state || '';
+                    const road = addr.road || addr.highway || 'Strada non classificata';
+                    document.getElementById('location-name').innerText = city ? `${city} (${county})` : 'In viaggio';
+                    document.getElementById('road-name').innerText = road;
+                }
+
+                const query = `[out:json][timeout:5];way(around:25,${lat},${lon})["highway"]["maxspeed"];out tags 1;`;
+                const ovRes = await fetch('https://overpass-api.de/api/interpreter', {
+                    method: 'POST',
+                    body: 'data=' + encodeURIComponent(query)
+                });
+                const ovData = await ovRes.json();
+                if (ovData && ovData.elements && ovData.elements.length > 0) {
+                    const rawLimit = ovData.elements[0].tags.maxspeed;
+                    const parsedLimit = parseInt(rawLimit);
+                    if (!isNaN(parsedLimit)) {
+                        currentSpeedLimit = parsedLimit;
+                        document.getElementById('speed-limit').innerText = parsedLimit;
+                    } else {
+                        currentSpeedLimit = null;
+                        document.getElementById('speed-limit').innerText = '--';
+                    }
+                } else {
+                    currentSpeedLimit = null;
+                    document.getElementById('speed-limit').innerText = '--';
                 }
             } catch (e) {}
         }
 
         function getWeatherDescription(code) {
-            const map = { 0: 'Sereno', 1: 'Sereno', 2: 'Parz. nuvoloso', 3: 'Nuvoloso', 45: 'Nebbia', 51: 'Pioggia', 61: 'Pioggia', 95: 'Temporale' };
+            const map = { 0: 'Sereno', 1: 'Preval. sereno', 2: 'Parz. nuvoloso', 3: 'Nuvoloso', 45: 'Nebbia', 51: 'Pioviggine', 61: 'Pioggia', 71: 'Neve', 95: 'Temporale' };
             return map[code] || 'Variabile';
         }
         function getWeatherIcon(code) {
@@ -341,21 +450,9 @@
             if (code <= 3) return '⛅';
             if (code <= 48) return '🌫️';
             if (code <= 67) return '🌧️';
+            if (code <= 77) return '❄️';
             if (code >= 95) return '⚡';
             return '☁️';
-        }
-
-        // DeviceMotion API per G-Force approssimate dai sensori del display
-        if (window.DeviceMotionEvent) {
-            window.addEventListener('devicemotion', (event) => {
-                const accG = event.acceleration;
-                if (accG && accG.x !== null && accG.y !== null) {
-                    const gLong = (accG.y / 9.81).toFixed(2);
-                    const gLat = (accG.x / 9.81).toFixed(2);
-                    document.getElementById('g-long').innerText = gLong + ' G';
-                    document.getElementById('g-lat').innerText = gLat + ' G';
-                }
-            });
         }
 
         function toggleFullScreen() {
