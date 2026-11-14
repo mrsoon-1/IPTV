@@ -1,26 +1,6 @@
 {
   "ACI SPORT TV.it": [
     {
-      "start": "2026-11-14T12:09:00+01:00",
-      "stop": "2026-11-14T12:37:00+01:00",
-      "title": "Magazine MLMC - Recap 2026"
-    },
-    {
-      "start": "2026-11-14T12:37:00+01:00",
-      "stop": "2026-11-14T12:50:00+01:00",
-      "title": "Revival ACi Sport since 2012"
-    },
-    {
-      "start": "2026-11-14T12:50:00+01:00",
-      "stop": "2026-11-14T17:50:00+01:00",
-      "title": "ALMS Series - 4 h of Le Castellet - G1"
-    },
-    {
-      "start": "2026-11-14T17:50:00+01:00",
-      "stop": "2026-11-14T18:36:00+01:00",
-      "title": "Rally Citta' di Lucca - PS2"
-    },
-    {
       "start": "2026-11-14T18:36:00+01:00",
       "stop": "2026-11-14T19:37:00+01:00",
       "title": "Rally Citta' di Lucca - SPS5"
@@ -127,56 +107,6 @@
     }
   ],
   "Al Jazeera International.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "News Live"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Inside Story"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Al Jazeera World"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Newshour"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "News Live"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "101 East"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Newshour"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "News Live"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Fault Lines"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "News Live"
-    },
     {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
@@ -319,66 +249,6 @@
     }
   ],
   "Alma TV.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Nuova Casa Alice"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Pillole Di Sapori"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Beker On Tour"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Il Piatto Forte"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "I Sapori del Sole"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "A casa di Emy"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "In Gran Forma Con Rosanna Lambertucci"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Frittanza: Altro Fritto Altra Corsa"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Mangiare Con Gusto"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "L'Eccellenza Del Gusto: Gelatieri in Sfida"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "Andata e Ritorno"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Un Amore di Stadio"
-    },
     {
       "start": "2026-11-14T18:00:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
@@ -607,36 +477,6 @@
   ],
   "Bloomberg.it": [
     {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Bloomberg Wall Street Week"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Bloomberg This Weekend"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Bloomberg Wall Street Week"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "The Mishal Husain Show"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "The David Rubenstein Show"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "The Circuit"
-    },
-    {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
       "title": "The Best of 2026 Bloomberg New..."
@@ -798,131 +638,6 @@
     }
   ],
   "Boing Plus.it": [
-    {
-      "start": "2026-11-14T12:05:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Rubble & Crew"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T12:50:00+01:00",
-      "title": "Blaze e le megamacchine"
-    },
-    {
-      "start": "2026-11-14T12:50:00+01:00",
-      "stop": "2026-11-14T13:15:00+01:00",
-      "title": "Blaze e le megamacchine"
-    },
-    {
-      "start": "2026-11-14T13:15:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Programmazione da definire"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:10:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T14:10:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T14:40:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T14:40:00+01:00",
-      "stop": "2026-11-14T14:55:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T14:55:00+01:00",
-      "stop": "2026-11-14T15:10:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T15:10:00+01:00",
-      "stop": "2026-11-14T15:25:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T15:25:00+01:00",
-      "stop": "2026-11-14T15:35:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T15:35:00+01:00",
-      "stop": "2026-11-14T15:50:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T15:50:00+01:00",
-      "stop": "2026-11-14T16:05:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T16:05:00+01:00",
-      "stop": "2026-11-14T16:20:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T16:20:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T16:45:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T16:45:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:15:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T17:15:00+01:00",
-      "stop": "2026-11-14T17:25:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T17:25:00+01:00",
-      "stop": "2026-11-14T17:40:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T17:40:00+01:00",
-      "stop": "2026-11-14T17:55:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T17:55:00+01:00",
-      "stop": "2026-11-14T18:10:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T18:10:00+01:00",
-      "stop": "2026-11-14T18:20:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T18:20:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T18:30:00+01:00",
-      "stop": "2026-11-14T18:45:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
     {
       "start": "2026-11-14T18:45:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
@@ -1480,136 +1195,6 @@
     }
   ],
   "Boing.it": [
-    {
-      "start": "2026-11-14T11:05:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Megamind"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:10:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T13:10:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T13:40:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T13:40:00+01:00",
-      "stop": "2026-11-14T13:55:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T13:55:00+01:00",
-      "stop": "2026-11-14T14:10:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T14:10:00+01:00",
-      "stop": "2026-11-14T14:25:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T14:25:00+01:00",
-      "stop": "2026-11-14T14:35:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T14:35:00+01:00",
-      "stop": "2026-11-14T14:50:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T14:50:00+01:00",
-      "stop": "2026-11-14T15:05:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T15:05:00+01:00",
-      "stop": "2026-11-14T15:20:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T15:20:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T15:45:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T15:45:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:15:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T16:15:00+01:00",
-      "stop": "2026-11-14T16:25:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T16:25:00+01:00",
-      "stop": "2026-11-14T16:40:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T16:40:00+01:00",
-      "stop": "2026-11-14T16:55:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T16:55:00+01:00",
-      "stop": "2026-11-14T17:10:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T17:10:00+01:00",
-      "stop": "2026-11-14T17:20:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T17:20:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T17:45:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T17:45:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:15:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T18:15:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T18:30:00+01:00",
-      "stop": "2026-11-14T18:45:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
     {
       "start": "2026-11-14T18:45:00+01:00",
       "stop": "2026-11-14T18:55:00+01:00",
@@ -2478,131 +2063,6 @@
   ],
   "Boomerang.it": [
     {
-      "start": "2026-11-14T12:05:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "La casa delle bambole di Gabby"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "La casa delle bambole di Gabby"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:20:00+01:00",
-      "title": "La casa delle bambole di Gabby"
-    },
-    {
-      "start": "2026-11-14T13:20:00+01:00",
-      "stop": "2026-11-14T13:35:00+01:00",
-      "title": "Dino Ranch: L'isola degli esploratori"
-    },
-    {
-      "start": "2026-11-14T13:35:00+01:00",
-      "stop": "2026-11-14T13:50:00+01:00",
-      "title": "Dino Ranch: L'isola degli esploratori"
-    },
-    {
-      "start": "2026-11-14T13:50:00+01:00",
-      "stop": "2026-11-14T14:05:00+01:00",
-      "title": "Dino Ranch: L'isola degli esploratori"
-    },
-    {
-      "start": "2026-11-14T14:05:00+01:00",
-      "stop": "2026-11-14T14:15:00+01:00",
-      "title": "Dino Ranch: L'isola degli esploratori"
-    },
-    {
-      "start": "2026-11-14T14:15:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "Batwheels"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T14:40:00+01:00",
-      "title": "Batwheels"
-    },
-    {
-      "start": "2026-11-14T14:40:00+01:00",
-      "stop": "2026-11-14T15:55:00+01:00",
-      "title": "Scooby-Doo e il Mistero del Wrestling"
-    },
-    {
-      "start": "2026-11-14T15:55:00+01:00",
-      "stop": "2026-11-14T16:10:00+01:00",
-      "title": "Adventure Time"
-    },
-    {
-      "start": "2026-11-14T16:10:00+01:00",
-      "stop": "2026-11-14T16:15:00+01:00",
-      "title": "Adventure Time"
-    },
-    {
-      "start": "2026-11-14T16:15:00+01:00",
-      "stop": "2026-11-14T16:20:00+01:00",
-      "title": "Adventure Time"
-    },
-    {
-      "start": "2026-11-14T16:20:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Grizzy e i Lemming: Pelosi e dispettosi"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T16:40:00+01:00",
-      "title": "Grizzy e i Lemming: Pelosi e dispettosi"
-    },
-    {
-      "start": "2026-11-14T16:40:00+01:00",
-      "stop": "2026-11-14T16:45:00+01:00",
-      "title": "Grizzy e i Lemming: Pelosi e dispettosi"
-    },
-    {
-      "start": "2026-11-14T16:45:00+01:00",
-      "stop": "2026-11-14T16:55:00+01:00",
-      "title": "Grizzy e i Lemming: Pelosi e dispettosi"
-    },
-    {
-      "start": "2026-11-14T16:55:00+01:00",
-      "stop": "2026-11-14T17:05:00+01:00",
-      "title": "Grizzy e i Lemming: Pelosi e dispettosi"
-    },
-    {
-      "start": "2026-11-14T17:05:00+01:00",
-      "stop": "2026-11-14T17:10:00+01:00",
-      "title": "Grizzy e i Lemming: Pelosi e dispettosi"
-    },
-    {
-      "start": "2026-11-14T17:10:00+01:00",
-      "stop": "2026-11-14T17:40:00+01:00",
-      "title": "La casa delle bambole di Gabby"
-    },
-    {
-      "start": "2026-11-14T17:40:00+01:00",
-      "stop": "2026-11-14T17:55:00+01:00",
-      "title": "Batwheels"
-    },
-    {
-      "start": "2026-11-14T17:55:00+01:00",
-      "stop": "2026-11-14T18:05:00+01:00",
-      "title": "Batwheels"
-    },
-    {
-      "start": "2026-11-14T18:05:00+01:00",
-      "stop": "2026-11-14T18:15:00+01:00",
-      "title": "Batwheels"
-    },
-    {
-      "start": "2026-11-14T18:15:00+01:00",
-      "stop": "2026-11-14T18:25:00+01:00",
-      "title": "Batwheels"
-    },
-    {
-      "start": "2026-11-14T18:25:00+01:00",
-      "stop": "2026-11-14T18:40:00+01:00",
-      "title": "Mr.Bean"
-    },
-    {
       "start": "2026-11-14T18:40:00+01:00",
       "stop": "2026-11-14T18:50:00+01:00",
       "title": "Mr.Bean"
@@ -3015,71 +2475,6 @@
   ],
   "Caccia e Pesca.it": [
     {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Cacciatori tutto l'anno"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Un cacciatore di beccacce 5"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Questione di setole"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T14:05:00+01:00",
-      "title": "Tordi a tutto tondo"
-    },
-    {
-      "start": "2026-11-14T14:05:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "La caccia di selezione e il controllo 1"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "A caccia con i cani"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T15:50:00+01:00",
-      "title": "Sapharia - Destinazione Africa - Ep. 7 - Zebra Hartmann"
-    },
-    {
-      "start": "2026-11-14T15:50:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Esame di caccia 1"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Esame di caccia 1"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "PRS: una nuova disciplina"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "Parliamo di caccia: Mixomatosi"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T18:05:00+01:00",
-      "title": "Target caccia"
-    },
-    {
-      "start": "2026-11-14T18:05:00+01:00",
-      "stop": "2026-11-14T18:35:00+01:00",
-      "title": "Live Hunting Emotion & Friends 7"
-    },
-    {
       "start": "2026-11-14T18:35:00+01:00",
       "stop": "2026-11-14T19:30:00+01:00",
       "title": "Lombardia: acqua, cultura e sapori 1"
@@ -3251,46 +2646,6 @@
     }
   ],
   "canale 20.it": [
-    {
-      "start": "2026-11-14T11:40:00+01:00",
-      "stop": "2026-11-14T12:28:00+01:00",
-      "title": "Walker"
-    },
-    {
-      "start": "2026-11-14T12:28:00+01:00",
-      "stop": "2026-11-14T13:17:00+01:00",
-      "title": "Walker"
-    },
-    {
-      "start": "2026-11-14T13:17:00+01:00",
-      "stop": "2026-11-14T14:10:00+01:00",
-      "title": "Walker"
-    },
-    {
-      "start": "2026-11-14T14:10:00+01:00",
-      "stop": "2026-11-14T14:58:00+01:00",
-      "title": "Walker"
-    },
-    {
-      "start": "2026-11-14T14:58:00+01:00",
-      "stop": "2026-11-14T15:43:00+01:00",
-      "title": "Walker"
-    },
-    {
-      "start": "2026-11-14T15:43:00+01:00",
-      "stop": "2026-11-14T16:36:00+01:00",
-      "title": "Walker"
-    },
-    {
-      "start": "2026-11-14T16:36:00+01:00",
-      "stop": "2026-11-14T17:29:00+01:00",
-      "title": "Walker"
-    },
-    {
-      "start": "2026-11-14T17:29:00+01:00",
-      "stop": "2026-11-14T18:16:00+01:00",
-      "title": "Walker"
-    },
     {
       "start": "2026-11-14T18:16:00+01:00",
       "stop": "2026-11-14T19:08:00+01:00",
@@ -3518,46 +2873,6 @@
     }
   ],
   "Canale 5.it": [
-    {
-      "start": "2026-11-14T11:00:00+01:00",
-      "stop": "2026-11-14T12:58:00+01:00",
-      "title": "Forum"
-    },
-    {
-      "start": "2026-11-14T12:58:00+01:00",
-      "stop": "2026-11-14T13:42:00+01:00",
-      "title": "Tg5"
-    },
-    {
-      "start": "2026-11-14T13:42:00+01:00",
-      "stop": "2026-11-14T14:20:00+01:00",
-      "title": "Beautiful"
-    },
-    {
-      "start": "2026-11-14T14:20:00+01:00",
-      "stop": "2026-11-14T15:40:00+01:00",
-      "title": "Amici di Maria"
-    },
-    {
-      "start": "2026-11-14T15:40:00+01:00",
-      "stop": "2026-11-14T15:49:00+01:00",
-      "title": "Forbidden Fruit"
-    },
-    {
-      "start": "2026-11-14T15:49:00+01:00",
-      "stop": "2026-11-14T16:20:00+01:00",
-      "title": "Forbidden Fruit"
-    },
-    {
-      "start": "2026-11-14T16:20:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Forbidden Fruit"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T18:42:00+01:00",
-      "title": "Verissimo"
-    },
     {
       "start": "2026-11-14T18:42:00+01:00",
       "stop": "2026-11-14T19:54:00+01:00",
@@ -3860,141 +3175,6 @@
     }
   ],
   "Cartoon Network.it": [
-    {
-      "start": "2026-11-14T12:15:00+01:00",
-      "stop": "2026-11-14T12:35:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T12:35:00+01:00",
-      "stop": "2026-11-14T12:50:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T12:50:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:10:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T13:10:00+01:00",
-      "stop": "2026-11-14T13:20:00+01:00",
-      "title": "Teen Titans Go"
-    },
-    {
-      "start": "2026-11-14T13:20:00+01:00",
-      "stop": "2026-11-14T13:35:00+01:00",
-      "title": "Teen Titans Go"
-    },
-    {
-      "start": "2026-11-14T13:35:00+01:00",
-      "stop": "2026-11-14T13:45:00+01:00",
-      "title": "Teen Titans Go"
-    },
-    {
-      "start": "2026-11-14T13:45:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Teen Titans Go"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T15:15:00+01:00",
-      "title": "Aquaman e la Justice League"
-    },
-    {
-      "start": "2026-11-14T15:15:00+01:00",
-      "stop": "2026-11-14T15:25:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T15:25:00+01:00",
-      "stop": "2026-11-14T15:40:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T15:40:00+01:00",
-      "stop": "2026-11-14T15:55:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T15:55:00+01:00",
-      "stop": "2026-11-14T16:05:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T16:05:00+01:00",
-      "stop": "2026-11-14T16:20:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T16:20:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T16:40:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T16:40:00+01:00",
-      "stop": "2026-11-14T16:50:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T16:50:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:10:00+01:00",
-      "title": "Adventure Time: Missioni Leggendarie"
-    },
-    {
-      "start": "2026-11-14T17:10:00+01:00",
-      "stop": "2026-11-14T17:25:00+01:00",
-      "title": "Adventure Time: Missioni Leggendarie"
-    },
-    {
-      "start": "2026-11-14T17:25:00+01:00",
-      "stop": "2026-11-14T17:35:00+01:00",
-      "title": "Craig"
-    },
-    {
-      "start": "2026-11-14T17:35:00+01:00",
-      "stop": "2026-11-14T17:45:00+01:00",
-      "title": "Craig"
-    },
-    {
-      "start": "2026-11-14T17:45:00+01:00",
-      "stop": "2026-11-14T17:55:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T17:55:00+01:00",
-      "stop": "2026-11-14T18:10:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T18:10:00+01:00",
-      "stop": "2026-11-14T18:25:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T18:25:00+01:00",
-      "stop": "2026-11-14T18:35:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
-    {
-      "start": "2026-11-14T18:35:00+01:00",
-      "stop": "2026-11-14T18:45:00+01:00",
-      "title": "Lo straordinario mondo di Gumball"
-    },
     {
       "start": "2026-11-14T18:45:00+01:00",
       "stop": "2026-11-14T18:55:00+01:00",
@@ -4337,126 +3517,6 @@
     }
   ],
   "Cartoonito.it": [
-    {
-      "start": "2026-11-14T12:15:00+01:00",
-      "stop": "2026-11-14T12:20:00+01:00",
-      "title": "Simone"
-    },
-    {
-      "start": "2026-11-14T12:20:00+01:00",
-      "stop": "2026-11-14T12:25:00+01:00",
-      "title": "Simone"
-    },
-    {
-      "start": "2026-11-14T12:25:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Simone"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T12:40:00+01:00",
-      "title": "Simone"
-    },
-    {
-      "start": "2026-11-14T12:40:00+01:00",
-      "stop": "2026-11-14T12:45:00+01:00",
-      "title": "Simone"
-    },
-    {
-      "start": "2026-11-14T12:45:00+01:00",
-      "stop": "2026-11-14T12:50:00+01:00",
-      "title": "Simone"
-    },
-    {
-      "start": "2026-11-14T12:50:00+01:00",
-      "stop": "2026-11-14T12:55:00+01:00",
-      "title": "Simone"
-    },
-    {
-      "start": "2026-11-14T12:55:00+01:00",
-      "stop": "2026-11-14T13:10:00+01:00",
-      "title": "Simone"
-    },
-    {
-      "start": "2026-11-14T13:10:00+01:00",
-      "stop": "2026-11-14T13:35:00+01:00",
-      "title": "La casa delle bambole di Gabby"
-    },
-    {
-      "start": "2026-11-14T13:35:00+01:00",
-      "stop": "2026-11-14T14:05:00+01:00",
-      "title": "La casa delle bambole di Gabby"
-    },
-    {
-      "start": "2026-11-14T14:05:00+01:00",
-      "stop": "2026-11-14T14:20:00+01:00",
-      "title": "Chi ha sfidato Ninna e Matti?"
-    },
-    {
-      "start": "2026-11-14T14:20:00+01:00",
-      "stop": "2026-11-14T14:45:00+01:00",
-      "title": "Chi ha sfidato Ninna e Matti?"
-    },
-    {
-      "start": "2026-11-14T14:45:00+01:00",
-      "stop": "2026-11-14T14:55:00+01:00",
-      "title": "Chi ha sfidato Ninna e Matti? Best of"
-    },
-    {
-      "start": "2026-11-14T14:55:00+01:00",
-      "stop": "2026-11-14T15:25:00+01:00",
-      "title": "Chi ha sfidato Ninna e Matti?"
-    },
-    {
-      "start": "2026-11-14T15:25:00+01:00",
-      "stop": "2026-11-14T15:35:00+01:00",
-      "title": "Dino Ranch: L'isola degli esploratori"
-    },
-    {
-      "start": "2026-11-14T15:35:00+01:00",
-      "stop": "2026-11-14T15:50:00+01:00",
-      "title": "Dino Ranch: L'isola degli esploratori"
-    },
-    {
-      "start": "2026-11-14T15:50:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Dino Ranch: L'isola degli esploratori"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:15:00+01:00",
-      "title": "Dino Ranch: L'isola degli esploratori"
-    },
-    {
-      "start": "2026-11-14T16:15:00+01:00",
-      "stop": "2026-11-14T16:25:00+01:00",
-      "title": "Dino Ranch"
-    },
-    {
-      "start": "2026-11-14T16:25:00+01:00",
-      "stop": "2026-11-14T16:40:00+01:00",
-      "title": "Dino Ranch"
-    },
-    {
-      "start": "2026-11-14T16:40:00+01:00",
-      "stop": "2026-11-14T17:10:00+01:00",
-      "title": "Paw Patrol"
-    },
-    {
-      "start": "2026-11-14T17:10:00+01:00",
-      "stop": "2026-11-14T17:40:00+01:00",
-      "title": "Rubble & Crew"
-    },
-    {
-      "start": "2026-11-14T17:40:00+01:00",
-      "stop": "2026-11-14T18:05:00+01:00",
-      "title": "Rubble & Crew"
-    },
-    {
-      "start": "2026-11-14T18:05:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Blaze e le megamacchine"
-    },
     {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T18:55:00+01:00",
@@ -5665,31 +4725,6 @@
   ],
   "Cielo.it": [
     {
-      "start": "2026-11-14T12:15:00+01:00",
-      "stop": "2026-11-14T13:10:00+01:00",
-      "title": "Love it or List it - Prendere o lasciare"
-    },
-    {
-      "start": "2026-11-14T13:10:00+01:00",
-      "stop": "2026-11-14T14:05:00+01:00",
-      "title": "Love it or List it - Prendere o lasciare"
-    },
-    {
-      "start": "2026-11-14T14:05:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "The November Man"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Cucine da incubo"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T18:15:00+01:00",
-      "title": "Cucine da incubo"
-    },
-    {
       "start": "2026-11-14T18:15:00+01:00",
       "stop": "2026-11-14T19:40:00+01:00",
       "title": "Cucine da incubo"
@@ -5947,21 +4982,6 @@
   ],
   "Cine 34.it": [
     {
-      "start": "2026-11-14T11:12:00+01:00",
-      "stop": "2026-11-14T13:15:00+01:00",
-      "title": "Lui e' peggio di me"
-    },
-    {
-      "start": "2026-11-14T13:15:00+01:00",
-      "stop": "2026-11-14T15:23:00+01:00",
-      "title": "Piper"
-    },
-    {
-      "start": "2026-11-14T15:23:00+01:00",
-      "stop": "2026-11-14T17:20:00+01:00",
-      "title": "Serafino"
-    },
-    {
       "start": "2026-11-14T17:20:00+01:00",
       "stop": "2026-11-14T19:20:00+01:00",
       "title": "Il ricco, il povero e il maggiordomo"
@@ -6099,101 +5119,6 @@
   ],
   "Class-Cnbc.it": [
     {
-      "start": "2026-11-14T12:15:00+01:00",
-      "stop": "2026-11-14T12:40:00+01:00",
-      "title": "Leggere l'economia"
-    },
-    {
-      "start": "2026-11-14T12:40:00+01:00",
-      "stop": "2026-11-14T12:45:00+01:00",
-      "title": "Fabi risponde"
-    },
-    {
-      "start": "2026-11-14T12:45:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Mytech"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:14:00+01:00",
-      "title": "Mese del risparmio PT 3"
-    },
-    {
-      "start": "2026-11-14T13:14:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Speciale mercati"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T13:42:00+01:00",
-      "title": "Focus trimestrali"
-    },
-    {
-      "start": "2026-11-14T13:42:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Growth Italia"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:33:00+01:00",
-      "title": "Family business"
-    },
-    {
-      "start": "2026-11-14T14:33:00+01:00",
-      "stop": "2026-11-14T14:48:00+01:00",
-      "title": "Incredible Investing Mercosur PT 6"
-    },
-    {
-      "start": "2026-11-14T14:48:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Speciale COP31"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T15:39:00+01:00",
-      "title": "The Floor"
-    },
-    {
-      "start": "2026-11-14T15:39:00+01:00",
-      "stop": "2026-11-14T16:33:00+01:00",
-      "title": "5 Giorni Sui Mercati"
-    },
-    {
-      "start": "2026-11-14T16:33:00+01:00",
-      "stop": "2026-11-14T16:43:00+01:00",
-      "title": "Speciale scandalo Jensen Huang"
-    },
-    {
-      "start": "2026-11-14T16:43:00+01:00",
-      "stop": "2026-11-14T16:54:00+01:00",
-      "title": "Speciale Report"
-    },
-    {
-      "start": "2026-11-14T16:54:00+01:00",
-      "stop": "2026-11-14T17:03:00+01:00",
-      "title": "Speciale Nvidia"
-    },
-    {
-      "start": "2026-11-14T17:03:00+01:00",
-      "stop": "2026-11-14T17:37:00+01:00",
-      "title": "Mese del risparmio PT 3"
-    },
-    {
-      "start": "2026-11-14T17:37:00+01:00",
-      "stop": "2026-11-14T17:50:00+01:00",
-      "title": "Speciale I costi della guerra ibrida"
-    },
-    {
-      "start": "2026-11-14T17:50:00+01:00",
-      "stop": "2026-11-14T18:02:00+01:00",
-      "title": "Focus trimestrali"
-    },
-    {
-      "start": "2026-11-14T18:02:00+01:00",
-      "stop": "2026-11-14T18:27:00+01:00",
-      "title": "Leggere l'economia"
-    },
-    {
       "start": "2026-11-14T18:27:00+01:00",
       "stop": "2026-11-14T19:02:00+01:00",
       "title": "Family business"
@@ -6330,46 +5255,6 @@
     }
   ],
   "CNBC.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "CNBC Sports - PGA Tour"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "DP World Tour"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "ROC d'Azur"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Tour De France Criterium"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "The Tech Download"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "CNBC Sport: On the Record"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "American Greed"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Managing Middle East"
-    },
     {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
@@ -6518,51 +5403,6 @@
   ],
   "CNN Intl.it": [
     {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "African Voices Playmakers"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Answering Tomorrow"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "CNN This Morning Weekend"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "First of All With Victor Blackwell"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Smerconish"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "CNN Creators"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Inside Africa"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "The Amanpour Hour"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "World Sport"
-    },
-    {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
       "title": "Answering Tomorrow"
@@ -6709,61 +5549,6 @@
     }
   ],
   "Comedy Central.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:20:00+01:00",
-      "title": "Hot In Cleveland"
-    },
-    {
-      "start": "2026-11-14T12:20:00+01:00",
-      "stop": "2026-11-14T12:45:00+01:00",
-      "title": "Hot In Cleveland"
-    },
-    {
-      "start": "2026-11-14T12:45:00+01:00",
-      "stop": "2026-11-14T13:10:00+01:00",
-      "title": "Frasier"
-    },
-    {
-      "start": "2026-11-14T13:10:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Frasier"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T13:55:00+01:00",
-      "title": "Frasier"
-    },
-    {
-      "start": "2026-11-14T13:55:00+01:00",
-      "stop": "2026-11-14T14:15:00+01:00",
-      "title": "Frasier"
-    },
-    {
-      "start": "2026-11-14T14:15:00+01:00",
-      "stop": "2026-11-14T14:40:00+01:00",
-      "title": "Frasier"
-    },
-    {
-      "start": "2026-11-14T14:40:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Frasier"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Battistology"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:25:00+01:00",
-      "title": "La pubblicita' piu' pazza del mondo!"
-    },
-    {
-      "start": "2026-11-14T16:25:00+01:00",
-      "stop": "2026-11-14T18:15:00+01:00",
-      "title": "Maurizio Battista: Comedy Celebration"
-    },
     {
       "start": "2026-11-14T18:15:00+01:00",
       "stop": "2026-11-14T19:10:00+01:00",
@@ -6991,266 +5776,6 @@
     }
   ],
   "DeA Junior.it": [
-    {
-      "start": "2026-11-14T12:10:00+01:00",
-      "stop": "2026-11-14T12:25:00+01:00",
-      "title": "Masha e Orso"
-    },
-    {
-      "start": "2026-11-14T12:25:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Booba"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T12:31:00+01:00",
-      "title": "Booba"
-    },
-    {
-      "start": "2026-11-14T12:31:00+01:00",
-      "stop": "2026-11-14T12:35:00+01:00",
-      "title": "Booba"
-    },
-    {
-      "start": "2026-11-14T12:35:00+01:00",
-      "stop": "2026-11-14T12:40:00+01:00",
-      "title": "Booba"
-    },
-    {
-      "start": "2026-11-14T12:40:00+01:00",
-      "stop": "2026-11-14T12:50:00+01:00",
-      "title": "Bing"
-    },
-    {
-      "start": "2026-11-14T12:50:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Bing"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:05:00+01:00",
-      "title": "Bing"
-    },
-    {
-      "start": "2026-11-14T13:05:00+01:00",
-      "stop": "2026-11-14T13:15:00+01:00",
-      "title": "Bing"
-    },
-    {
-      "start": "2026-11-14T13:15:00+01:00",
-      "stop": "2026-11-14T13:25:00+01:00",
-      "title": "Bing"
-    },
-    {
-      "start": "2026-11-14T13:25:00+01:00",
-      "stop": "2026-11-14T13:35:00+01:00",
-      "title": "Bing"
-    },
-    {
-      "start": "2026-11-14T13:35:00+01:00",
-      "stop": "2026-11-14T13:40:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T13:40:00+01:00",
-      "stop": "2026-11-14T13:45:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T13:45:00+01:00",
-      "stop": "2026-11-14T13:50:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T13:50:00+01:00",
-      "stop": "2026-11-14T13:55:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T13:55:00+01:00",
-      "stop": "2026-11-14T14:05:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T14:05:00+01:00",
-      "stop": "2026-11-14T14:10:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T14:10:00+01:00",
-      "stop": "2026-11-14T14:15:00+01:00",
-      "title": "Peppa Pig (Shorts)"
-    },
-    {
-      "start": "2026-11-14T14:15:00+01:00",
-      "stop": "2026-11-14T14:20:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T14:20:00+01:00",
-      "stop": "2026-11-14T14:35:00+01:00",
-      "title": "44 gatti"
-    },
-    {
-      "start": "2026-11-14T14:35:00+01:00",
-      "stop": "2026-11-14T14:50:00+01:00",
-      "title": "44 gatti"
-    },
-    {
-      "start": "2026-11-14T14:50:00+01:00",
-      "stop": "2026-11-14T15:05:00+01:00",
-      "title": "44 gatti"
-    },
-    {
-      "start": "2026-11-14T15:05:00+01:00",
-      "stop": "2026-11-14T15:15:00+01:00",
-      "title": "44 gatti"
-    },
-    {
-      "start": "2026-11-14T15:15:00+01:00",
-      "stop": "2026-11-14T15:25:00+01:00",
-      "title": "Lavaggio completo"
-    },
-    {
-      "start": "2026-11-14T15:25:00+01:00",
-      "stop": "2026-11-14T15:35:00+01:00",
-      "title": "Masha e Orso"
-    },
-    {
-      "start": "2026-11-14T15:35:00+01:00",
-      "stop": "2026-11-14T15:45:00+01:00",
-      "title": "Masha e Orso"
-    },
-    {
-      "start": "2026-11-14T15:45:00+01:00",
-      "stop": "2026-11-14T15:55:00+01:00",
-      "title": "Masha e Orso"
-    },
-    {
-      "start": "2026-11-14T15:55:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Masha e Orso"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:10:00+01:00",
-      "title": "Bing"
-    },
-    {
-      "start": "2026-11-14T16:10:00+01:00",
-      "stop": "2026-11-14T16:15:00+01:00",
-      "title": "Bing"
-    },
-    {
-      "start": "2026-11-14T16:15:00+01:00",
-      "stop": "2026-11-14T16:25:00+01:00",
-      "title": "Bing"
-    },
-    {
-      "start": "2026-11-14T16:25:00+01:00",
-      "stop": "2026-11-14T16:35:00+01:00",
-      "title": "Bing"
-    },
-    {
-      "start": "2026-11-14T16:35:00+01:00",
-      "stop": "2026-11-14T16:45:00+01:00",
-      "title": "Bing"
-    },
-    {
-      "start": "2026-11-14T16:45:00+01:00",
-      "stop": "2026-11-14T16:55:00+01:00",
-      "title": "Bing"
-    },
-    {
-      "start": "2026-11-14T16:55:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Bing"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:10:00+01:00",
-      "title": "Bing"
-    },
-    {
-      "start": "2026-11-14T17:10:00+01:00",
-      "stop": "2026-11-14T17:20:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T17:20:00+01:00",
-      "stop": "2026-11-14T17:25:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T17:25:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T17:35:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T17:35:00+01:00",
-      "stop": "2026-11-14T17:40:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T17:40:00+01:00",
-      "stop": "2026-11-14T17:45:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T17:45:00+01:00",
-      "stop": "2026-11-14T17:50:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T17:50:00+01:00",
-      "stop": "2026-11-14T17:55:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T17:55:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:05:00+01:00",
-      "title": "Booba"
-    },
-    {
-      "start": "2026-11-14T18:05:00+01:00",
-      "stop": "2026-11-14T18:10:00+01:00",
-      "title": "Booba"
-    },
-    {
-      "start": "2026-11-14T18:10:00+01:00",
-      "stop": "2026-11-14T18:15:00+01:00",
-      "title": "Booba"
-    },
-    {
-      "start": "2026-11-14T18:15:00+01:00",
-      "stop": "2026-11-14T18:20:00+01:00",
-      "title": "Booba"
-    },
-    {
-      "start": "2026-11-14T18:20:00+01:00",
-      "stop": "2026-11-14T18:25:00+01:00",
-      "title": "Booba"
-    },
-    {
-      "start": "2026-11-14T18:25:00+01:00",
-      "stop": "2026-11-14T18:35:00+01:00",
-      "title": "Bing"
-    },
-    {
-      "start": "2026-11-14T18:35:00+01:00",
-      "stop": "2026-11-14T18:40:00+01:00",
-      "title": "Bing"
-    },
     {
       "start": "2026-11-14T18:40:00+01:00",
       "stop": "2026-11-14T18:50:00+01:00",
@@ -7749,151 +6274,6 @@
   ],
   "DeAKids.it": [
     {
-      "start": "2026-11-14T12:05:00+01:00",
-      "stop": "2026-11-14T12:20:00+01:00",
-      "title": "Max e Naoki"
-    },
-    {
-      "start": "2026-11-14T12:20:00+01:00",
-      "stop": "2026-11-14T12:35:00+01:00",
-      "title": "New School"
-    },
-    {
-      "start": "2026-11-14T12:35:00+01:00",
-      "stop": "2026-11-14T12:45:00+01:00",
-      "title": "New School"
-    },
-    {
-      "start": "2026-11-14T12:45:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "New School"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:15:00+01:00",
-      "title": "New School"
-    },
-    {
-      "start": "2026-11-14T13:15:00+01:00",
-      "stop": "2026-11-14T13:40:00+01:00",
-      "title": "H2O: Just Add Water"
-    },
-    {
-      "start": "2026-11-14T13:40:00+01:00",
-      "stop": "2026-11-14T14:10:00+01:00",
-      "title": "H2O: Just Add Water"
-    },
-    {
-      "start": "2026-11-14T14:10:00+01:00",
-      "stop": "2026-11-14T14:40:00+01:00",
-      "title": "Cercami a Parigi"
-    },
-    {
-      "start": "2026-11-14T14:40:00+01:00",
-      "stop": "2026-11-14T15:10:00+01:00",
-      "title": "Cercami a Parigi"
-    },
-    {
-      "start": "2026-11-14T15:10:00+01:00",
-      "stop": "2026-11-14T15:20:00+01:00",
-      "title": "Max e Naoki"
-    },
-    {
-      "start": "2026-11-14T15:20:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "Max e Naoki"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T15:40:00+01:00",
-      "title": "Maca & Roni"
-    },
-    {
-      "start": "2026-11-14T15:40:00+01:00",
-      "stop": "2026-11-14T15:50:00+01:00",
-      "title": "Maca & Roni"
-    },
-    {
-      "start": "2026-11-14T15:50:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Zig & Sharko"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:10:00+01:00",
-      "title": "Zig & Sharko"
-    },
-    {
-      "start": "2026-11-14T16:10:00+01:00",
-      "stop": "2026-11-14T16:20:00+01:00",
-      "title": "Zig & Sharko"
-    },
-    {
-      "start": "2026-11-14T16:20:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Zig & Sharko"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T16:35:00+01:00",
-      "title": "Zig & Sharko"
-    },
-    {
-      "start": "2026-11-14T16:35:00+01:00",
-      "stop": "2026-11-14T16:40:00+01:00",
-      "title": "Zig & Sharko"
-    },
-    {
-      "start": "2026-11-14T16:40:00+01:00",
-      "stop": "2026-11-14T16:45:00+01:00",
-      "title": "Le Avventure Di Bernie"
-    },
-    {
-      "start": "2026-11-14T16:45:00+01:00",
-      "stop": "2026-11-14T16:50:00+01:00",
-      "title": "Le Avventure Di Bernie"
-    },
-    {
-      "start": "2026-11-14T16:50:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Le Avventure Di Bernie"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:20:00+01:00",
-      "title": "A tutto reality: Le origini"
-    },
-    {
-      "start": "2026-11-14T17:20:00+01:00",
-      "stop": "2026-11-14T17:45:00+01:00",
-      "title": "A tutto reality: Le origini"
-    },
-    {
-      "start": "2026-11-14T17:45:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Il barbiere pasticciere"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:15:00+01:00",
-      "title": "Il barbiere pasticciere"
-    },
-    {
-      "start": "2026-11-14T18:15:00+01:00",
-      "stop": "2026-11-14T18:20:00+01:00",
-      "title": "Il Barbiere Pasticciere"
-    },
-    {
-      "start": "2026-11-14T18:20:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Prova a non ridere con Rebby e Molly"
-    },
-    {
-      "start": "2026-11-14T18:30:00+01:00",
-      "stop": "2026-11-14T18:40:00+01:00",
-      "title": "Prova a non ridere con Rebby e Molly"
-    },
-    {
       "start": "2026-11-14T18:40:00+01:00",
       "stop": "2026-11-14T18:50:00+01:00",
       "title": "Max e Naoki"
@@ -8301,16 +6681,6 @@
   ],
   "Deejay TV.it": [
     {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "50 Songs"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Deejay Time"
-    },
-    {
       "start": "2026-11-14T16:00:00+01:00",
       "stop": "2026-11-14T20:00:00+01:00",
       "title": "La musica di Radio Deejay"
@@ -8342,46 +6712,6 @@
     }
   ],
   "DMAX.it": [
-    {
-      "start": "2026-11-14T12:05:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Quei cattivi vicini"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:55:00+01:00",
-      "title": "Quei cattivi vicini"
-    },
-    {
-      "start": "2026-11-14T13:55:00+01:00",
-      "stop": "2026-11-14T14:50:00+01:00",
-      "title": "Real Crash TV"
-    },
-    {
-      "start": "2026-11-14T14:50:00+01:00",
-      "stop": "2026-11-14T15:45:00+01:00",
-      "title": "Real Crash TV"
-    },
-    {
-      "start": "2026-11-14T15:45:00+01:00",
-      "stop": "2026-11-14T16:35:00+01:00",
-      "title": "Real Crash TV"
-    },
-    {
-      "start": "2026-11-14T16:35:00+01:00",
-      "stop": "2026-11-14T17:10:00+01:00",
-      "title": "Mr. Oro: tutto ha un prezzo"
-    },
-    {
-      "start": "2026-11-14T17:10:00+01:00",
-      "stop": "2026-11-14T17:45:00+01:00",
-      "title": "Mr. Oro: tutto ha un prezzo"
-    },
-    {
-      "start": "2026-11-14T17:45:00+01:00",
-      "stop": "2026-11-14T18:20:00+01:00",
-      "title": "Mr. Oro: tutto ha un prezzo"
-    },
     {
       "start": "2026-11-14T18:20:00+01:00",
       "stop": "2026-11-14T18:55:00+01:00",
@@ -8585,11 +6915,6 @@
   ],
   "EQU TV.it": [
     {
-      "start": "2026-11-14T12:15:00+01:00",
-      "stop": "2026-11-14T13:15:00+01:00",
-      "title": "EQUTV Mattina"
-    },
-    {
       "start": "2026-11-14T13:15:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
       "title": "Premio Vittorio Di Capua"
@@ -8646,161 +6971,6 @@
     }
   ],
   "Euronews.it": [
-    {
-      "start": "2026-11-14T12:12:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "The Ring"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T12:35:00+01:00",
-      "title": "5 Minutes"
-    },
-    {
-      "start": "2026-11-14T12:35:00+01:00",
-      "stop": "2026-11-14T12:49:00+01:00",
-      "title": "The Ring"
-    },
-    {
-      "start": "2026-11-14T12:49:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:12:00+01:00",
-      "title": "5 Minutes"
-    },
-    {
-      "start": "2026-11-14T13:12:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T13:35:00+01:00",
-      "title": "5 Minutes"
-    },
-    {
-      "start": "2026-11-14T13:35:00+01:00",
-      "stop": "2026-11-14T13:47:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T13:47:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Made in europe"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:12:00+01:00",
-      "title": "5 Minutes"
-    },
-    {
-      "start": "2026-11-14T14:12:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "The Ring"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T14:35:00+01:00",
-      "title": "5 Minutes"
-    },
-    {
-      "start": "2026-11-14T14:35:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "The Ring"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T15:12:00+01:00",
-      "title": "5 Minutes"
-    },
-    {
-      "start": "2026-11-14T15:12:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T15:35:00+01:00",
-      "title": "5 Minutes"
-    },
-    {
-      "start": "2026-11-14T15:35:00+01:00",
-      "stop": "2026-11-14T15:51:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T15:51:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:12:00+01:00",
-      "title": "5 Minutes"
-    },
-    {
-      "start": "2026-11-14T16:12:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "The Ring"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T16:35:00+01:00",
-      "title": "5 Minutes"
-    },
-    {
-      "start": "2026-11-14T16:35:00+01:00",
-      "stop": "2026-11-14T16:44:00+01:00",
-      "title": "The Ring"
-    },
-    {
-      "start": "2026-11-14T16:44:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:12:00+01:00",
-      "title": "5 Minutes"
-    },
-    {
-      "start": "2026-11-14T17:12:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T17:35:00+01:00",
-      "title": "5 Minutes"
-    },
-    {
-      "start": "2026-11-14T17:35:00+01:00",
-      "stop": "2026-11-14T17:47:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T17:47:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Made in europe"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:12:00+01:00",
-      "title": "5 Minutes"
-    },
-    {
-      "start": "2026-11-14T18:12:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "The Ring"
-    },
-    {
-      "start": "2026-11-14T18:30:00+01:00",
-      "stop": "2026-11-14T18:35:00+01:00",
-      "title": "5 Minutes"
-    },
     {
       "start": "2026-11-14T18:35:00+01:00",
       "stop": "2026-11-14T18:51:00+01:00",
@@ -9219,36 +7389,6 @@
   ],
   "Focus.it": [
     {
-      "start": "2026-11-14T11:26:00+01:00",
-      "stop": "2026-11-14T12:33:00+01:00",
-      "title": "Melaverde"
-    },
-    {
-      "start": "2026-11-14T12:33:00+01:00",
-      "stop": "2026-11-14T13:44:00+01:00",
-      "title": "Casa dolce casa - Dove vivono gli animali"
-    },
-    {
-      "start": "2026-11-14T13:44:00+01:00",
-      "stop": "2026-11-14T14:58:00+01:00",
-      "title": "Vita e natura d'acqua dolce"
-    },
-    {
-      "start": "2026-11-14T14:58:00+01:00",
-      "stop": "2026-11-14T16:01:00+01:00",
-      "title": "Naziste - le donne che aiutarono hitler"
-    },
-    {
-      "start": "2026-11-14T16:01:00+01:00",
-      "stop": "2026-11-14T17:05:00+01:00",
-      "title": "Hitler's secret s*x life"
-    },
-    {
-      "start": "2026-11-14T17:05:00+01:00",
-      "stop": "2026-11-14T18:35:00+01:00",
-      "title": "Pompei: Le nuove verita'"
-    },
-    {
       "start": "2026-11-14T18:35:00+01:00",
       "stop": "2026-11-14T19:40:00+01:00",
       "title": "Ancient Pompei - The secrets of Villa Oplontis"
@@ -9475,56 +7615,6 @@
     }
   ],
   "foodnetwork.it": [
-    {
-      "start": "2026-11-14T12:10:00+01:00",
-      "stop": "2026-11-14T12:45:00+01:00",
-      "title": "Fatto in casa per voi"
-    },
-    {
-      "start": "2026-11-14T12:45:00+01:00",
-      "stop": "2026-11-14T13:20:00+01:00",
-      "title": "Fatto in casa per voi"
-    },
-    {
-      "start": "2026-11-14T13:20:00+01:00",
-      "stop": "2026-11-14T13:55:00+01:00",
-      "title": "Fatto in casa per voi"
-    },
-    {
-      "start": "2026-11-14T13:55:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "Fatto in casa per voi"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T15:05:00+01:00",
-      "title": "Fatto in casa per voi"
-    },
-    {
-      "start": "2026-11-14T15:05:00+01:00",
-      "stop": "2026-11-14T15:40:00+01:00",
-      "title": "Fatto in casa per voi"
-    },
-    {
-      "start": "2026-11-14T15:40:00+01:00",
-      "stop": "2026-11-14T16:25:00+01:00",
-      "title": "Giusina in cucina"
-    },
-    {
-      "start": "2026-11-14T16:25:00+01:00",
-      "stop": "2026-11-14T17:10:00+01:00",
-      "title": "Giusina in cucina"
-    },
-    {
-      "start": "2026-11-14T17:10:00+01:00",
-      "stop": "2026-11-14T17:55:00+01:00",
-      "title": "Giusina in cucina"
-    },
-    {
-      "start": "2026-11-14T17:55:00+01:00",
-      "stop": "2026-11-14T18:40:00+01:00",
-      "title": "Uno Chef in fattoria"
-    },
     {
       "start": "2026-11-14T18:40:00+01:00",
       "stop": "2026-11-14T19:20:00+01:00",
@@ -9888,46 +7978,6 @@
   ],
   "Fox Business.it": [
     {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Weather Command Weekend"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Weather Command Weekend"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Weather Command Weekend"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "Power Players"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Barron's Round Table"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Power Players"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Barron's Round Table"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Kudlow Weekend"
-    },
-    {
       "start": "2026-11-14T18:00:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
       "title": "Fish"
@@ -10025,16 +8075,6 @@
   ],
   "Fox News.it": [
     {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Hosts Charlie Hurt, Rachel Campos Duffy and Griff Jenkins"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Saturday in America - Stag. 2025 - Host Kayleigh McEnany"
-    },
-    {
       "start": "2026-11-14T18:00:00+01:00",
       "stop": "2026-11-14T20:00:00+01:00",
       "title": "Host Aishah Hasnie"
@@ -10111,186 +8151,6 @@
     }
   ],
   "France 24 English.it": [
-    {
-      "start": "2026-11-14T12:15:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Arts24"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T12:44:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T12:44:00+01:00",
-      "stop": "2026-11-14T12:45:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T12:45:00+01:00",
-      "stop": "2026-11-14T12:50:00+01:00",
-      "title": "Focus"
-    },
-    {
-      "start": "2026-11-14T12:50:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Sports"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:15:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T13:15:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Guest of the day"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T13:45:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T13:45:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "The 51 Percent"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:15:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T14:15:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "A Week in France"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T14:45:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T14:45:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "The Reporter's Week"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T15:09:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T15:09:00+01:00",
-      "stop": "2026-11-14T15:10:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T15:10:00+01:00",
-      "stop": "2026-11-14T15:25:00+01:00",
-      "title": "Paris des Arts"
-    },
-    {
-      "start": "2026-11-14T15:25:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "Short Cuts"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T15:39:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T15:39:00+01:00",
-      "stop": "2026-11-14T15:40:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T15:40:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Revisited"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:14:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T16:14:00+01:00",
-      "stop": "2026-11-14T16:15:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T16:15:00+01:00",
-      "stop": "2026-11-14T16:21:00+01:00",
-      "title": "French Connections"
-    },
-    {
-      "start": "2026-11-14T16:21:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Entre Nous"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T16:44:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T16:44:00+01:00",
-      "stop": "2026-11-14T16:45:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T16:45:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Arts24"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:14:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T17:14:00+01:00",
-      "stop": "2026-11-14T17:15:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T17:15:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "Across Africa"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T17:44:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T17:44:00+01:00",
-      "stop": "2026-11-14T17:45:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T17:45:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Tete a tete"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:15:00+01:00",
-      "title": "News"
-    },
-    {
-      "start": "2026-11-14T18:15:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Spotlight"
-    },
-    {
-      "start": "2026-11-14T18:30:00+01:00",
-      "stop": "2026-11-14T18:45:00+01:00",
-      "title": "News"
-    },
     {
       "start": "2026-11-14T18:45:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
@@ -10714,146 +8574,6 @@
   ],
   "France 24.it": [
     {
-      "start": "2026-11-14T12:14:00+01:00",
-      "stop": "2026-11-14T12:41:00+01:00",
-      "title": "Aux avant-postes"
-    },
-    {
-      "start": "2026-11-14T12:41:00+01:00",
-      "stop": "2026-11-14T12:53:00+01:00",
-      "title": "En tete a tete"
-    },
-    {
-      "start": "2026-11-14T12:53:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Plan B"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "L'info du jour"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T13:45:00+01:00",
-      "title": "Paris direct : le journal"
-    },
-    {
-      "start": "2026-11-14T13:45:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Outre-mer"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:15:00+01:00",
-      "title": "Autour du monde : le journal"
-    },
-    {
-      "start": "2026-11-14T14:15:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "Une semaine en France"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T14:45:00+01:00",
-      "title": "Autour du monde : le journal"
-    },
-    {
-      "start": "2026-11-14T14:45:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Une semaine reportages"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T15:10:00+01:00",
-      "title": "Autour du monde : le journal"
-    },
-    {
-      "start": "2026-11-14T15:10:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "Ici l'Europe : on en debat"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T15:40:00+01:00",
-      "title": "Autour du monde : le journal"
-    },
-    {
-      "start": "2026-11-14T15:40:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Legendes urbaines"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:09:00+01:00",
-      "title": "Autour du monde : le journal"
-    },
-    {
-      "start": "2026-11-14T16:09:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Billet retour"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T16:40:00+01:00",
-      "title": "Autour du monde : le journal"
-    },
-    {
-      "start": "2026-11-14T16:40:00+01:00",
-      "stop": "2026-11-14T16:55:00+01:00",
-      "title": "C'est en France"
-    },
-    {
-      "start": "2026-11-14T16:55:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "L'instant mobile"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:15:00+01:00",
-      "title": "Autour du monde : le journal"
-    },
-    {
-      "start": "2026-11-14T17:15:00+01:00",
-      "stop": "2026-11-14T17:21:00+01:00",
-      "title": "#Pas2quartier"
-    },
-    {
-      "start": "2026-11-14T17:21:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "Focus"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T17:45:00+01:00",
-      "title": "Autour du monde : le journal"
-    },
-    {
-      "start": "2026-11-14T17:45:00+01:00",
-      "stop": "2026-11-14T17:51:00+01:00",
-      "title": "Les observateurs"
-    },
-    {
-      "start": "2026-11-14T17:51:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Dans les hebdos"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:15:00+01:00",
-      "title": "Au coeur de l'info : le journal"
-    },
-    {
-      "start": "2026-11-14T18:15:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "a l'affiche"
-    },
-    {
-      "start": "2026-11-14T18:30:00+01:00",
-      "stop": "2026-11-14T18:45:00+01:00",
-      "title": "Au coeur de l'info : le journal"
-    },
-    {
       "start": "2026-11-14T18:45:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
       "title": "Une semaine en France"
@@ -11205,86 +8925,6 @@
     }
   ],
   "FRISBEE.it": [
-    {
-      "start": "2026-11-14T12:15:00+01:00",
-      "stop": "2026-11-14T12:40:00+01:00",
-      "title": "Grizzy e i Lemming"
-    },
-    {
-      "start": "2026-11-14T12:40:00+01:00",
-      "stop": "2026-11-14T13:05:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T13:05:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T14:20:00+01:00",
-      "title": "Curioso come George"
-    },
-    {
-      "start": "2026-11-14T14:20:00+01:00",
-      "stop": "2026-11-14T14:45:00+01:00",
-      "title": "Curioso come George"
-    },
-    {
-      "start": "2026-11-14T14:45:00+01:00",
-      "stop": "2026-11-14T15:10:00+01:00",
-      "title": "Oggy Oggy"
-    },
-    {
-      "start": "2026-11-14T15:10:00+01:00",
-      "stop": "2026-11-14T15:35:00+01:00",
-      "title": "Oggy Oggy"
-    },
-    {
-      "start": "2026-11-14T15:35:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Mega Game DinsiemE"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Mega Game DinsiemE"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T16:55:00+01:00",
-      "title": "Mega Game DinsiemE"
-    },
-    {
-      "start": "2026-11-14T16:55:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Baby Born"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:05:00+01:00",
-      "title": "Baby Born"
-    },
-    {
-      "start": "2026-11-14T17:05:00+01:00",
-      "stop": "2026-11-14T17:35:00+01:00",
-      "title": "Curioso come George"
-    },
-    {
-      "start": "2026-11-14T17:35:00+01:00",
-      "stop": "2026-11-14T18:05:00+01:00",
-      "title": "Curioso come George"
-    },
-    {
-      "start": "2026-11-14T18:05:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Curioso come George"
-    },
-    {
-      "start": "2026-11-14T18:30:00+01:00",
-      "stop": "2026-11-14T18:45:00+01:00",
-      "title": "Super Wings"
-    },
     {
       "start": "2026-11-14T18:45:00+01:00",
       "stop": "2026-11-14T18:55:00+01:00",
@@ -11938,81 +9578,6 @@
   ],
   "Gambero Rosso HD.it": [
     {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "La mia Sardegna"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T12:55:00+01:00",
-      "title": "Wild Tomei"
-    },
-    {
-      "start": "2026-11-14T12:55:00+01:00",
-      "stop": "2026-11-14T13:25:00+01:00",
-      "title": "Neogrania - Dal campo al forno"
-    },
-    {
-      "start": "2026-11-14T13:25:00+01:00",
-      "stop": "2026-11-14T13:55:00+01:00",
-      "title": "Fuoco - Stag. 2 Ep. 5 - Tartufi"
-    },
-    {
-      "start": "2026-11-14T13:55:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "Giorgione a casa tua - Garda, Dolomiti - Stag. 10 Ep. 4 - Antonia"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T14:55:00+01:00",
-      "title": "Invita Vito"
-    },
-    {
-      "start": "2026-11-14T14:55:00+01:00",
-      "stop": "2026-11-14T15:10:00+01:00",
-      "title": "In bici con gusto"
-    },
-    {
-      "start": "2026-11-14T15:10:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "In bici con gusto"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T15:45:00+01:00",
-      "title": "In bici con gusto"
-    },
-    {
-      "start": "2026-11-14T15:45:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "In bici con gusto"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Questa terra e' la mia terra - Stag. 13 Ep. 3 - Braciola alla napoletana"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T17:05:00+01:00",
-      "title": "Il dolce sale"
-    },
-    {
-      "start": "2026-11-14T17:05:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "Le grandi cucine - Stag. 1 Ep. 3 - Deborah Corsi"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Le grandi cucine - Stag. 1 Ep. 4 - Massimiliano Mascia"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:35:00+01:00",
-      "title": "Tutto in famiglia"
-    },
-    {
       "start": "2026-11-14T18:35:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
       "title": "Neogrania - Dal campo al forno"
@@ -12215,31 +9780,6 @@
   ],
   "Giallo.it": [
     {
-      "start": "2026-11-14T11:20:00+01:00",
-      "stop": "2026-11-14T12:20:00+01:00",
-      "title": "La stagista del crimine"
-    },
-    {
-      "start": "2026-11-14T12:20:00+01:00",
-      "stop": "2026-11-14T13:20:00+01:00",
-      "title": "La stagista del crimine"
-    },
-    {
-      "start": "2026-11-14T13:20:00+01:00",
-      "stop": "2026-11-14T15:15:00+01:00",
-      "title": "Jacobs: un veterinario per agente"
-    },
-    {
-      "start": "2026-11-14T15:15:00+01:00",
-      "stop": "2026-11-14T17:10:00+01:00",
-      "title": "Vera"
-    },
-    {
-      "start": "2026-11-14T17:10:00+01:00",
-      "stop": "2026-11-14T18:10:00+01:00",
-      "title": "Ludwig"
-    },
-    {
       "start": "2026-11-14T18:10:00+01:00",
       "stop": "2026-11-14T19:10:00+01:00",
       "title": "Ludwig"
@@ -12427,41 +9967,6 @@
   ],
   "History Channel.it": [
     {
-      "start": "2026-11-14T11:30:00+01:00",
-      "stop": "2026-11-14T12:20:00+01:00",
-      "title": "Affari Di Famiglia"
-    },
-    {
-      "start": "2026-11-14T12:20:00+01:00",
-      "stop": "2026-11-14T13:10:00+01:00",
-      "title": "Affari Di Famiglia"
-    },
-    {
-      "start": "2026-11-14T13:10:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Enigmi Alieni"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:55:00+01:00",
-      "title": "Storie Top Secret con David..."
-    },
-    {
-      "start": "2026-11-14T14:55:00+01:00",
-      "stop": "2026-11-14T15:50:00+01:00",
-      "title": "World War II con Tom Hanks"
-    },
-    {
-      "start": "2026-11-14T15:50:00+01:00",
-      "stop": "2026-11-14T16:40:00+01:00",
-      "title": "World War II con Tom Hanks"
-    },
-    {
-      "start": "2026-11-14T16:40:00+01:00",
-      "stop": "2026-11-14T18:35:00+01:00",
-      "title": "La caduta: Cronache della fine del fascismo"
-    },
-    {
       "start": "2026-11-14T18:35:00+01:00",
       "stop": "2026-11-14T19:30:00+01:00",
       "title": "Affari al buio"
@@ -12563,36 +10068,6 @@
     }
   ],
   "Home And Garden TV.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Sogni in costruzione"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Sogni in costruzione"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T15:10:00+01:00",
-      "title": "Open House - La casa più bella"
-    },
-    {
-      "start": "2026-11-14T15:10:00+01:00",
-      "stop": "2026-11-14T16:15:00+01:00",
-      "title": "Open House - La casa più bella"
-    },
-    {
-      "start": "2026-11-14T16:15:00+01:00",
-      "stop": "2026-11-14T17:10:00+01:00",
-      "title": "Casa su misura"
-    },
-    {
-      "start": "2026-11-14T17:10:00+01:00",
-      "stop": "2026-11-14T18:05:00+01:00",
-      "title": "Casa su misura"
-    },
     {
       "start": "2026-11-14T18:05:00+01:00",
       "stop": "2026-11-14T18:55:00+01:00",
@@ -12826,46 +10301,6 @@
   ],
   "Horse TV HD.it": [
     {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Longines FEI Jumping Nations Cup 2023"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "FEI Icons 2"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "FEI Equestrian World 1"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "FEI Ride Originals 2026 S7"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Longines Masters of New York"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Polo Rider Cup Competition 2021"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Polo Masters Cup Dubai 2020"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Dressage Season Review 2016 2017"
-    },
-    {
       "start": "2026-11-14T18:00:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
       "title": "Event Rider Masters 2019"
@@ -12998,51 +10433,6 @@
   ],
   "Inter TV HD.it": [
     {
-      "start": "2026-11-14T12:15:00+01:00",
-      "stop": "2026-11-14T12:45:00+01:00",
-      "title": "TB Inter-Bologna 25/26"
-    },
-    {
-      "start": "2026-11-14T12:45:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Brothers of the world - Uruguay"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Inter Futbal Club - Cile"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:15:00+01:00",
-      "title": "Careers - Adriano"
-    },
-    {
-      "start": "2026-11-14T14:15:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "Da una stella all'altra pt.03"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T14:45:00+01:00",
-      "title": "From Milano to the stars pt. 5"
-    },
-    {
-      "start": "2026-11-14T14:45:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Coppie gol - Adriano, Recoba"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Inter U23-Salernitana 26/27"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "I M Trophy - Baresi"
-    },
-    {
       "start": "2026-11-14T17:30:00+01:00",
       "stop": "2026-11-14T19:30:00+01:00",
       "title": "Milan Women-Inter Women 26/27"
@@ -13170,16 +10560,6 @@
   ],
   "Iris.it": [
     {
-      "start": "2026-11-14T11:46:00+01:00",
-      "stop": "2026-11-14T14:24:00+01:00",
-      "title": "Fino a prova contraria"
-    },
-    {
-      "start": "2026-11-14T14:24:00+01:00",
-      "stop": "2026-11-14T16:54:00+01:00",
-      "title": "I Molti Santi del New Jersey"
-    },
-    {
       "start": "2026-11-14T16:54:00+01:00",
       "stop": "2026-11-14T19:10:00+01:00",
       "title": "Beverly Hills Cop - Un piedipiatti a Beverly Hills"
@@ -13306,51 +10686,6 @@
     }
   ],
   "Italia Uno.it": [
-    {
-      "start": "2026-11-14T11:54:00+01:00",
-      "stop": "2026-11-14T12:25:00+01:00",
-      "title": "Will & grace"
-    },
-    {
-      "start": "2026-11-14T12:25:00+01:00",
-      "stop": "2026-11-14T13:05:00+01:00",
-      "title": "Studio Aperto"
-    },
-    {
-      "start": "2026-11-14T13:05:00+01:00",
-      "stop": "2026-11-14T13:35:00+01:00",
-      "title": "Sport mediaset 2026"
-    },
-    {
-      "start": "2026-11-14T13:35:00+01:00",
-      "stop": "2026-11-14T14:27:00+01:00",
-      "title": "Sport Mediaset - Speciale ATP Finals"
-    },
-    {
-      "start": "2026-11-14T14:27:00+01:00",
-      "stop": "2026-11-14T15:40:00+01:00",
-      "title": "Drive up (it1)"
-    },
-    {
-      "start": "2026-11-14T15:40:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Sfida Impossibile"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T17:24:00+01:00",
-      "title": "The equalizer"
-    },
-    {
-      "start": "2026-11-14T17:24:00+01:00",
-      "stop": "2026-11-14T18:21:00+01:00",
-      "title": "The equalizer"
-    },
-    {
-      "start": "2026-11-14T18:21:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Studio Aperto Live"
-    },
     {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T18:57:00+01:00",
@@ -13633,136 +10968,6 @@
     }
   ],
   "K2.it": [
-    {
-      "start": "2026-11-14T12:05:00+01:00",
-      "stop": "2026-11-14T12:35:00+01:00",
-      "title": "Il barbiere pasticciere"
-    },
-    {
-      "start": "2026-11-14T12:35:00+01:00",
-      "stop": "2026-11-14T12:45:00+01:00",
-      "title": "Il barbiere pasticciere"
-    },
-    {
-      "start": "2026-11-14T12:45:00+01:00",
-      "stop": "2026-11-14T13:15:00+01:00",
-      "title": "Il barbiere pasticciere"
-    },
-    {
-      "start": "2026-11-14T13:15:00+01:00",
-      "stop": "2026-11-14T13:25:00+01:00",
-      "title": "Il barbiere pasticciere"
-    },
-    {
-      "start": "2026-11-14T13:25:00+01:00",
-      "stop": "2026-11-14T13:40:00+01:00",
-      "title": "Il barbiere pasticciere"
-    },
-    {
-      "start": "2026-11-14T13:40:00+01:00",
-      "stop": "2026-11-14T13:50:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T13:50:00+01:00",
-      "stop": "2026-11-14T14:05:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T14:05:00+01:00",
-      "stop": "2026-11-14T14:20:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T14:20:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T14:40:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T14:40:00+01:00",
-      "stop": "2026-11-14T14:55:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T14:55:00+01:00",
-      "stop": "2026-11-14T15:05:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T15:05:00+01:00",
-      "stop": "2026-11-14T15:20:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T15:20:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T15:45:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T15:45:00+01:00",
-      "stop": "2026-11-14T15:55:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T15:55:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:15:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T16:15:00+01:00",
-      "stop": "2026-11-14T16:45:00+01:00",
-      "title": "Il barbiere pasticciere"
-    },
-    {
-      "start": "2026-11-14T16:45:00+01:00",
-      "stop": "2026-11-14T17:10:00+01:00",
-      "title": "Il barbiere pasticciere"
-    },
-    {
-      "start": "2026-11-14T17:10:00+01:00",
-      "stop": "2026-11-14T17:40:00+01:00",
-      "title": "Il barbiere pasticciere"
-    },
-    {
-      "start": "2026-11-14T17:40:00+01:00",
-      "stop": "2026-11-14T17:50:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T17:50:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:15:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T18:15:00+01:00",
-      "stop": "2026-11-14T18:25:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
-    {
-      "start": "2026-11-14T18:25:00+01:00",
-      "stop": "2026-11-14T18:40:00+01:00",
-      "title": "Alvinnn!!! And the Chipmunks"
-    },
     {
       "start": "2026-11-14T18:40:00+01:00",
       "stop": "2026-11-14T18:55:00+01:00",
@@ -14461,16 +11666,6 @@
   ],
   "La 5.it": [
     {
-      "start": "2026-11-14T12:09:00+01:00",
-      "stop": "2026-11-14T15:36:00+01:00",
-      "title": "Verissimo"
-    },
-    {
-      "start": "2026-11-14T15:36:00+01:00",
-      "stop": "2026-11-14T17:34:00+01:00",
-      "title": "All'improvviso... l'amore"
-    },
-    {
       "start": "2026-11-14T17:34:00+01:00",
       "stop": "2026-11-14T18:51:00+01:00",
       "title": "Terra Amara"
@@ -14668,16 +11863,6 @@
   ],
   "LA7 Cinema.it": [
     {
-      "start": "2026-11-14T11:55:00+01:00",
-      "stop": "2026-11-14T14:35:00+01:00",
-      "title": "L'età dell'innocenza"
-    },
-    {
-      "start": "2026-11-14T14:35:00+01:00",
-      "stop": "2026-11-14T16:50:00+01:00",
-      "title": "Arrival"
-    },
-    {
       "start": "2026-11-14T16:50:00+01:00",
       "stop": "2026-11-14T19:15:00+01:00",
       "title": "Le verità nascoste"
@@ -14784,41 +11969,6 @@
     }
   ],
   "LA7.it": [
-    {
-      "start": "2026-11-14T12:05:00+01:00",
-      "stop": "2026-11-14T12:55:00+01:00",
-      "title": "L'Aria Che Tira Diario"
-    },
-    {
-      "start": "2026-11-14T12:55:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "LIKE, tutto ciò che piace"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T14:10:00+01:00",
-      "title": "TG La7 Edizione Delle 13.30"
-    },
-    {
-      "start": "2026-11-14T14:10:00+01:00",
-      "stop": "2026-11-14T14:15:00+01:00",
-      "title": "La7 e Corrado Augias presentano M la serie"
-    },
-    {
-      "start": "2026-11-14T14:15:00+01:00",
-      "stop": "2026-11-14T15:05:00+01:00",
-      "title": "M - Il figlio del secolo"
-    },
-    {
-      "start": "2026-11-14T15:05:00+01:00",
-      "stop": "2026-11-14T16:10:00+01:00",
-      "title": "M - Il figlio del secolo"
-    },
-    {
-      "start": "2026-11-14T16:10:00+01:00",
-      "stop": "2026-11-14T16:40:00+01:00",
-      "title": "La7 e Corrado Augias presentano M la serie"
-    },
     {
       "start": "2026-11-14T16:40:00+01:00",
       "stop": "2026-11-14T20:00:00+01:00",
@@ -15082,41 +12232,6 @@
   ],
   "Mediaset 27.it": [
     {
-      "start": "2026-11-14T11:14:00+01:00",
-      "stop": "2026-11-14T12:16:00+01:00",
-      "title": "La casa nella prateria"
-    },
-    {
-      "start": "2026-11-14T12:16:00+01:00",
-      "stop": "2026-11-14T13:12:00+01:00",
-      "title": "La signora del West"
-    },
-    {
-      "start": "2026-11-14T13:12:00+01:00",
-      "stop": "2026-11-14T14:10:00+01:00",
-      "title": "La signora del West"
-    },
-    {
-      "start": "2026-11-14T14:10:00+01:00",
-      "stop": "2026-11-14T15:03:00+01:00",
-      "title": "La signora del West"
-    },
-    {
-      "start": "2026-11-14T15:03:00+01:00",
-      "stop": "2026-11-14T16:11:00+01:00",
-      "title": "La casa nella prateria"
-    },
-    {
-      "start": "2026-11-14T16:11:00+01:00",
-      "stop": "2026-11-14T17:07:00+01:00",
-      "title": "La casa nella prateria"
-    },
-    {
-      "start": "2026-11-14T17:07:00+01:00",
-      "stop": "2026-11-14T18:07:00+01:00",
-      "title": "La casa nella prateria"
-    },
-    {
       "start": "2026-11-14T18:07:00+01:00",
       "stop": "2026-11-14T19:35:00+01:00",
       "title": "Colombo"
@@ -15304,26 +12419,6 @@
   ],
   "Mediaset Extra.it": [
     {
-      "start": "2026-11-14T09:00:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Grande Fratello Vip Live"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T14:44:00+01:00",
-      "title": "Grande Fratello Vip Live"
-    },
-    {
-      "start": "2026-11-14T14:44:00+01:00",
-      "stop": "2026-11-14T16:44:00+01:00",
-      "title": "Grande Fratello Vip Live"
-    },
-    {
-      "start": "2026-11-14T16:44:00+01:00",
-      "stop": "2026-11-14T18:44:00+01:00",
-      "title": "Grande Fratello Vip Live"
-    },
-    {
       "start": "2026-11-14T18:44:00+01:00",
       "stop": "2026-11-14T21:19:00+01:00",
       "title": "Grande Fratello Vip Live"
@@ -15400,66 +12495,6 @@
     }
   ],
   "Mediaset Italia Due.it": [
-    {
-      "start": "2026-11-14T10:55:00+01:00",
-      "stop": "2026-11-14T12:57:00+01:00",
-      "title": "Lupin: il pericolo e' il mio mestiere"
-    },
-    {
-      "start": "2026-11-14T12:57:00+01:00",
-      "stop": "2026-11-14T13:24:00+01:00",
-      "title": "The Goldbergs"
-    },
-    {
-      "start": "2026-11-14T13:24:00+01:00",
-      "stop": "2026-11-14T13:58:00+01:00",
-      "title": "The Goldbergs"
-    },
-    {
-      "start": "2026-11-14T13:58:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "The Goldbergs"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T14:56:00+01:00",
-      "title": "The Goldbergs"
-    },
-    {
-      "start": "2026-11-14T14:56:00+01:00",
-      "stop": "2026-11-14T15:24:00+01:00",
-      "title": "The Goldbergs"
-    },
-    {
-      "start": "2026-11-14T15:24:00+01:00",
-      "stop": "2026-11-14T15:54:00+01:00",
-      "title": "The Goldbergs"
-    },
-    {
-      "start": "2026-11-14T15:54:00+01:00",
-      "stop": "2026-11-14T16:23:00+01:00",
-      "title": "Dragon Ball Super"
-    },
-    {
-      "start": "2026-11-14T16:23:00+01:00",
-      "stop": "2026-11-14T16:53:00+01:00",
-      "title": "Dragon Ball Super"
-    },
-    {
-      "start": "2026-11-14T16:53:00+01:00",
-      "stop": "2026-11-14T17:21:00+01:00",
-      "title": "Dragon Ball Super"
-    },
-    {
-      "start": "2026-11-14T17:21:00+01:00",
-      "stop": "2026-11-14T17:51:00+01:00",
-      "title": "Dragon Ball Super"
-    },
-    {
-      "start": "2026-11-14T17:51:00+01:00",
-      "stop": "2026-11-14T18:20:00+01:00",
-      "title": "Dragon Ball Super"
-    },
     {
       "start": "2026-11-14T18:20:00+01:00",
       "stop": "2026-11-14T18:49:00+01:00",
@@ -15828,21 +12863,6 @@
   ],
   "Milan TV.it": [
     {
-      "start": "2026-11-14T11:40:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Genoa v Milan 26/27"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "6 Per Sempre Baresi"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T17:10:00+01:00",
-      "title": "Villavalle v Milan F."
-    },
-    {
       "start": "2026-11-14T17:10:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
       "title": "U20-Milan Juventus"
@@ -15884,26 +12904,6 @@
     }
   ],
   "Motor Trend.it": [
-    {
-      "start": "2026-11-14T11:35:00+01:00",
-      "stop": "2026-11-14T13:20:00+01:00",
-      "title": "Reperti d'assalto"
-    },
-    {
-      "start": "2026-11-14T13:20:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "Top Gear"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T15:40:00+01:00",
-      "title": "Top Gear"
-    },
-    {
-      "start": "2026-11-14T15:40:00+01:00",
-      "stop": "2026-11-14T17:35:00+01:00",
-      "title": "Reperti d'assalto"
-    },
     {
       "start": "2026-11-14T17:35:00+01:00",
       "stop": "2026-11-14T19:25:00+01:00",
@@ -15971,51 +12971,6 @@
     }
   ],
   "MTV.it": [
-    {
-      "start": "2026-11-14T11:35:00+01:00",
-      "stop": "2026-11-14T12:20:00+01:00",
-      "title": "Teen Mom: The Next Chapter"
-    },
-    {
-      "start": "2026-11-14T12:20:00+01:00",
-      "stop": "2026-11-14T13:05:00+01:00",
-      "title": "Dallas Cowboys Cheerleaders: Making..."
-    },
-    {
-      "start": "2026-11-14T13:05:00+01:00",
-      "stop": "2026-11-14T13:50:00+01:00",
-      "title": "Dallas Cowboys Cheerleaders: Making..."
-    },
-    {
-      "start": "2026-11-14T13:50:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "Dallas Cowboys Cheerleaders: Making..."
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T15:20:00+01:00",
-      "title": "Ink Master: Hometown Heroes - Stag. 17 Ep. 1 - Inizia la sfida"
-    },
-    {
-      "start": "2026-11-14T15:20:00+01:00",
-      "stop": "2026-11-14T16:05:00+01:00",
-      "title": "Ink Master: Hometown Heroes - Stag. 17 Ep. 2 - Tutto da rifare"
-    },
-    {
-      "start": "2026-11-14T16:05:00+01:00",
-      "stop": "2026-11-14T16:55:00+01:00",
-      "title": "Catfish: False Identita'"
-    },
-    {
-      "start": "2026-11-14T16:55:00+01:00",
-      "stop": "2026-11-14T17:40:00+01:00",
-      "title": "Catfish: False Identita'"
-    },
-    {
-      "start": "2026-11-14T17:40:00+01:00",
-      "stop": "2026-11-14T18:25:00+01:00",
-      "title": "Catfish: False Identita'"
-    },
     {
       "start": "2026-11-14T18:25:00+01:00",
       "stop": "2026-11-14T19:10:00+01:00",
@@ -16188,131 +13143,6 @@
     }
   ],
   "NHK World TV HD.it": [
-    {
-      "start": "2026-11-14T12:10:00+01:00",
-      "stop": "2026-11-14T12:40:00+01:00",
-      "title": "Design X Stories"
-    },
-    {
-      "start": "2026-11-14T12:40:00+01:00",
-      "stop": "2026-11-14T12:50:00+01:00",
-      "title": "u&i"
-    },
-    {
-      "start": "2026-11-14T12:50:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Viewpoint Science"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:10:00+01:00",
-      "title": "NHK Newsline"
-    },
-    {
-      "start": "2026-11-14T13:10:00+01:00",
-      "stop": "2026-11-14T13:20:00+01:00",
-      "title": "Trails to Oishii Tokyo 10min."
-    },
-    {
-      "start": "2026-11-14T13:20:00+01:00",
-      "stop": "2026-11-14T13:25:00+01:00",
-      "title": "Hit the Road"
-    },
-    {
-      "start": "2026-11-14T13:25:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Ukiyo-e Edo-Life"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T13:57:00+01:00",
-      "title": "Grand Sumo Highlights"
-    },
-    {
-      "start": "2026-11-14T13:57:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Sumopedia"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:10:00+01:00",
-      "title": "NHK Newsline"
-    },
-    {
-      "start": "2026-11-14T14:10:00+01:00",
-      "stop": "2026-11-14T14:25:00+01:00",
-      "title": "Bosai: Science That Can Save..."
-    },
-    {
-      "start": "2026-11-14T14:25:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "Design Museum Japan"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Kabuki Kool"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T15:10:00+01:00",
-      "title": "NHK Newsline"
-    },
-    {
-      "start": "2026-11-14T15:10:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Building the Sun"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:10:00+01:00",
-      "title": "NHK Newsline"
-    },
-    {
-      "start": "2026-11-14T16:10:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Nations in Peril: Climate Security"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:10:00+01:00",
-      "title": "NHK Newsline"
-    },
-    {
-      "start": "2026-11-14T17:10:00+01:00",
-      "stop": "2026-11-14T17:20:00+01:00",
-      "title": "Trails to Oishii Tokyo 10min."
-    },
-    {
-      "start": "2026-11-14T17:20:00+01:00",
-      "stop": "2026-11-14T17:25:00+01:00",
-      "title": "Hit the Road"
-    },
-    {
-      "start": "2026-11-14T17:25:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "Ukiyo-e Edo-Life"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T17:57:00+01:00",
-      "title": "Grand Sumo Highlights"
-    },
-    {
-      "start": "2026-11-14T17:57:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Sumopedia"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:10:00+01:00",
-      "title": "NHK Newsline"
-    },
-    {
-      "start": "2026-11-14T18:10:00+01:00",
-      "stop": "2026-11-14T18:40:00+01:00",
-      "title": "Design X Stories"
-    },
     {
       "start": "2026-11-14T18:40:00+01:00",
       "stop": "2026-11-14T18:50:00+01:00",
@@ -16586,61 +13416,6 @@
   ],
   "Nick Junior.it": [
     {
-      "start": "2026-11-14T11:35:00+01:00",
-      "stop": "2026-11-14T13:05:00+01:00",
-      "title": "Barbapapà: Una grande famiglia felice"
-    },
-    {
-      "start": "2026-11-14T13:05:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Blaze e le mega macchine"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T13:50:00+01:00",
-      "title": "Blaze e le mega macchine"
-    },
-    {
-      "start": "2026-11-14T13:50:00+01:00",
-      "stop": "2026-11-14T14:15:00+01:00",
-      "title": "Blaze e le Mega Macchine"
-    },
-    {
-      "start": "2026-11-14T14:15:00+01:00",
-      "stop": "2026-11-14T14:50:00+01:00",
-      "title": "Barbapapà: Una grande famiglia felice"
-    },
-    {
-      "start": "2026-11-14T14:50:00+01:00",
-      "stop": "2026-11-14T15:15:00+01:00",
-      "title": "Deer Squad"
-    },
-    {
-      "start": "2026-11-14T15:15:00+01:00",
-      "stop": "2026-11-14T15:45:00+01:00",
-      "title": "Blue's Clues & You!"
-    },
-    {
-      "start": "2026-11-14T15:45:00+01:00",
-      "stop": "2026-11-14T16:10:00+01:00",
-      "title": "Santiago Dei Mari"
-    },
-    {
-      "start": "2026-11-14T16:10:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Santiago Dei Mari"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T17:35:00+01:00",
-      "title": "DORA"
-    },
-    {
-      "start": "2026-11-14T17:35:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Barbapapà: Una grande famiglia felice"
-    },
-    {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
       "title": "PAW Patrol"
@@ -16762,86 +13537,6 @@
     }
   ],
   "Nickelodeon.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:25:00+01:00",
-      "title": "I Thunderman"
-    },
-    {
-      "start": "2026-11-14T12:25:00+01:00",
-      "stop": "2026-11-14T12:50:00+01:00",
-      "title": "I Thunderman"
-    },
-    {
-      "start": "2026-11-14T12:50:00+01:00",
-      "stop": "2026-11-14T13:10:00+01:00",
-      "title": "Henry Danger"
-    },
-    {
-      "start": "2026-11-14T13:10:00+01:00",
-      "stop": "2026-11-14T13:35:00+01:00",
-      "title": "Henry Danger"
-    },
-    {
-      "start": "2026-11-14T13:35:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "The Boss Baby"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:25:00+01:00",
-      "title": "The Boss Baby"
-    },
-    {
-      "start": "2026-11-14T14:25:00+01:00",
-      "stop": "2026-11-14T14:50:00+01:00",
-      "title": "Lo Show di Patrick Stella"
-    },
-    {
-      "start": "2026-11-14T14:50:00+01:00",
-      "stop": "2026-11-14T15:10:00+01:00",
-      "title": "SpongeBob"
-    },
-    {
-      "start": "2026-11-14T15:10:00+01:00",
-      "stop": "2026-11-14T15:35:00+01:00",
-      "title": "SpongeBob"
-    },
-    {
-      "start": "2026-11-14T15:35:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "I Marsupilami"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:25:00+01:00",
-      "title": "I Marsupilami"
-    },
-    {
-      "start": "2026-11-14T16:25:00+01:00",
-      "stop": "2026-11-14T16:50:00+01:00",
-      "title": "A casa dei Loud"
-    },
-    {
-      "start": "2026-11-14T16:50:00+01:00",
-      "stop": "2026-11-14T17:15:00+01:00",
-      "title": "A casa dei Loud"
-    },
-    {
-      "start": "2026-11-14T17:15:00+01:00",
-      "stop": "2026-11-14T17:40:00+01:00",
-      "title": "The Boss Baby"
-    },
-    {
-      "start": "2026-11-14T17:40:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "The Boss Baby"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:25:00+01:00",
-      "title": "I Thunderman"
-    },
     {
       "start": "2026-11-14T18:25:00+01:00",
       "stop": "2026-11-14T18:50:00+01:00",
@@ -17190,26 +13885,6 @@
   ],
   "NOVE.it": [
     {
-      "start": "2026-11-14T12:15:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Cash or Trash - Chi offre di più?"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "The Cage - Prendi e scappa"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T16:55:00+01:00",
-      "title": "Il monaco"
-    },
-    {
-      "start": "2026-11-14T16:55:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Little Big Italy"
-    },
-    {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T20:00:00+01:00",
       "title": "Little Big Italy"
@@ -17412,66 +14087,6 @@
   ],
   "Pesca e Caccia.it": [
     {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Gioia Lake e Jurassic Lake"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Ai confini del mondo 1"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Il mio Surf"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Pura vida 1"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:35:00+01:00",
-      "title": "Acque veloci 1"
-    },
-    {
-      "start": "2026-11-14T14:35:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Spinfly 1"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Nuove cronache di pesca in apnea 1"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Spinning Specialist 1"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "I signori della pesca a mosca 2"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "Destinazione kayak 3 - Stag. 3 Ep. 1"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "In mare dalla riva 2"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Lenze tese con Mauro Pitorri 2"
-    },
-    {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
       "title": "Sotto lo stesso mare"
@@ -17629,31 +14244,6 @@
   ],
   "QVC.it": [
     {
-      "start": "2026-11-14T11:00:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Buongiorno bellezza!"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Palazzo Moda, stile tra arte e natura"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Una casa da vivere con Samsung"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Ultimate, alleati del benessere"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Alpha H, gli specialisti della pelle"
-    },
-    {
       "start": "2026-11-14T18:00:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
       "title": "Palazzo Moda, stile tra arte e natura"
@@ -17680,21 +14270,6 @@
     }
   ],
   "radiofreccia.it": [
-    {
-      "start": "2026-11-14T10:00:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Good vibrations"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Electric Ladyland"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Note di stile"
-    },
     {
       "start": "2026-11-14T18:00:00+01:00",
       "stop": "2026-11-14T21:00:00+01:00",
@@ -17727,26 +14302,6 @@
     }
   ],
   "RadioItaliaTV.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "La classifica italiana"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Radio Italia best"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Radio Italia new"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:20:00+01:00",
-      "title": "Radio Italia Music Week"
-    },
     {
       "start": "2026-11-14T18:20:00+01:00",
       "stop": "2026-11-14T22:00:00+01:00",
@@ -17824,16 +14379,6 @@
     }
   ],
   "Radionorba TV.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T13:55:00+01:00",
-      "title": "LIVE Daniela Vantaggiato"
-    },
-    {
-      "start": "2026-11-14T13:55:00+01:00",
-      "stop": "2026-11-14T16:55:00+01:00",
-      "title": "Il Mezzogiorno con Radio Norba"
-    },
     {
       "start": "2026-11-14T16:55:00+01:00",
       "stop": "2026-11-14T19:55:00+01:00",
@@ -17921,51 +14466,6 @@
     }
   ],
   "Rai 1.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Linea Verde Storie - Emilia Romagna - 26"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Linea Verde Italia - Chi Torna E Chi Resta: I Borghi Della Provincia Di Latina - 26"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "TG 1"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T15:10:00+01:00",
-      "title": "Bar Centrale"
-    },
-    {
-      "start": "2026-11-14T15:10:00+01:00",
-      "stop": "2026-11-14T16:05:00+01:00",
-      "title": "Il paradiso delle signore"
-    },
-    {
-      "start": "2026-11-14T16:05:00+01:00",
-      "stop": "2026-11-14T16:47:00+01:00",
-      "title": "A Sua Immagine"
-    },
-    {
-      "start": "2026-11-14T16:47:00+01:00",
-      "stop": "2026-11-14T16:55:00+01:00",
-      "title": "Che Tempo Fa"
-    },
-    {
-      "start": "2026-11-14T16:55:00+01:00",
-      "stop": "2026-11-14T17:05:00+01:00",
-      "title": "TG1"
-    },
-    {
-      "start": "2026-11-14T17:05:00+01:00",
-      "stop": "2026-11-14T18:40:00+01:00",
-      "title": "Ciao Maschio"
-    },
     {
       "start": "2026-11-14T18:40:00+01:00",
       "stop": "2026-11-14T20:00:00+01:00",
@@ -18234,51 +14734,6 @@
   ],
   "Rai 2.it": [
     {
-      "start": "2026-11-14T10:00:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Sci Alpino: Coppa Del Mondo Femminile - 26"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "TG2 GIORNO"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "TG2 Week-End"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "Playlist"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Storie Al Bivio Weekend"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:50:00+01:00",
-      "title": "Bellissima Italia Generazione Green - Valchiavenna"
-    },
-    {
-      "start": "2026-11-14T17:50:00+01:00",
-      "stop": "2026-11-14T17:55:00+01:00",
-      "title": "Gli Imperdibili"
-    },
-    {
-      "start": "2026-11-14T17:55:00+01:00",
-      "stop": "2026-11-14T17:58:00+01:00",
-      "title": "TG2 L.I.S."
-    },
-    {
-      "start": "2026-11-14T17:58:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Meteo 2"
-    },
-    {
       "start": "2026-11-14T18:00:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
       "title": "Dribbling"
@@ -18535,66 +14990,6 @@
     }
   ],
   "Rai 3.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:22:00+01:00",
-      "title": "TG3"
-    },
-    {
-      "start": "2026-11-14T12:22:00+01:00",
-      "stop": "2026-11-14T12:25:00+01:00",
-      "title": "TG3 Persone"
-    },
-    {
-      "start": "2026-11-14T12:25:00+01:00",
-      "stop": "2026-11-14T12:55:00+01:00",
-      "title": "TGR Il Settimanale"
-    },
-    {
-      "start": "2026-11-14T12:55:00+01:00",
-      "stop": "2026-11-14T13:25:00+01:00",
-      "title": "TGR Mezzogiorno Italia"
-    },
-    {
-      "start": "2026-11-14T13:25:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "TGR BellItalia"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:19:00+01:00",
-      "title": "TG Regione"
-    },
-    {
-      "start": "2026-11-14T14:19:00+01:00",
-      "stop": "2026-11-14T14:20:00+01:00",
-      "title": "TG Regione Meteo"
-    },
-    {
-      "start": "2026-11-14T14:20:00+01:00",
-      "stop": "2026-11-14T14:45:00+01:00",
-      "title": "TG3"
-    },
-    {
-      "start": "2026-11-14T14:45:00+01:00",
-      "stop": "2026-11-14T14:49:00+01:00",
-      "title": "TG3 Pixel"
-    },
-    {
-      "start": "2026-11-14T14:49:00+01:00",
-      "stop": "2026-11-14T14:55:00+01:00",
-      "title": "Meteo 3"
-    },
-    {
-      "start": "2026-11-14T14:55:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "TG3 L.I.S."
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T16:40:00+01:00",
-      "title": "Tv Talk"
-    },
     {
       "start": "2026-11-14T16:40:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
@@ -18858,41 +15253,6 @@
   ],
   "Rai 4.it": [
     {
-      "start": "2026-11-14T11:51:00+01:00",
-      "stop": "2026-11-14T12:35:00+01:00",
-      "title": "Hudson & Rex"
-    },
-    {
-      "start": "2026-11-14T12:35:00+01:00",
-      "stop": "2026-11-14T13:22:00+01:00",
-      "title": "Hudson & Rex"
-    },
-    {
-      "start": "2026-11-14T13:22:00+01:00",
-      "stop": "2026-11-14T14:06:00+01:00",
-      "title": "Hudson & Rex"
-    },
-    {
-      "start": "2026-11-14T14:06:00+01:00",
-      "stop": "2026-11-14T15:38:00+01:00",
-      "title": "Take Cover"
-    },
-    {
-      "start": "2026-11-14T15:38:00+01:00",
-      "stop": "2026-11-14T15:41:00+01:00",
-      "title": "Gli Imperdibili"
-    },
-    {
-      "start": "2026-11-14T15:41:00+01:00",
-      "stop": "2026-11-14T16:45:00+01:00",
-      "title": "Delitti in Paradiso"
-    },
-    {
-      "start": "2026-11-14T16:45:00+01:00",
-      "stop": "2026-11-14T17:46:00+01:00",
-      "title": "Delitti in Paradiso"
-    },
-    {
       "start": "2026-11-14T17:46:00+01:00",
       "stop": "2026-11-14T18:49:00+01:00",
       "title": "Delitti in Paradiso"
@@ -19114,46 +15474,6 @@
     }
   ],
   "Rai 5.it": [
-    {
-      "start": "2026-11-14T11:51:00+01:00",
-      "stop": "2026-11-14T12:44:00+01:00",
-      "title": "Sciarada - Il Circolo Delle Parole: ODB, L'Inesauribile Oreste Del Buono"
-    },
-    {
-      "start": "2026-11-14T12:44:00+01:00",
-      "stop": "2026-11-14T12:49:00+01:00",
-      "title": "Gli Imperdibili"
-    },
-    {
-      "start": "2026-11-14T12:49:00+01:00",
-      "stop": "2026-11-14T13:52:00+01:00",
-      "title": "Scena Aperta - Tra Palco E Podio Amore O Odio? - 26"
-    },
-    {
-      "start": "2026-11-14T13:52:00+01:00",
-      "stop": "2026-11-14T13:55:00+01:00",
-      "title": "Evolution - Il Viaggio Di Darwin Puntata"
-    },
-    {
-      "start": "2026-11-14T13:55:00+01:00",
-      "stop": "2026-11-14T14:55:00+01:00",
-      "title": "Le Isole Scozzesi Con Ben Fogle"
-    },
-    {
-      "start": "2026-11-14T14:55:00+01:00",
-      "stop": "2026-11-14T15:45:00+01:00",
-      "title": "America'S Wild Seasons"
-    },
-    {
-      "start": "2026-11-14T15:45:00+01:00",
-      "stop": "2026-11-14T17:32:00+01:00",
-      "title": "Kilimangiaro Collection 2026"
-    },
-    {
-      "start": "2026-11-14T17:32:00+01:00",
-      "stop": "2026-11-14T18:02:00+01:00",
-      "title": "Intelligenze Umane. The Dark Side - DIAlogo Con Federico Ruffo (Pt.1)"
-    },
     {
       "start": "2026-11-14T18:02:00+01:00",
       "stop": "2026-11-14T20:24:00+01:00",
@@ -19396,136 +15716,6 @@
     }
   ],
   "Rai Gulp.it": [
-    {
-      "start": "2026-11-14T12:05:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Mia and Me"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T12:55:00+01:00",
-      "title": "Mia and Me"
-    },
-    {
-      "start": "2026-11-14T12:55:00+01:00",
-      "stop": "2026-11-14T13:20:00+01:00",
-      "title": "Mystery Lane"
-    },
-    {
-      "start": "2026-11-14T13:20:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Robin Hood"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T13:45:00+01:00",
-      "title": "Robin Hood"
-    },
-    {
-      "start": "2026-11-14T13:45:00+01:00",
-      "stop": "2026-11-14T13:55:00+01:00",
-      "title": "Robin Hood"
-    },
-    {
-      "start": "2026-11-14T13:55:00+01:00",
-      "stop": "2026-11-14T14:10:00+01:00",
-      "title": "Robin Hood"
-    },
-    {
-      "start": "2026-11-14T14:10:00+01:00",
-      "stop": "2026-11-14T14:35:00+01:00",
-      "title": "Ronja - Figlia di brigante"
-    },
-    {
-      "start": "2026-11-14T14:35:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Ronja - Figlia di brigante"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T15:15:00+01:00",
-      "title": "Food Wizards"
-    },
-    {
-      "start": "2026-11-14T15:15:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "Food Wizards"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T15:55:00+01:00",
-      "title": "Cercami A Parigi - Scarpette E Scivoloni"
-    },
-    {
-      "start": "2026-11-14T15:55:00+01:00",
-      "stop": "2026-11-14T16:20:00+01:00",
-      "title": "Cercami A Parigi - Prove Segrete"
-    },
-    {
-      "start": "2026-11-14T16:20:00+01:00",
-      "stop": "2026-11-14T16:45:00+01:00",
-      "title": "Home Sweet Rome! - L'Incidente"
-    },
-    {
-      "start": "2026-11-14T16:45:00+01:00",
-      "stop": "2026-11-14T17:10:00+01:00",
-      "title": "Mermaid Magic"
-    },
-    {
-      "start": "2026-11-14T17:10:00+01:00",
-      "stop": "2026-11-14T17:15:00+01:00",
-      "title": "Prova a non ridere"
-    },
-    {
-      "start": "2026-11-14T17:15:00+01:00",
-      "stop": "2026-11-14T17:25:00+01:00",
-      "title": "Prova a non ridere"
-    },
-    {
-      "start": "2026-11-14T17:25:00+01:00",
-      "stop": "2026-11-14T17:35:00+01:00",
-      "title": "Prova a non ridere"
-    },
-    {
-      "start": "2026-11-14T17:35:00+01:00",
-      "stop": "2026-11-14T17:40:00+01:00",
-      "title": "Rabbids Invasion"
-    },
-    {
-      "start": "2026-11-14T17:40:00+01:00",
-      "stop": "2026-11-14T17:50:00+01:00",
-      "title": "Rabbids Invasion"
-    },
-    {
-      "start": "2026-11-14T17:50:00+01:00",
-      "stop": "2026-11-14T17:55:00+01:00",
-      "title": "Rabbids Invasion"
-    },
-    {
-      "start": "2026-11-14T17:55:00+01:00",
-      "stop": "2026-11-14T18:05:00+01:00",
-      "title": "Rabbids Invasion"
-    },
-    {
-      "start": "2026-11-14T18:05:00+01:00",
-      "stop": "2026-11-14T18:10:00+01:00",
-      "title": "Rabbids Invasion"
-    },
-    {
-      "start": "2026-11-14T18:10:00+01:00",
-      "stop": "2026-11-14T18:20:00+01:00",
-      "title": "Rabbids Invasion"
-    },
-    {
-      "start": "2026-11-14T18:20:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Underdog e i Canine Defenders"
-    },
-    {
-      "start": "2026-11-14T18:30:00+01:00",
-      "stop": "2026-11-14T18:40:00+01:00",
-      "title": "Underdog e i Canine Defenders"
-    },
     {
       "start": "2026-11-14T18:40:00+01:00",
       "stop": "2026-11-14T18:55:00+01:00",
@@ -20329,26 +16519,6 @@
   ],
   "Rai Movie.it": [
     {
-      "start": "2026-11-14T12:15:00+01:00",
-      "stop": "2026-11-14T13:55:00+01:00",
-      "title": "Sfida senza regole"
-    },
-    {
-      "start": "2026-11-14T13:55:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Gli Imperdibili"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T15:50:00+01:00",
-      "title": "Fidanzata in affitto"
-    },
-    {
-      "start": "2026-11-14T15:50:00+01:00",
-      "stop": "2026-11-14T17:45:00+01:00",
-      "title": "Io e Marley"
-    },
-    {
       "start": "2026-11-14T17:45:00+01:00",
       "stop": "2026-11-14T19:40:00+01:00",
       "title": "Romeo and Juliet"
@@ -20475,111 +16645,6 @@
     }
   ],
   "Rai News 24.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "TG EDIZIONE PRINCIPALE"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "SPORT 24"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:25:00+01:00",
-      "title": "TITOLI + TG GIORNO"
-    },
-    {
-      "start": "2026-11-14T13:25:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "METEO"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T13:40:00+01:00",
-      "title": "TG IN INGLESE"
-    },
-    {
-      "start": "2026-11-14T13:40:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "TUTTIFRUTTI"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "TITOLI + TG GIORNO"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T14:45:00+01:00",
-      "title": "SOMMARIO + TG GIORNO BREVE"
-    },
-    {
-      "start": "2026-11-14T14:45:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "RUBRICA SUPERCINEMA + LA VIA DEI LIBRI"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T15:26:00+01:00",
-      "title": "POMERIGGIO 24"
-    },
-    {
-      "start": "2026-11-14T15:26:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "METEO"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T15:53:00+01:00",
-      "title": "POMERIGGIO 24"
-    },
-    {
-      "start": "2026-11-14T15:53:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "NON SOLO 8 MARZO"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:23:00+01:00",
-      "title": "TITOLI + TG GIORNO"
-    },
-    {
-      "start": "2026-11-14T16:23:00+01:00",
-      "stop": "2026-11-14T16:26:00+01:00",
-      "title": "TG UCRAINO"
-    },
-    {
-      "start": "2026-11-14T16:26:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "METEO"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "POMERIGGIO 24 + RUBR. LIVE + RUBR. SOCIA"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "TITOLI + TG GIORNO"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T17:33:00+01:00",
-      "title": "SERA 24 ANTEPRIMA"
-    },
-    {
-      "start": "2026-11-14T17:33:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "ECONOMIA 24"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "SERA 24"
-    },
     {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
@@ -21188,46 +17253,6 @@
   ],
   "Rai Premium.it": [
     {
-      "start": "2026-11-14T12:05:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "L'Ispettore Coliandro"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T15:40:00+01:00",
-      "title": "Crociere di nozze"
-    },
-    {
-      "start": "2026-11-14T15:40:00+01:00",
-      "stop": "2026-11-14T16:05:00+01:00",
-      "title": "I Mestieri Di Mirko - La Pietra Che Respira"
-    },
-    {
-      "start": "2026-11-14T16:05:00+01:00",
-      "stop": "2026-11-14T16:10:00+01:00",
-      "title": "Gli Imperdibili"
-    },
-    {
-      "start": "2026-11-14T16:10:00+01:00",
-      "stop": "2026-11-14T16:15:00+01:00",
-      "title": "Anica - Appuntamento Al Cinema"
-    },
-    {
-      "start": "2026-11-14T16:15:00+01:00",
-      "stop": "2026-11-14T16:55:00+01:00",
-      "title": "Il paradiso delle signore"
-    },
-    {
-      "start": "2026-11-14T16:55:00+01:00",
-      "stop": "2026-11-14T17:40:00+01:00",
-      "title": "Il paradiso delle signore"
-    },
-    {
-      "start": "2026-11-14T17:40:00+01:00",
-      "stop": "2026-11-14T18:20:00+01:00",
-      "title": "Il paradiso delle signore"
-    },
-    {
       "start": "2026-11-14T18:20:00+01:00",
       "stop": "2026-11-14T19:05:00+01:00",
       "title": "Il paradiso delle signore"
@@ -21425,36 +17450,6 @@
   ],
   "Rai Sport.it": [
     {
-      "start": "2026-11-14T12:10:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Giochi Olimpici Giovanili 2026 - 14a Giornata"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T14:15:00+01:00",
-      "title": "Sci Alpino: Coppa Del Mondo 2026-2027 - Levi: Slalom Femminile (2a Manche)"
-    },
-    {
-      "start": "2026-11-14T14:15:00+01:00",
-      "stop": "2026-11-14T14:20:00+01:00",
-      "title": "Gli Imperdibili"
-    },
-    {
-      "start": "2026-11-14T14:20:00+01:00",
-      "stop": "2026-11-14T14:45:00+01:00",
-      "title": "Ippica - Premio St. Leger Italiano 2026"
-    },
-    {
-      "start": "2026-11-14T14:45:00+01:00",
-      "stop": "2026-11-14T15:20:00+01:00",
-      "title": "Atletica - Corsa Dei Santi 2026"
-    },
-    {
-      "start": "2026-11-14T15:20:00+01:00",
-      "stop": "2026-11-14T17:55:00+01:00",
-      "title": "Pallavolo: Supercoppa Maschile 2026-2027 - Semifinale: Perugia - Trento"
-    },
-    {
       "start": "2026-11-14T17:55:00+01:00",
       "stop": "2026-11-14T20:50:00+01:00",
       "title": "Pallavolo: Supercoppa Maschile 2026-2027 - Semifinale: Verona - Civitanova"
@@ -21601,66 +17596,6 @@
     }
   ],
   "Rai Storia.it": [
-    {
-      "start": "2026-11-14T10:40:00+01:00",
-      "stop": "2026-11-14T12:35:00+01:00",
-      "title": "Speciali Il Tempo E La Storia - Norimberga, Processo Ai Vinti"
-    },
-    {
-      "start": "2026-11-14T12:35:00+01:00",
-      "stop": "2026-11-14T12:55:00+01:00",
-      "title": "Il Giorno E La Storia"
-    },
-    {
-      "start": "2026-11-14T12:55:00+01:00",
-      "stop": "2026-11-14T13:50:00+01:00",
-      "title": "Italiani Con Paolo Mieli - Alba De Cespedes, Vivere Per Scrivere"
-    },
-    {
-      "start": "2026-11-14T13:50:00+01:00",
-      "stop": "2026-11-14T14:05:00+01:00",
-      "title": "Come Eravamo - Giovani (Pt.14)"
-    },
-    {
-      "start": "2026-11-14T14:05:00+01:00",
-      "stop": "2026-11-14T14:25:00+01:00",
-      "title": "Il Giorno E La Storia"
-    },
-    {
-      "start": "2026-11-14T14:25:00+01:00",
-      "stop": "2026-11-14T15:05:00+01:00",
-      "title": "Passato E Presente - Furio Lauri. Le Nuove Frontiere Del Volo - 26"
-    },
-    {
-      "start": "2026-11-14T15:05:00+01:00",
-      "stop": "2026-11-14T16:05:00+01:00",
-      "title": "Tablet. Italia In 4D - I Giorni Del Polesine. Viaggio Nella Memoria Di Un'Alluvione"
-    },
-    {
-      "start": "2026-11-14T16:05:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Vola Colomba"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Programmazione da definire"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:15:00+01:00",
-      "title": "Garibaldi: La Repubblica Romana E I Mille"
-    },
-    {
-      "start": "2026-11-14T17:15:00+01:00",
-      "stop": "2026-11-14T17:45:00+01:00",
-      "title": "1947: La Scelta Democratica Italiana - L'Ordinamento Democratico E La Corte Costituzionale (Pt.13)"
-    },
-    {
-      "start": "2026-11-14T17:45:00+01:00",
-      "stop": "2026-11-14T18:45:00+01:00",
-      "title": "Ho fatto Splash"
-    },
     {
       "start": "2026-11-14T18:45:00+01:00",
       "stop": "2026-11-14T19:15:00+01:00",
@@ -21978,251 +17913,6 @@
     }
   ],
   "Rai YoYo.it": [
-    {
-      "start": "2026-11-14T12:15:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Grisù"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T12:40:00+01:00",
-      "title": "Alice & Lewis"
-    },
-    {
-      "start": "2026-11-14T12:40:00+01:00",
-      "stop": "2026-11-14T12:50:00+01:00",
-      "title": "Alice & Lewis"
-    },
-    {
-      "start": "2026-11-14T12:50:00+01:00",
-      "stop": "2026-11-14T13:05:00+01:00",
-      "title": "Alice & Lewis"
-    },
-    {
-      "start": "2026-11-14T13:05:00+01:00",
-      "stop": "2026-11-14T13:10:00+01:00",
-      "title": "Team Nuggets - Una classe scatenata!"
-    },
-    {
-      "start": "2026-11-14T13:10:00+01:00",
-      "stop": "2026-11-14T13:20:00+01:00",
-      "title": "Team Nuggets - Una classe scatenata!"
-    },
-    {
-      "start": "2026-11-14T13:20:00+01:00",
-      "stop": "2026-11-14T13:25:00+01:00",
-      "title": "Team Nuggets - Una classe scatenata!"
-    },
-    {
-      "start": "2026-11-14T13:25:00+01:00",
-      "stop": "2026-11-14T13:35:00+01:00",
-      "title": "Team Nuggets - Una classe scatenata!"
-    },
-    {
-      "start": "2026-11-14T13:35:00+01:00",
-      "stop": "2026-11-14T13:40:00+01:00",
-      "title": "Bluey"
-    },
-    {
-      "start": "2026-11-14T13:40:00+01:00",
-      "stop": "2026-11-14T13:45:00+01:00",
-      "title": "Bluey"
-    },
-    {
-      "start": "2026-11-14T13:45:00+01:00",
-      "stop": "2026-11-14T13:55:00+01:00",
-      "title": "Bluey"
-    },
-    {
-      "start": "2026-11-14T13:55:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Bluey"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:05:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T14:05:00+01:00",
-      "stop": "2026-11-14T14:10:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T14:10:00+01:00",
-      "stop": "2026-11-14T14:15:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T14:15:00+01:00",
-      "stop": "2026-11-14T14:25:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T14:25:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T14:35:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T14:35:00+01:00",
-      "stop": "2026-11-14T14:40:00+01:00",
-      "title": "Pino & Shinoby"
-    },
-    {
-      "start": "2026-11-14T14:40:00+01:00",
-      "stop": "2026-11-14T14:45:00+01:00",
-      "title": "Pino & Shinoby"
-    },
-    {
-      "start": "2026-11-14T14:45:00+01:00",
-      "stop": "2026-11-14T14:50:00+01:00",
-      "title": "Pino & Shinoby"
-    },
-    {
-      "start": "2026-11-14T14:50:00+01:00",
-      "stop": "2026-11-14T14:55:00+01:00",
-      "title": "Pino & Shinoby"
-    },
-    {
-      "start": "2026-11-14T14:55:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Pino & Shinoby"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T15:05:00+01:00",
-      "title": "Pino & Shinoby"
-    },
-    {
-      "start": "2026-11-14T15:05:00+01:00",
-      "stop": "2026-11-14T15:35:00+01:00",
-      "title": "Hello Yoyo"
-    },
-    {
-      "start": "2026-11-14T15:35:00+01:00",
-      "stop": "2026-11-14T15:40:00+01:00",
-      "title": "Pocoyo"
-    },
-    {
-      "start": "2026-11-14T15:40:00+01:00",
-      "stop": "2026-11-14T15:50:00+01:00",
-      "title": "Pocoyo"
-    },
-    {
-      "start": "2026-11-14T15:50:00+01:00",
-      "stop": "2026-11-14T15:55:00+01:00",
-      "title": "Pocoyo"
-    },
-    {
-      "start": "2026-11-14T15:55:00+01:00",
-      "stop": "2026-11-14T16:05:00+01:00",
-      "title": "Pocoyo"
-    },
-    {
-      "start": "2026-11-14T16:05:00+01:00",
-      "stop": "2026-11-14T16:15:00+01:00",
-      "title": "Masha e Orso"
-    },
-    {
-      "start": "2026-11-14T16:15:00+01:00",
-      "stop": "2026-11-14T16:20:00+01:00",
-      "title": "Masha e Orso"
-    },
-    {
-      "start": "2026-11-14T16:20:00+01:00",
-      "stop": "2026-11-14T16:25:00+01:00",
-      "title": "Masha e Orso"
-    },
-    {
-      "start": "2026-11-14T16:25:00+01:00",
-      "stop": "2026-11-14T16:35:00+01:00",
-      "title": "Masha e Orso"
-    },
-    {
-      "start": "2026-11-14T16:35:00+01:00",
-      "stop": "2026-11-14T16:45:00+01:00",
-      "title": "Masha e Orso"
-    },
-    {
-      "start": "2026-11-14T16:45:00+01:00",
-      "stop": "2026-11-14T16:50:00+01:00",
-      "title": "Masha e Orso"
-    },
-    {
-      "start": "2026-11-14T16:50:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "I Racconti di Masha"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "La Posta Di Yoyo Remix"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T17:35:00+01:00",
-      "title": "È Un Azzurro Albero - Canestro!"
-    },
-    {
-      "start": "2026-11-14T17:35:00+01:00",
-      "stop": "2026-11-14T17:40:00+01:00",
-      "title": "È Un Azzurro Albero - Che Sorpresa..."
-    },
-    {
-      "start": "2026-11-14T17:40:00+01:00",
-      "stop": "2026-11-14T17:45:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T17:45:00+01:00",
-      "stop": "2026-11-14T17:50:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T17:50:00+01:00",
-      "stop": "2026-11-14T17:55:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T17:55:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:05:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T18:05:00+01:00",
-      "stop": "2026-11-14T18:10:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T18:10:00+01:00",
-      "stop": "2026-11-14T18:15:00+01:00",
-      "title": "Peppa Pig"
-    },
-    {
-      "start": "2026-11-14T18:15:00+01:00",
-      "stop": "2026-11-14T18:25:00+01:00",
-      "title": "Carletto"
-    },
-    {
-      "start": "2026-11-14T18:25:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Carletto"
-    },
-    {
-      "start": "2026-11-14T18:30:00+01:00",
-      "stop": "2026-11-14T18:40:00+01:00",
-      "title": "Carletto"
-    },
     {
       "start": "2026-11-14T18:40:00+01:00",
       "stop": "2026-11-14T18:50:00+01:00",
@@ -23551,36 +19241,6 @@
   ],
   "Real Time.it": [
     {
-      "start": "2026-11-14T11:50:00+01:00",
-      "stop": "2026-11-14T12:55:00+01:00",
-      "title": "Cortesie per gli ospiti"
-    },
-    {
-      "start": "2026-11-14T12:55:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Cortesie per gli ospiti"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "L'atelier delle cerimonie"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "L'atelier delle cerimonie"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T17:05:00+01:00",
-      "title": "Casa a prima vista"
-    },
-    {
-      "start": "2026-11-14T17:05:00+01:00",
-      "stop": "2026-11-14T18:10:00+01:00",
-      "title": "Casa a prima vista"
-    },
-    {
       "start": "2026-11-14T18:10:00+01:00",
       "stop": "2026-11-14T19:15:00+01:00",
       "title": "Casa a prima vista"
@@ -23773,36 +19433,6 @@
   ],
   "Rete4.it": [
     {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:27:00+01:00",
-      "title": "Tg4"
-    },
-    {
-      "start": "2026-11-14T12:27:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Ciak speciale"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T13:59:00+01:00",
-      "title": "La signora in giallo"
-    },
-    {
-      "start": "2026-11-14T13:59:00+01:00",
-      "stop": "2026-11-14T15:27:00+01:00",
-      "title": "Lo sportello di forum"
-    },
-    {
-      "start": "2026-11-14T15:27:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "Tg4 - Diario del giorno (Anteprima)"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T16:34:00+01:00",
-      "title": "Diario del weekend"
-    },
-    {
       "start": "2026-11-14T16:34:00+01:00",
       "stop": "2026-11-14T18:58:00+01:00",
       "title": "City of Angels - Citta' degli angeli"
@@ -23989,56 +19619,6 @@
     }
   ],
   "RSI LA1.it": [
-    {
-      "start": "2026-11-14T12:05:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Segni dei tempi - Nell’antica certosa di Ittingen fra sé stessi e Dio"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T12:45:00+01:00",
-      "title": "Telegiornale"
-    },
-    {
-      "start": "2026-11-14T12:45:00+01:00",
-      "stop": "2026-11-14T12:50:00+01:00",
-      "title": "Meteo regionale"
-    },
-    {
-      "start": "2026-11-14T12:50:00+01:00",
-      "stop": "2026-11-14T13:50:00+01:00",
-      "title": "Patti Chiari"
-    },
-    {
-      "start": "2026-11-14T13:50:00+01:00",
-      "stop": "2026-11-14T14:05:00+01:00",
-      "title": "Tesori del mondo - Sukhothai - Le rovine dell'antica città reale - Tailandia"
-    },
-    {
-      "start": "2026-11-14T14:05:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Tandem - Il diamante nero"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Mansur Piccolo Orso"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Il giardino di Albert - A piene mani"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:10:00+01:00",
-      "title": "Telegiornale flash"
-    },
-    {
-      "start": "2026-11-14T18:10:00+01:00",
-      "stop": "2026-11-14T18:40:00+01:00",
-      "title": "Scacciapensieri"
-    },
     {
       "start": "2026-11-14T18:40:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
@@ -24447,31 +20027,6 @@
   ],
   "RSI LA2.it": [
     {
-      "start": "2026-11-14T11:30:00+01:00",
-      "stop": "2026-11-14T12:55:00+01:00",
-      "title": "Ritorno Da Te"
-    },
-    {
-      "start": "2026-11-14T12:55:00+01:00",
-      "stop": "2026-11-14T13:55:00+01:00",
-      "title": "Sci alpino: Coppa del Mondo 2026/2027 - Slalom femminile"
-    },
-    {
-      "start": "2026-11-14T13:55:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "La Storia Fantastica"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T17:05:00+01:00",
-      "title": "Fuga Dal Natale"
-    },
-    {
-      "start": "2026-11-14T17:05:00+01:00",
-      "stop": "2026-11-14T18:05:00+01:00",
-      "title": "Sci alpino: Coppa del Mondo 2026/2027 - Slalom femminile"
-    },
-    {
       "start": "2026-11-14T18:05:00+01:00",
       "stop": "2026-11-14T18:55:00+01:00",
       "title": "Parchi nazionali visti dall'alto - Parchi nazionali dall’alto - Göreme"
@@ -24739,21 +20294,6 @@
   ],
   "RTL 102.5 TV.it": [
     {
-      "start": "2026-11-14T11:00:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "No problem - W l'Italia"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Hello Weekend"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Mai visto alla radio"
-    },
-    {
       "start": "2026-11-14T17:00:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
       "title": "Pop around the clock"
@@ -24800,46 +20340,6 @@
     }
   ],
   "Sky Adventure.it": [
-    {
-      "start": "2026-11-14T11:30:00+01:00",
-      "stop": "2026-11-14T12:20:00+01:00",
-      "title": "Pesca Selvaggia"
-    },
-    {
-      "start": "2026-11-14T12:20:00+01:00",
-      "stop": "2026-11-14T13:25:00+01:00",
-      "title": "Orlando Bloom: Oltre il Limite"
-    },
-    {
-      "start": "2026-11-14T13:25:00+01:00",
-      "stop": "2026-11-14T14:15:00+01:00",
-      "title": "Ingegneria del futuro"
-    },
-    {
-      "start": "2026-11-14T14:15:00+01:00",
-      "stop": "2026-11-14T15:05:00+01:00",
-      "title": "Giga strutture"
-    },
-    {
-      "start": "2026-11-14T15:05:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Giga strutture"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:50:00+01:00",
-      "title": "Ingegneria degli Epic Fail"
-    },
-    {
-      "start": "2026-11-14T16:50:00+01:00",
-      "stop": "2026-11-14T17:40:00+01:00",
-      "title": "Giant Lobster Hunters"
-    },
-    {
-      "start": "2026-11-14T17:40:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Giant Lobster Hunters"
-    },
     {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T19:25:00+01:00",
@@ -24958,31 +20458,6 @@
   ],
   "Sky Arte HD.it": [
     {
-      "start": "2026-11-14T12:15:00+01:00",
-      "stop": "2026-11-14T13:05:00+01:00",
-      "title": "Stories"
-    },
-    {
-      "start": "2026-11-14T13:05:00+01:00",
-      "stop": "2026-11-14T14:50:00+01:00",
-      "title": "Vittorio De Sica: La vita in scena"
-    },
-    {
-      "start": "2026-11-14T14:50:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Siamo tutti Alberto Sordi?"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T17:20:00+01:00",
-      "title": "Il mistero dei capolavori perduti"
-    },
-    {
-      "start": "2026-11-14T17:20:00+01:00",
-      "stop": "2026-11-14T17:55:00+01:00",
-      "title": "Vite - L'arte del possibile"
-    },
-    {
       "start": "2026-11-14T17:55:00+01:00",
       "stop": "2026-11-14T20:05:00+01:00",
       "title": "Brunello, il visionario garbato"
@@ -25094,41 +20569,6 @@
     }
   ],
   "Sky Atlantic HD.it": [
-    {
-      "start": "2026-11-14T11:55:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Yellowstone"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T14:05:00+01:00",
-      "title": "Yellowstone"
-    },
-    {
-      "start": "2026-11-14T14:05:00+01:00",
-      "stop": "2026-11-14T14:55:00+01:00",
-      "title": "Babylon Berlin"
-    },
-    {
-      "start": "2026-11-14T14:55:00+01:00",
-      "stop": "2026-11-14T15:50:00+01:00",
-      "title": "Babylon Berlin"
-    },
-    {
-      "start": "2026-11-14T15:50:00+01:00",
-      "stop": "2026-11-14T16:40:00+01:00",
-      "title": "The Rainmaker"
-    },
-    {
-      "start": "2026-11-14T16:40:00+01:00",
-      "stop": "2026-11-14T17:35:00+01:00",
-      "title": "The Rainmaker"
-    },
-    {
-      "start": "2026-11-14T17:35:00+01:00",
-      "stop": "2026-11-14T18:35:00+01:00",
-      "title": "Rosa Elettrica - In fuga con il nemico"
-    },
     {
       "start": "2026-11-14T18:35:00+01:00",
       "stop": "2026-11-14T19:30:00+01:00",
@@ -25247,21 +20687,6 @@
   ],
   "Sky Cinema Action HD.it": [
     {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Justice League"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T16:15:00+01:00",
-      "title": "Mission: Impossible - Rogue Nation"
-    },
-    {
-      "start": "2026-11-14T16:15:00+01:00",
-      "stop": "2026-11-14T18:45:00+01:00",
-      "title": "Mission: Impossible - Fallout"
-    },
-    {
       "start": "2026-11-14T18:45:00+01:00",
       "stop": "2026-11-14T21:00:00+01:00",
       "title": "Pacific Rim"
@@ -25359,21 +20784,6 @@
   ],
   "Sky Cinema Collection HD.it": [
     {
-      "start": "2026-11-14T12:15:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "John Wick"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T16:10:00+01:00",
-      "title": "John Wick - Capitolo 2"
-    },
-    {
-      "start": "2026-11-14T16:10:00+01:00",
-      "stop": "2026-11-14T18:25:00+01:00",
-      "title": "John Wick 3 - Parabellum"
-    },
-    {
       "start": "2026-11-14T18:25:00+01:00",
       "stop": "2026-11-14T21:15:00+01:00",
       "title": "John Wick 4"
@@ -25420,21 +20830,6 @@
     }
   ],
   "Sky Cinema Comedy HD.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T13:50:00+01:00",
-      "title": "Beetlejuice Beetlejuice"
-    },
-    {
-      "start": "2026-11-14T13:50:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "Un sacco bello"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T17:20:00+01:00",
-      "title": "... altrimenti ci arrabbiamo!"
-    },
     {
       "start": "2026-11-14T17:20:00+01:00",
       "stop": "2026-11-14T19:05:00+01:00",
@@ -25498,21 +20893,6 @@
   ],
   "Sky Cinema Drama HD.it": [
     {
-      "start": "2026-11-14T10:20:00+01:00",
-      "stop": "2026-11-14T12:55:00+01:00",
-      "title": "Green Border"
-    },
-    {
-      "start": "2026-11-14T12:55:00+01:00",
-      "stop": "2026-11-14T15:05:00+01:00",
-      "title": "La verità secondo Maureen K."
-    },
-    {
-      "start": "2026-11-14T15:05:00+01:00",
-      "stop": "2026-11-14T17:05:00+01:00",
-      "title": "Revolutionary Road"
-    },
-    {
       "start": "2026-11-14T17:05:00+01:00",
       "stop": "2026-11-14T18:50:00+01:00",
       "title": "Una notte a New York"
@@ -25569,26 +20949,6 @@
     }
   ],
   "Sky Cinema Due +24 HD.it": [
-    {
-      "start": "2026-11-14T10:15:00+01:00",
-      "stop": "2026-11-14T12:45:00+01:00",
-      "title": "Into the Wild - Nelle terre selvagge"
-    },
-    {
-      "start": "2026-11-14T12:45:00+01:00",
-      "stop": "2026-11-14T14:25:00+01:00",
-      "title": "Il ritratto del Duca"
-    },
-    {
-      "start": "2026-11-14T14:25:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Il grande Lebowski"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "La donna più ricca del mondo"
-    },
     {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T21:15:00+01:00",
@@ -25682,21 +21042,6 @@
   ],
   "Sky Cinema Due HD.it": [
     {
-      "start": "2026-11-14T10:25:00+01:00",
-      "stop": "2026-11-14T13:25:00+01:00",
-      "title": "Il Signore degli Anelli - Le due Torri"
-    },
-    {
-      "start": "2026-11-14T13:25:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Educazione fisica"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T16:50:00+01:00",
-      "title": "November - I cinque giorni dopo il Bataclan"
-    },
-    {
       "start": "2026-11-14T16:50:00+01:00",
       "stop": "2026-11-14T19:15:00+01:00",
       "title": "Le ali della libertà"
@@ -25728,26 +21073,6 @@
     }
   ],
   "Sky Cinema Family HD.it": [
-    {
-      "start": "2026-11-14T10:55:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Madagascar 2"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T14:05:00+01:00",
-      "title": "Madagascar 3: Ricercati in Europa"
-    },
-    {
-      "start": "2026-11-14T14:05:00+01:00",
-      "stop": "2026-11-14T15:55:00+01:00",
-      "title": "La musica nel cuore - August Rush"
-    },
-    {
-      "start": "2026-11-14T15:55:00+01:00",
-      "stop": "2026-11-14T17:35:00+01:00",
-      "title": "Viaggio al centro della Terra"
-    },
     {
       "start": "2026-11-14T17:35:00+01:00",
       "stop": "2026-11-14T19:20:00+01:00",
@@ -25816,21 +21141,6 @@
   ],
   "Sky Cinema Romance HD.it": [
     {
-      "start": "2026-11-14T11:05:00+01:00",
-      "stop": "2026-11-14T13:10:00+01:00",
-      "title": "Hitch - Lui si' che capisce le donne"
-    },
-    {
-      "start": "2026-11-14T13:10:00+01:00",
-      "stop": "2026-11-14T14:55:00+01:00",
-      "title": "Mia moglie è un fantasma"
-    },
-    {
-      "start": "2026-11-14T14:55:00+01:00",
-      "stop": "2026-11-14T16:40:00+01:00",
-      "title": "Una proposta per dire si'"
-    },
-    {
       "start": "2026-11-14T16:40:00+01:00",
       "stop": "2026-11-14T18:50:00+01:00",
       "title": "La La Land"
@@ -25893,21 +21203,6 @@
   ],
   "Sky Cinema Suspense HD.it": [
     {
-      "start": "2026-11-14T10:30:00+01:00",
-      "stop": "2026-11-14T12:45:00+01:00",
-      "title": "Miss Sloane - Giochi di potere"
-    },
-    {
-      "start": "2026-11-14T12:45:00+01:00",
-      "stop": "2026-11-14T14:45:00+01:00",
-      "title": "Scream 7"
-    },
-    {
-      "start": "2026-11-14T14:45:00+01:00",
-      "stop": "2026-11-14T16:45:00+01:00",
-      "title": "Giochi di potere"
-    },
-    {
       "start": "2026-11-14T16:45:00+01:00",
       "stop": "2026-11-14T18:50:00+01:00",
       "title": "Transcendence"
@@ -25964,21 +21259,6 @@
     }
   ],
   "Sky Cinema Uno +24 HD.it": [
-    {
-      "start": "2026-11-14T11:20:00+01:00",
-      "stop": "2026-11-14T13:55:00+01:00",
-      "title": "Il cavaliere oscuro"
-    },
-    {
-      "start": "2026-11-14T13:55:00+01:00",
-      "stop": "2026-11-14T15:45:00+01:00",
-      "title": "Tuner - L’accordatore"
-    },
-    {
-      "start": "2026-11-14T15:45:00+01:00",
-      "stop": "2026-11-14T17:25:00+01:00",
-      "title": "Innamorarsi e altre pessime idee"
-    },
     {
       "start": "2026-11-14T17:25:00+01:00",
       "stop": "2026-11-14T19:15:00+01:00",
@@ -26037,21 +21317,6 @@
   ],
   "Sky Cinema Uno HD.it": [
     {
-      "start": "2026-11-14T11:55:00+01:00",
-      "stop": "2026-11-14T13:35:00+01:00",
-      "title": "Uno di famiglia"
-    },
-    {
-      "start": "2026-11-14T13:35:00+01:00",
-      "stop": "2026-11-14T16:40:00+01:00",
-      "title": "Pearl Harbor"
-    },
-    {
-      "start": "2026-11-14T16:40:00+01:00",
-      "stop": "2026-11-14T17:45:00+01:00",
-      "title": "Nord Sud Ovest Est: La leggendaria storia degli 883"
-    },
-    {
       "start": "2026-11-14T17:45:00+01:00",
       "stop": "2026-11-14T19:35:00+01:00",
       "title": "Americana"
@@ -26108,41 +21373,6 @@
     }
   ],
   "Sky Classica.it": [
-    {
-      "start": "2026-11-14T11:55:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Mestiere Teatro: Nicoletta Ceccolini"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "R.Strauss - Vier letzte Lieder op.50"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:50:00+01:00",
-      "title": "Almanacco di Bellezza"
-    },
-    {
-      "start": "2026-11-14T13:50:00+01:00",
-      "stop": "2026-11-14T16:10:00+01:00",
-      "title": "Prokof'ev - Il giocatore"
-    },
-    {
-      "start": "2026-11-14T16:10:00+01:00",
-      "stop": "2026-11-14T17:15:00+01:00",
-      "title": "Beethoven - Sinfonia n.3"
-    },
-    {
-      "start": "2026-11-14T17:15:00+01:00",
-      "stop": "2026-11-14T18:15:00+01:00",
-      "title": "Raina Kabaivanska - Ritratto"
-    },
-    {
-      "start": "2026-11-14T18:15:00+01:00",
-      "stop": "2026-11-14T18:35:00+01:00",
-      "title": "Kaiserwalzer: Marcel Proust"
-    },
     {
       "start": "2026-11-14T18:35:00+01:00",
       "stop": "2026-11-14T19:45:00+01:00",
@@ -26235,41 +21465,6 @@
     }
   ],
   "Sky Crime.it": [
-    {
-      "start": "2026-11-14T10:50:00+01:00",
-      "stop": "2026-11-14T12:25:00+01:00",
-      "title": "Processo a Michael Jackson"
-    },
-    {
-      "start": "2026-11-14T12:25:00+01:00",
-      "stop": "2026-11-14T13:20:00+01:00",
-      "title": "Indagini con Stefano Nazzi"
-    },
-    {
-      "start": "2026-11-14T13:20:00+01:00",
-      "stop": "2026-11-14T14:25:00+01:00",
-      "title": "Indagini con Stefano Nazzi"
-    },
-    {
-      "start": "2026-11-14T14:25:00+01:00",
-      "stop": "2026-11-14T15:15:00+01:00",
-      "title": "Troviamo Denise - Storia di..."
-    },
-    {
-      "start": "2026-11-14T15:15:00+01:00",
-      "stop": "2026-11-14T15:40:00+01:00",
-      "title": "Crimini selvaggi"
-    },
-    {
-      "start": "2026-11-14T15:40:00+01:00",
-      "stop": "2026-11-14T16:10:00+01:00",
-      "title": "Crimini selvaggi"
-    },
-    {
-      "start": "2026-11-14T16:10:00+01:00",
-      "stop": "2026-11-14T17:45:00+01:00",
-      "title": "Ludwig: Gli angeli neri"
-    },
     {
       "start": "2026-11-14T17:45:00+01:00",
       "stop": "2026-11-14T18:50:00+01:00",
@@ -26402,41 +21597,6 @@
     }
   ],
   "Sky Documentaries HD.it": [
-    {
-      "start": "2026-11-14T12:05:00+01:00",
-      "stop": "2026-11-14T12:45:00+01:00",
-      "title": "Alessandro Barbero: 1848 L'Europa in..."
-    },
-    {
-      "start": "2026-11-14T12:45:00+01:00",
-      "stop": "2026-11-14T13:50:00+01:00",
-      "title": "Food Markets: Profumi e sapori a km 0 - Stag. 4 Ep. 4 - Salonicco - Kapani"
-    },
-    {
-      "start": "2026-11-14T13:50:00+01:00",
-      "stop": "2026-11-14T14:40:00+01:00",
-      "title": "Anthony Bourdain: Cucine segrete"
-    },
-    {
-      "start": "2026-11-14T14:40:00+01:00",
-      "stop": "2026-11-14T15:45:00+01:00",
-      "title": "I segreti della guerra fredda"
-    },
-    {
-      "start": "2026-11-14T15:45:00+01:00",
-      "stop": "2026-11-14T16:45:00+01:00",
-      "title": "I segreti della guerra fredda"
-    },
-    {
-      "start": "2026-11-14T16:45:00+01:00",
-      "stop": "2026-11-14T17:45:00+01:00",
-      "title": "I segreti della guerra fredda"
-    },
-    {
-      "start": "2026-11-14T17:45:00+01:00",
-      "stop": "2026-11-14T18:25:00+01:00",
-      "title": "Alessandro Barbero: 1848 L'Europa in..."
-    },
     {
       "start": "2026-11-14T18:25:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
@@ -26655,41 +21815,6 @@
   ],
   "Sky investigation HD.it": [
     {
-      "start": "2026-11-14T10:55:00+01:00",
-      "stop": "2026-11-14T12:35:00+01:00",
-      "title": "Signora Volpe"
-    },
-    {
-      "start": "2026-11-14T12:35:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Law & Order: Organized Crime"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T14:20:00+01:00",
-      "title": "Law & Order: Organized Crime"
-    },
-    {
-      "start": "2026-11-14T14:20:00+01:00",
-      "stop": "2026-11-14T16:05:00+01:00",
-      "title": "Capitaine Marleau"
-    },
-    {
-      "start": "2026-11-14T16:05:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Law & Order: Special Victims Unit"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:50:00+01:00",
-      "title": "Law & Order: Special Victims Unit"
-    },
-    {
-      "start": "2026-11-14T17:50:00+01:00",
-      "stop": "2026-11-14T18:35:00+01:00",
-      "title": "Mistletoe Murders: Delitti sotto l'albero"
-    },
-    {
       "start": "2026-11-14T18:35:00+01:00",
       "stop": "2026-11-14T19:30:00+01:00",
       "title": "Mistletoe Murders: Delitti sotto l'albero"
@@ -26892,36 +22017,6 @@
   ],
   "Sky Nature HD.it": [
     {
-      "start": "2026-11-14T12:05:00+01:00",
-      "stop": "2026-11-14T13:05:00+01:00",
-      "title": "I segreti delle foreste incantate"
-    },
-    {
-      "start": "2026-11-14T13:05:00+01:00",
-      "stop": "2026-11-14T14:05:00+01:00",
-      "title": "Wild Moon: L'altra faccia della luna"
-    },
-    {
-      "start": "2026-11-14T14:05:00+01:00",
-      "stop": "2026-11-14T15:10:00+01:00",
-      "title": "Wild Moon: L'altra faccia della luna"
-    },
-    {
-      "start": "2026-11-14T15:10:00+01:00",
-      "stop": "2026-11-14T16:10:00+01:00",
-      "title": "Wild Moon: L'altra faccia della luna"
-    },
-    {
-      "start": "2026-11-14T16:10:00+01:00",
-      "stop": "2026-11-14T17:15:00+01:00",
-      "title": "Le grandi sfide alla natura"
-    },
-    {
-      "start": "2026-11-14T17:15:00+01:00",
-      "stop": "2026-11-14T18:15:00+01:00",
-      "title": "Le grandi sfide alla natura"
-    },
-    {
       "start": "2026-11-14T18:15:00+01:00",
       "stop": "2026-11-14T19:20:00+01:00",
       "title": "Le grandi sfide alla natura"
@@ -27038,71 +22133,6 @@
     }
   ],
   "Sky News.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Sky News Today with Sam Washington"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Sky News Today with Sam Washington"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Sky News Today with Sam Washington"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Sky News Today with Sam Washington"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "Sky News Today with Sam Washington"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Sky News Today"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "Sky News Today"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Sky News Today"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Sky News Today"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Sky News Today"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "Sky News Today"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Sky News Today"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "News Hour with Jonathan Samuels"
-    },
     {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
@@ -27246,46 +22276,6 @@
   ],
   "Sky Serie HD.it": [
     {
-      "start": "2026-11-14T11:45:00+01:00",
-      "stop": "2026-11-14T12:20:00+01:00",
-      "title": "The Other Bennet Sister: Orgoglio e..."
-    },
-    {
-      "start": "2026-11-14T12:20:00+01:00",
-      "stop": "2026-11-14T12:55:00+01:00",
-      "title": "The Other Bennet Sister: Orgoglio e..."
-    },
-    {
-      "start": "2026-11-14T12:55:00+01:00",
-      "stop": "2026-11-14T13:20:00+01:00",
-      "title": "Friends"
-    },
-    {
-      "start": "2026-11-14T13:20:00+01:00",
-      "stop": "2026-11-14T13:55:00+01:00",
-      "title": "Friends"
-    },
-    {
-      "start": "2026-11-14T13:55:00+01:00",
-      "stop": "2026-11-14T14:55:00+01:00",
-      "title": "Nord Sud Ovest Est: La leggendaria storia degli 883"
-    },
-    {
-      "start": "2026-11-14T14:55:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Nord Sud Ovest Est: La leggendaria storia degli 883"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "The Gilded Age"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "The Gilded Age"
-    },
-    {
       "start": "2026-11-14T18:00:00+01:00",
       "stop": "2026-11-14T19:10:00+01:00",
       "title": "A Very English Scandal"
@@ -27397,76 +22387,6 @@
     }
   ],
   "Sky Sport 24.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Sport 24 Today"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Sport 24 Today"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Sport 24 Today"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Sport 24 Today"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "Sport 24 Today"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Sport 24 Today"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T15:10:00+01:00",
-      "title": "Sport 24 Today"
-    },
-    {
-      "start": "2026-11-14T15:10:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "Studio Tennis 2026 14/11/2026"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Sport 24 Today"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Sport 24 Today"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Sport 24 Today"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "Sport 24 Today"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Sport 24 Today"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Sport 24 Today"
-    },
     {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
@@ -27640,26 +22560,6 @@
   ],
   "Sky Sport 4K.it": [
     {
-      "start": "2026-11-14T11:30:00+01:00",
-      "stop": "2026-11-14T13:15:00+01:00",
-      "title": "Roma - Sassuolo"
-    },
-    {
-      "start": "2026-11-14T13:15:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Venezia - Inter"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T16:45:00+01:00",
-      "title": "Milan - Inter"
-    },
-    {
-      "start": "2026-11-14T16:45:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Inter - Como"
-    },
-    {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
       "title": "Feyenoord - Inter"
@@ -27731,31 +22631,6 @@
     }
   ],
   "Sky Sport Arena.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Prepartita Rugby Nations Championship"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T14:40:00+01:00",
-      "title": "Italia - Argentina"
-    },
-    {
-      "start": "2026-11-14T14:40:00+01:00",
-      "stop": "2026-11-14T14:55:00+01:00",
-      "title": "Postpartita Rugby Nations Championship"
-    },
-    {
-      "start": "2026-11-14T14:55:00+01:00",
-      "stop": "2026-11-14T17:10:00+01:00",
-      "title": "Galles - Nuova Zelanda"
-    },
-    {
-      "start": "2026-11-14T17:10:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "Claudio Marchisio"
-    },
     {
       "start": "2026-11-14T17:30:00+01:00",
       "stop": "2026-11-14T19:45:00+01:00",
@@ -27839,36 +22714,6 @@
   ],
   "Sky Sport Calcio.it": [
     {
-      "start": "2026-11-14T10:40:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Italia - Francia"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T14:20:00+01:00",
-      "title": "Serbia - Germania"
-    },
-    {
-      "start": "2026-11-14T14:20:00+01:00",
-      "stop": "2026-11-14T16:25:00+01:00",
-      "title": "Reggiana - Livorno"
-    },
-    {
-      "start": "2026-11-14T16:25:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Champions League Remix Ep.4 06/11/2026"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:15:00+01:00",
-      "title": "Claudio Marchisio"
-    },
-    {
-      "start": "2026-11-14T17:15:00+01:00",
-      "stop": "2026-11-14T17:20:00+01:00",
-      "title": "Programmazione non disponibile"
-    },
-    {
       "start": "2026-11-14T17:20:00+01:00",
       "stop": "2026-11-14T19:30:00+01:00",
       "title": "Bari - Foggia"
@@ -27940,46 +22785,6 @@
     }
   ],
   "Sky Sport F1 HD.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "GP Italia: Gara"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:35:00+01:00",
-      "title": "Komplimenti Kampione"
-    },
-    {
-      "start": "2026-11-14T13:35:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "GP Madrid: Gara"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T15:05:00+01:00",
-      "title": "Little Italy: La Mercedes di Kimi"
-    },
-    {
-      "start": "2026-11-14T15:05:00+01:00",
-      "stop": "2026-11-14T16:05:00+01:00",
-      "title": "GP Azerbaijan: Gara"
-    },
-    {
-      "start": "2026-11-14T16:05:00+01:00",
-      "stop": "2026-11-14T16:50:00+01:00",
-      "title": "Inside The Team - Un Gp con Kimi"
-    },
-    {
-      "start": "2026-11-14T16:50:00+01:00",
-      "stop": "2026-11-14T17:05:00+01:00",
-      "title": "Kampione: L'intervista"
-    },
-    {
-      "start": "2026-11-14T17:05:00+01:00",
-      "stop": "2026-11-14T18:05:00+01:00",
-      "title": "GP San Paolo: Gara"
-    },
     {
       "start": "2026-11-14T18:05:00+01:00",
       "stop": "2026-11-14T19:05:00+01:00",
@@ -28123,36 +22928,6 @@
   ],
   "Sky Sport Golf.it": [
     {
-      "start": "2026-11-14T08:00:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "DP World Tour Championship: Giorno 3"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:15:00+01:00",
-      "title": "Open De Espana"
-    },
-    {
-      "start": "2026-11-14T14:15:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "India Championship"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Memorial Giorgio Bordoni"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "DP World Tour Championship: Giorno 3"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Villa Paradiso Alps Open"
-    },
-    {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
       "title": "Sergio Melpignano Senior Italian Open"
@@ -28215,11 +22990,6 @@
   ],
   "Sky Sport HD 1.it": [
     {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T17:25:00+01:00",
-      "title": "Albinoleffe - Union Brescia"
-    },
-    {
       "start": "2026-11-14T17:25:00+01:00",
       "stop": "2026-11-15T14:00:00+01:00",
       "title": "Bari - Foggia"
@@ -28242,11 +23012,6 @@
   ],
   "Sky Sport HD 2.it": [
     {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T17:25:00+01:00",
-      "title": "Reggiana - Livorno"
-    },
-    {
       "start": "2026-11-14T17:25:00+01:00",
       "stop": "2026-11-15T14:00:00+01:00",
       "title": "Lumezzane - Trento"
@@ -28263,11 +23028,6 @@
     }
   ],
   "Sky Sport HD 3.it": [
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T17:25:00+01:00",
-      "title": "Casarano - Picerno"
-    },
     {
       "start": "2026-11-14T17:25:00+01:00",
       "stop": "2026-11-15T14:00:00+01:00",
@@ -28286,11 +23046,6 @@
   ],
   "Sky Sport HD 4.it": [
     {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T17:25:00+01:00",
-      "title": "Vis Pesaro - Pianese"
-    },
-    {
       "start": "2026-11-14T17:25:00+01:00",
       "stop": "2026-11-15T14:00:00+01:00",
       "title": "Carpi - Giana Erminio"
@@ -28307,11 +23062,6 @@
     }
   ],
   "Sky Sport HD 5.it": [
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T17:25:00+01:00",
-      "title": "Arzignano V. - Alcione Milano"
-    },
     {
       "start": "2026-11-14T17:25:00+01:00",
       "stop": "2026-11-15T14:00:00+01:00",
@@ -28330,27 +23080,12 @@
   ],
   "Sky Sport HD 6.it": [
     {
-      "start": "2026-11-15T14:00:00+01:00",
-      "stop": "2026-11-14T17:25:00+01:00",
-      "title": "Cavese - Crotone"
-    },
-    {
       "start": "2026-11-15T17:25:00+01:00",
       "stop": "2026-11-15T06:00:00+01:00",
       "title": "Pergolettese - Pro Vercelli"
     }
   ],
   "Sky Sport HD 7.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T14:55:00+01:00",
-      "title": "Novara - Lecco"
-    },
-    {
-      "start": "2026-11-14T14:55:00+01:00",
-      "stop": "2026-11-14T17:55:00+01:00",
-      "title": "Lettonia - Armenia"
-    },
     {
       "start": "2026-11-14T17:55:00+01:00",
       "stop": "2026-11-15T06:00:00+01:00",
@@ -28359,42 +23094,12 @@
   ],
   "Sky Sport HD 8.it": [
     {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Giugliano - Savoia"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Programmazione da definire"
-    },
-    {
       "start": "2026-11-14T17:00:00+01:00",
       "stop": "2026-11-15T06:00:00+01:00",
       "title": "Arsenal-London City Lionesses"
     }
   ],
   "Sky Sport Legend.it": [
-    {
-      "start": "2026-11-14T11:15:00+01:00",
-      "stop": "2026-11-14T12:45:00+01:00",
-      "title": "The Lost Dreamteam"
-    },
-    {
-      "start": "2026-11-14T12:45:00+01:00",
-      "stop": "2026-11-14T13:45:00+01:00",
-      "title": "Natural Born Driver - L'incredibile storia di Ivan Capelli"
-    },
-    {
-      "start": "2026-11-14T13:45:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Volley Femminile Cev Champions League 2020/2021 - Stag. -3 - Conegliano - Istanbul. Finale"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T16:55:00+01:00",
-      "title": "Lo sbarco del fenomeno: Ronnie e l'Inter"
-    },
     {
       "start": "2026-11-14T16:55:00+01:00",
       "stop": "2026-11-14T19:15:00+01:00",
@@ -28503,36 +23208,6 @@
   ],
   "Sky Sport Max.it": [
     {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T13:45:00+01:00",
-      "title": "Inghilterra - Croazia"
-    },
-    {
-      "start": "2026-11-14T13:45:00+01:00",
-      "stop": "2026-11-14T14:05:00+01:00",
-      "title": "Claudio Marchisio"
-    },
-    {
-      "start": "2026-11-14T14:05:00+01:00",
-      "stop": "2026-11-14T14:20:00+01:00",
-      "title": "La giovane Italia"
-    },
-    {
-      "start": "2026-11-14T14:20:00+01:00",
-      "stop": "2026-11-14T14:50:00+01:00",
-      "title": "Europa E Conference League Remix Ep.4 06/11/2026"
-    },
-    {
-      "start": "2026-11-14T14:50:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Kosovo - Israele"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:50:00+01:00",
-      "title": "Master"
-    },
-    {
       "start": "2026-11-14T17:50:00+01:00",
       "stop": "2026-11-14T20:00:00+01:00",
       "title": "Norvegia - Galles"
@@ -28614,21 +23289,6 @@
     }
   ],
   "Sky Sport Mix.it": [
-    {
-      "start": "2026-11-14T11:45:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Master"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "This Is Padel 2026 Ep.14 13/11/2026"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Dubai P1: Semifinali Sessione Diurna"
-    },
     {
       "start": "2026-11-14T17:00:00+01:00",
       "stop": "2026-11-14T21:00:00+01:00",
@@ -28716,31 +23376,6 @@
     }
   ],
   "Sky Sport MotoGP.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:45:00+01:00",
-      "title": "GP Austria: Sprint Race"
-    },
-    {
-      "start": "2026-11-14T12:45:00+01:00",
-      "stop": "2026-11-14T13:15:00+01:00",
-      "title": "Max Bartolini: La Mia Rivoluzione"
-    },
-    {
-      "start": "2026-11-14T13:15:00+01:00",
-      "stop": "2026-11-14T17:10:00+01:00",
-      "title": "Francia: Gara 1"
-    },
-    {
-      "start": "2026-11-14T17:10:00+01:00",
-      "stop": "2026-11-14T17:55:00+01:00",
-      "title": "La Storia Di Angelo Bergamonti"
-    },
-    {
-      "start": "2026-11-14T17:55:00+01:00",
-      "stop": "2026-11-14T18:40:00+01:00",
-      "title": "GP Gran Bretagna: Sprint Race"
-    },
     {
       "start": "2026-11-14T18:40:00+01:00",
       "stop": "2026-11-14T19:45:00+01:00",
@@ -28909,36 +23544,6 @@
   ],
   "Sky Sport NBA.it": [
     {
-      "start": "2026-11-14T11:00:00+01:00",
-      "stop": "2026-11-14T12:55:00+01:00",
-      "title": "Italia - Slovenia"
-    },
-    {
-      "start": "2026-11-14T12:55:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Basket Nba Action 2026/2027 Ep.4 13/11/2026"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T15:20:00+01:00",
-      "title": "Philadelphia 76ers - Toronto Raptors"
-    },
-    {
-      "start": "2026-11-14T15:20:00+01:00",
-      "stop": "2026-11-14T17:15:00+01:00",
-      "title": "Anadolu Efes Spor Kulubu - Virtus Bologna"
-    },
-    {
-      "start": "2026-11-14T17:15:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "Basket Room NBA"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T17:50:00+01:00",
-      "title": "Box&One"
-    },
-    {
       "start": "2026-11-14T17:50:00+01:00",
       "stop": "2026-11-14T20:00:00+01:00",
       "title": "Austria - Italia"
@@ -28980,21 +23585,6 @@
     }
   ],
   "Sky Sport Tennis.it": [
-    {
-      "start": "2026-11-14T12:10:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Master"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Finale"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Dubai P1: Semifinali Sessione Diurna"
-    },
     {
       "start": "2026-11-14T17:00:00+01:00",
       "stop": "2026-11-14T19:40:00+01:00",
@@ -29072,31 +23662,6 @@
     }
   ],
   "Sky Sport Uno.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Prepartita Rugby Nations Championship"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T14:40:00+01:00",
-      "title": "Italia - Argentina"
-    },
-    {
-      "start": "2026-11-14T14:40:00+01:00",
-      "stop": "2026-11-14T14:55:00+01:00",
-      "title": "Postpartita Rugby Nations Championship"
-    },
-    {
-      "start": "2026-11-14T14:55:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Galles - Nuova Zelanda"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:50:00+01:00",
-      "title": "Master"
-    },
     {
       "start": "2026-11-14T17:50:00+01:00",
       "stop": "2026-11-14T19:50:00+01:00",
@@ -29189,91 +23754,6 @@
     }
   ],
   "SKY TG24.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Il TG di Mezzogiorno"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T12:55:00+01:00",
-      "title": "TG24 mezz'ora"
-    },
-    {
-      "start": "2026-11-14T12:55:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "TG24 Preview"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Ore 13"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T13:50:00+01:00",
-      "title": "Ore 13"
-    },
-    {
-      "start": "2026-11-14T13:50:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Extra Time"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:30:00+01:00",
-      "title": "TG24 mezz'ora"
-    },
-    {
-      "start": "2026-11-14T14:30:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "TG24 mezz'ora"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "Sky Cube: Cosa c'e' da sapere"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T15:40:00+01:00",
-      "title": "Drive Club"
-    },
-    {
-      "start": "2026-11-14T15:40:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "TG24 mezz'ora"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "Sky TG25"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T16:50:00+01:00",
-      "title": "TG24 mezz'ora"
-    },
-    {
-      "start": "2026-11-14T16:50:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Sky Meteo24"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "TG24 mezz'ora"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "TG24 mezz'ora"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:25:00+01:00",
-      "title": "TG24 mezz'ora"
-    },
     {
       "start": "2026-11-14T18:25:00+01:00",
       "stop": "2026-11-14T18:55:00+01:00",
@@ -29807,41 +24287,6 @@
   ],
   "Sky Uno HD.it": [
     {
-      "start": "2026-11-14T11:50:00+01:00",
-      "stop": "2026-11-14T12:50:00+01:00",
-      "title": "Nord Sud Ovest Est: La leggendaria storia degli 883"
-    },
-    {
-      "start": "2026-11-14T12:50:00+01:00",
-      "stop": "2026-11-14T12:55:00+01:00",
-      "title": "Foodish"
-    },
-    {
-      "start": "2026-11-14T12:55:00+01:00",
-      "stop": "2026-11-14T13:55:00+01:00",
-      "title": "Foodish"
-    },
-    {
-      "start": "2026-11-14T13:55:00+01:00",
-      "stop": "2026-11-14T14:10:00+01:00",
-      "title": "Ante Factor"
-    },
-    {
-      "start": "2026-11-14T14:10:00+01:00",
-      "stop": "2026-11-14T17:20:00+01:00",
-      "title": "X Factor"
-    },
-    {
-      "start": "2026-11-14T17:20:00+01:00",
-      "stop": "2026-11-14T17:25:00+01:00",
-      "title": "Foodish"
-    },
-    {
-      "start": "2026-11-14T17:25:00+01:00",
-      "stop": "2026-11-14T18:25:00+01:00",
-      "title": "Foodish"
-    },
-    {
       "start": "2026-11-14T18:25:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
       "title": "Alessandro Borghese Kitchen Sound"
@@ -29923,46 +24368,6 @@
     }
   ],
   "SMtv San Marino.it": [
-    {
-      "start": "2026-11-14T12:08:00+01:00",
-      "stop": "2026-11-14T12:45:00+01:00",
-      "title": "Attenti a quei due"
-    },
-    {
-      "start": "2026-11-14T12:45:00+01:00",
-      "stop": "2026-11-14T13:50:00+01:00",
-      "title": "A tutto Gas 2026"
-    },
-    {
-      "start": "2026-11-14T13:50:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "TG SPORT"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T14:15:00+01:00",
-      "title": "TG SAN MARINO"
-    },
-    {
-      "start": "2026-11-14T14:15:00+01:00",
-      "stop": "2026-11-14T14:55:00+01:00",
-      "title": "A tutto Gas Historic 2026"
-    },
-    {
-      "start": "2026-11-14T14:55:00+01:00",
-      "stop": "2026-11-14T16:55:00+01:00",
-      "title": "Tre Penne - Juvenes Dogana"
-    },
-    {
-      "start": "2026-11-14T16:55:00+01:00",
-      "stop": "2026-11-14T17:20:00+01:00",
-      "title": "Bakugan"
-    },
-    {
-      "start": "2026-11-14T17:20:00+01:00",
-      "stop": "2026-11-14T18:15:00+01:00",
-      "title": "Stadium"
-    },
     {
       "start": "2026-11-14T18:15:00+01:00",
       "stop": "2026-11-14T19:15:00+01:00",
@@ -30055,31 +24460,6 @@
     }
   ],
   "Sportitalia.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Aspettando il week end"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Si Live 24"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "Si Live 24"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Qualificazioni Coppa d'Africa Marocco-Niger"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "SoloCalcio"
-    },
     {
       "start": "2026-11-14T17:00:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
@@ -30267,76 +24647,6 @@
     }
   ],
   "Super!.it": [
-    {
-      "start": "2026-11-14T12:14:00+01:00",
-      "stop": "2026-11-14T12:42:00+01:00",
-      "title": "Miraculous - Le Storie di Ladybug e Chat Noir"
-    },
-    {
-      "start": "2026-11-14T12:42:00+01:00",
-      "stop": "2026-11-14T13:11:00+01:00",
-      "title": "Miraculous - Le Storie di Ladybug e Chat Noir"
-    },
-    {
-      "start": "2026-11-14T13:11:00+01:00",
-      "stop": "2026-11-14T13:22:00+01:00",
-      "title": "New School: One Wish"
-    },
-    {
-      "start": "2026-11-14T13:22:00+01:00",
-      "stop": "2026-11-14T13:42:00+01:00",
-      "title": "New School: One Wish"
-    },
-    {
-      "start": "2026-11-14T13:42:00+01:00",
-      "stop": "2026-11-14T14:11:00+01:00",
-      "title": "iCarly"
-    },
-    {
-      "start": "2026-11-14T14:11:00+01:00",
-      "stop": "2026-11-14T14:40:00+01:00",
-      "title": "iCarly"
-    },
-    {
-      "start": "2026-11-14T14:40:00+01:00",
-      "stop": "2026-11-14T15:19:00+01:00",
-      "title": "I Thunderman"
-    },
-    {
-      "start": "2026-11-14T15:19:00+01:00",
-      "stop": "2026-11-14T15:38:00+01:00",
-      "title": "I Thunderman"
-    },
-    {
-      "start": "2026-11-14T15:38:00+01:00",
-      "stop": "2026-11-14T16:06:00+01:00",
-      "title": "Tyler Perry's Young Dylan"
-    },
-    {
-      "start": "2026-11-14T16:06:00+01:00",
-      "stop": "2026-11-14T16:35:00+01:00",
-      "title": "Henry Danger"
-    },
-    {
-      "start": "2026-11-14T16:35:00+01:00",
-      "stop": "2026-11-14T16:57:00+01:00",
-      "title": "A casa dei Loud"
-    },
-    {
-      "start": "2026-11-14T16:57:00+01:00",
-      "stop": "2026-11-14T17:26:00+01:00",
-      "title": "A casa dei Loud"
-    },
-    {
-      "start": "2026-11-14T17:26:00+01:00",
-      "stop": "2026-11-14T17:55:00+01:00",
-      "title": "Miraculous - Le Storie di Ladybug e Chat Noir"
-    },
-    {
-      "start": "2026-11-14T17:55:00+01:00",
-      "stop": "2026-11-14T18:25:00+01:00",
-      "title": "Miraculous - Le Storie di Ladybug e Chat Noir"
-    },
     {
       "start": "2026-11-14T18:25:00+01:00",
       "stop": "2026-11-14T18:55:00+01:00",
@@ -30835,26 +25145,6 @@
   ],
   "Supertennis.it": [
     {
-      "start": "2026-11-14T10:00:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "WTA Finals Indian Wells 2026 - Singolare"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T13:45:00+01:00",
-      "title": "Supertennis TG"
-    },
-    {
-      "start": "2026-11-14T13:45:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Nitto ATP Finals Torino 2025 - Stag. 2022 Ep. 2 - Jannik Sinner vs Carlos Alcaraz Atp Finals 2025 Finale # 1"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:15:00+01:00",
-      "title": "Colpo da campione - Stagione 2026 - Ep. 32 - Colpo da campione By Head - il servizio di Sonego"
-    },
-    {
       "start": "2026-11-14T16:15:00+01:00",
       "stop": "2026-11-14T19:55:00+01:00",
       "title": "WTA Finals Indian Wells 2026 - Singolare"
@@ -30996,66 +25286,6 @@
     }
   ],
   "TgCom24.it": [
-    {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T12:25:00+01:00",
-      "title": "Tg4"
-    },
-    {
-      "start": "2026-11-14T12:25:00+01:00",
-      "stop": "2026-11-14T12:58:00+01:00",
-      "title": "Studio Aperto"
-    },
-    {
-      "start": "2026-11-14T12:58:00+01:00",
-      "stop": "2026-11-14T13:32:00+01:00",
-      "title": "Tg5"
-    },
-    {
-      "start": "2026-11-14T13:32:00+01:00",
-      "stop": "2026-11-14T14:10:00+01:00",
-      "title": "Sport mediaset 2026"
-    },
-    {
-      "start": "2026-11-14T14:10:00+01:00",
-      "stop": "2026-11-14T14:35:00+01:00",
-      "title": "Tgcom24 diretta 2026"
-    },
-    {
-      "start": "2026-11-14T14:35:00+01:00",
-      "stop": "2026-11-14T14:42:00+01:00",
-      "title": "Tgcom24 - meteo"
-    },
-    {
-      "start": "2026-11-14T14:42:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "Tgcom24 diretta 2026"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T15:56:00+01:00",
-      "title": "Diario del weekend"
-    },
-    {
-      "start": "2026-11-14T15:56:00+01:00",
-      "stop": "2026-11-14T16:17:00+01:00",
-      "title": "Diario del weekend"
-    },
-    {
-      "start": "2026-11-14T16:17:00+01:00",
-      "stop": "2026-11-14T16:31:00+01:00",
-      "title": "Diario del weekend"
-    },
-    {
-      "start": "2026-11-14T16:31:00+01:00",
-      "stop": "2026-11-14T18:21:00+01:00",
-      "title": "Tgcom24 diretta 2026"
-    },
-    {
-      "start": "2026-11-14T18:21:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Studio Aperto Live"
-    },
     {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T18:58:00+01:00",
@@ -31394,41 +25624,6 @@
   ],
   "TOPCrime.it": [
     {
-      "start": "2026-11-14T11:36:00+01:00",
-      "stop": "2026-11-14T12:25:00+01:00",
-      "title": "Law & Order: Special Victims Unit"
-    },
-    {
-      "start": "2026-11-14T12:25:00+01:00",
-      "stop": "2026-11-14T13:18:00+01:00",
-      "title": "Law & Order: Special Victims Unit"
-    },
-    {
-      "start": "2026-11-14T13:18:00+01:00",
-      "stop": "2026-11-14T14:08:00+01:00",
-      "title": "Law & Order: Special Victims Unit"
-    },
-    {
-      "start": "2026-11-14T14:08:00+01:00",
-      "stop": "2026-11-14T15:01:00+01:00",
-      "title": "Rizzoli & Isles"
-    },
-    {
-      "start": "2026-11-14T15:01:00+01:00",
-      "stop": "2026-11-14T15:52:00+01:00",
-      "title": "Rizzoli & Isles"
-    },
-    {
-      "start": "2026-11-14T15:52:00+01:00",
-      "stop": "2026-11-14T16:45:00+01:00",
-      "title": "Forever"
-    },
-    {
-      "start": "2026-11-14T16:45:00+01:00",
-      "stop": "2026-11-14T17:31:00+01:00",
-      "title": "Forever"
-    },
-    {
       "start": "2026-11-14T17:31:00+01:00",
       "stop": "2026-11-14T19:20:00+01:00",
       "title": "La signora in giallo: Vagone letto con omicidio"
@@ -31666,81 +25861,6 @@
   ],
   "TRM h24.it": [
     {
-      "start": "2026-11-14T11:30:00+01:00",
-      "stop": "2026-11-14T13:00:00+01:00",
-      "title": "Live Special"
-    },
-    {
-      "start": "2026-11-14T13:00:00+01:00",
-      "stop": "2026-11-14T13:15:00+01:00",
-      "title": "TG"
-    },
-    {
-      "start": "2026-11-14T13:15:00+01:00",
-      "stop": "2026-11-14T13:30:00+01:00",
-      "title": "Edicola"
-    },
-    {
-      "start": "2026-11-14T13:30:00+01:00",
-      "stop": "2026-11-14T14:00:00+01:00",
-      "title": "TG"
-    },
-    {
-      "start": "2026-11-14T14:00:00+01:00",
-      "stop": "2026-11-14T15:00:00+01:00",
-      "title": "Focus"
-    },
-    {
-      "start": "2026-11-14T15:00:00+01:00",
-      "stop": "2026-11-14T15:15:00+01:00",
-      "title": "TG"
-    },
-    {
-      "start": "2026-11-14T15:15:00+01:00",
-      "stop": "2026-11-14T15:30:00+01:00",
-      "title": "Approfondimento"
-    },
-    {
-      "start": "2026-11-14T15:30:00+01:00",
-      "stop": "2026-11-14T15:45:00+01:00",
-      "title": "TG"
-    },
-    {
-      "start": "2026-11-14T15:45:00+01:00",
-      "stop": "2026-11-14T16:00:00+01:00",
-      "title": "Approfondimento"
-    },
-    {
-      "start": "2026-11-14T16:00:00+01:00",
-      "stop": "2026-11-14T16:30:00+01:00",
-      "title": "TG"
-    },
-    {
-      "start": "2026-11-14T16:30:00+01:00",
-      "stop": "2026-11-14T17:30:00+01:00",
-      "title": "Focus"
-    },
-    {
-      "start": "2026-11-14T17:30:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Passi di speranza"
-    },
-    {
-      "start": "2026-11-14T18:00:00+01:00",
-      "stop": "2026-11-14T18:15:00+01:00",
-      "title": "TG"
-    },
-    {
-      "start": "2026-11-14T18:15:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Approfondimento"
-    },
-    {
-      "start": "2026-11-14T18:30:00+01:00",
-      "stop": "2026-11-14T18:45:00+01:00",
-      "title": "TG"
-    },
-    {
       "start": "2026-11-14T18:45:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
       "title": "Approfondimento"
@@ -31967,71 +26087,6 @@
     }
   ],
   "TV2000.it": [
-    {
-      "start": "2026-11-14T11:59:00+01:00",
-      "stop": "2026-11-14T12:20:00+01:00",
-      "title": "Tg2000"
-    },
-    {
-      "start": "2026-11-14T12:20:00+01:00",
-      "stop": "2026-11-14T12:50:00+01:00",
-      "title": "Borghi D Italia"
-    },
-    {
-      "start": "2026-11-14T12:50:00+01:00",
-      "stop": "2026-11-14T13:20:00+01:00",
-      "title": "PAPA LEONE: CUORE PERUVIANIO"
-    },
-    {
-      "start": "2026-11-14T13:20:00+01:00",
-      "stop": "2026-11-14T13:55:00+01:00",
-      "title": "VIAGGIO APOSTOLICO DI PAPA LEONE"
-    },
-    {
-      "start": "2026-11-14T13:55:00+01:00",
-      "stop": "2026-11-14T14:40:00+01:00",
-      "title": "VIAGGIO APOSTOLICO DI PAPA LEONE"
-    },
-    {
-      "start": "2026-11-14T14:40:00+01:00",
-      "stop": "2026-11-14T14:55:00+01:00",
-      "title": "VIAGGIO APOSTOLICO DI PAPA LEONE"
-    },
-    {
-      "start": "2026-11-14T14:55:00+01:00",
-      "stop": "2026-11-14T15:15:00+01:00",
-      "title": "CORONCINA ALLA DIVINA MISERICORDIA - CHIESA DI SANTO SPIRITO IN SASSIA ROMA"
-    },
-    {
-      "start": "2026-11-14T15:15:00+01:00",
-      "stop": "2026-11-14T15:55:00+01:00",
-      "title": "Algoretica"
-    },
-    {
-      "start": "2026-11-14T15:55:00+01:00",
-      "stop": "2026-11-14T17:00:00+01:00",
-      "title": "Documentario"
-    },
-    {
-      "start": "2026-11-14T17:00:00+01:00",
-      "stop": "2026-11-14T17:05:00+01:00",
-      "title": "VIAGGIO APOSTOLICO DI PAPA LEONE"
-    },
-    {
-      "start": "2026-11-14T17:05:00+01:00",
-      "stop": "2026-11-14T17:50:00+01:00",
-      "title": "Santa Messa"
-    },
-    {
-      "start": "2026-11-14T17:50:00+01:00",
-      "stop": "2026-11-14T17:55:00+01:00",
-      "title": "VIAGGIO APOSTOLICO DI PAPA LEONE"
-    },
-    {
-      "start": "2026-11-14T17:55:00+01:00",
-      "stop": "2026-11-14T18:25:00+01:00",
-      "title": "Rosario In Diretta Da Lourdes."
-    },
     {
       "start": "2026-11-14T18:25:00+01:00",
       "stop": "2026-11-14T19:00:00+01:00",
@@ -32335,21 +26390,6 @@
   ],
   "TV8.it": [
     {
-      "start": "2026-11-14T11:05:00+01:00",
-      "stop": "2026-11-14T12:30:00+01:00",
-      "title": "Alessandro Borghese - 4 Ristoranti"
-    },
-    {
-      "start": "2026-11-14T12:30:00+01:00",
-      "stop": "2026-11-14T14:40:00+01:00",
-      "title": "Italia - Argentina"
-    },
-    {
-      "start": "2026-11-14T14:40:00+01:00",
-      "stop": "2026-11-14T17:40:00+01:00",
-      "title": "X Factor"
-    },
-    {
       "start": "2026-11-14T17:40:00+01:00",
       "stop": "2026-11-14T19:05:00+01:00",
       "title": "Alessandro Borghese - 4 Ristoranti"
@@ -32567,11 +26607,6 @@
   ],
   "Zona Dazn 2.it": [
     {
-      "start": "2026-11-14T12:00:00+01:00",
-      "stop": "2026-11-14T18:00:00+01:00",
-      "title": "Nessun evento in onda"
-    },
-    {
       "start": "2026-11-14T18:00:00+01:00",
       "stop": "2026-11-15T00:00:00+01:00",
       "title": "Nessun evento in onda"
@@ -32593,36 +26628,6 @@
     }
   ],
   "Zona Dazn.it": [
-    {
-      "start": "2026-11-14T11:37:00+01:00",
-      "stop": "2026-11-14T12:25:00+01:00",
-      "title": "Italia: un lavoro di squadra"
-    },
-    {
-      "start": "2026-11-14T12:25:00+01:00",
-      "stop": "2026-11-14T14:28:00+01:00",
-      "title": "Napoli - Milan"
-    },
-    {
-      "start": "2026-11-14T14:28:00+01:00",
-      "stop": "2026-11-14T14:55:00+01:00",
-      "title": "La visione di Spalletti"
-    },
-    {
-      "start": "2026-11-14T14:55:00+01:00",
-      "stop": "2026-11-14T16:59:00+01:00",
-      "title": "Roma - Parma"
-    },
-    {
-      "start": "2026-11-14T16:59:00+01:00",
-      "stop": "2026-11-14T17:51:00+01:00",
-      "title": "Inter: Tutti i gol della stagione 25-26"
-    },
-    {
-      "start": "2026-11-14T17:51:00+01:00",
-      "stop": "2026-11-14T18:30:00+01:00",
-      "title": "Come l'Inter ha vinto lo Scudetto"
-    },
     {
       "start": "2026-11-14T18:30:00+01:00",
       "stop": "2026-11-14T20:01:00+01:00",
@@ -32679,5 +26684,5 @@
       "title": "Parma - Bologna"
     }
   ],
-  "_ultimo_aggiornamento": "2026-11-14 12:15:17"
+  "_ultimo_aggiornamento": "2026-11-14 18:45:29"
 }
