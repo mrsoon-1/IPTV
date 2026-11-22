@@ -26,6 +26,6 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add epg_dtt.json epg-sumnsungtvplus.json
-          git commit -m "Aggiornamento automatico epg_dtt.json e epg-sumnsungtvplus.json" || exit 0
+          git add epg_dtt.json epg_sumsungtvplus.json epg_plutotv.json
+          git commit -m "Aggiornamento automatico EPG DTT, Samsung TV e Pluto TV" || exit 0
           git push
