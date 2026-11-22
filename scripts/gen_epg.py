@@ -8,9 +8,11 @@ from zoneinfo import ZoneInfo
 
 DTT_XML_URL = "https://www.open-epg.com/files/italy8.xml"
 SAMSUNG_XML_GZ_URL = "https://github.com/matthuisman/i.mjh.nz/raw/master/SamsungTVPlus/it.xml.gz"
+PLUTO_XML_GZ_URL = "https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/it.xml.gz"
 
 DTT_OUTPUT_FILE = "epg_dtt.json"
-SAMSUNG_OUTPUT_FILE = "epg-sumnsungtvplus.json"
+SAMSUNG_OUTPUT_FILE = "epg_sumsungtvplus.json"
+PLUTO_OUTPUT_FILE = "epg_plutotv"
 
 ROME_TZ = ZoneInfo("Europe/Rome")
 
@@ -24,7 +26,6 @@ def fetch_xml_root(url: str) -> ET.Element:
     with urllib.request.urlopen(req, timeout=60) as resp:
         raw_bytes = resp.read()
 
-    # Controlla magic bytes GZIP (1f 8b) o estensione .gz
     if url.endswith(".gz") or raw_bytes[:2] == b"\x1f\x8b":
         with gzip.GzipFile(fileobj=io.BytesIO(raw_bytes)) as gz:
             xml_bytes = gz.read()
@@ -65,7 +66,6 @@ def build_epg_dict(root: ET.Element, now_rome: datetime) -> dict:
         except Exception:
             continue
 
-    # Ordina i programmi di ciascun canale per orario di inizio
     for ch_id, progs in epg_dict.items():
         progs.sort(key=lambda p: p["start"])
 
@@ -90,6 +90,10 @@ def main() -> None:
     samsung_root = fetch_xml_root(SAMSUNG_XML_GZ_URL)
     samsung_epg = build_epg_dict(samsung_root, now_rome)
     save_json(samsung_epg, SAMSUNG_OUTPUT_FILE)
+
+    pluto_root = fetch_xml_root(PLUTO_XML_GZ_URL)
+    pluto_epg = build_epg_dict(pluto_root, now_rome)
+    save_json(pluto_epg, PLUTO_OUTPUT_FILE)
 
 
 if __name__ == "__main__":
