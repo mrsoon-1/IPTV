@@ -67,13 +67,15 @@
       z-index: 10;
       width: 90%;
       max-width: 580px;
-      padding: 35px;
+      padding: 32px 35px;
       background: rgba(18, 18, 18, 0.88);
       border: 1px solid rgba(255, 255, 255, 0.15);
       border-radius: 14px;
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      max-height: 92vh;
+      overflow-y: auto;
     }
 
     #welcome-message h2 {
@@ -88,7 +90,7 @@
     .instruction-step {
       display: flex;
       align-items: flex-start;
-      margin-bottom: 12px;
+      margin-bottom: 11px;
     }
 
     .instruction-step span {
@@ -110,14 +112,29 @@
     .instruction-step p { margin: 0; color: #ccc; }
     .instruction-step p strong { color: #fff; }
 
+    .disclaimer-box {
+      margin-top: 16px;
+      padding: 12px 14px;
+      border-radius: 8px;
+      background: rgba(200, 50, 50, 0.16);
+      border: 1px solid rgba(255, 100, 100, 0.35);
+      color: #ffb3b3;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .disclaimer-box strong {
+      color: #ff6b6b;
+    }
+
     #welcome-message .footer-text {
       text-align: center;
       color: #4da6ff;
       font-weight: bold;
       font-size: 16px;
-      margin-top: 20px;
+      margin-top: 18px;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
-      padding-top: 15px;
+      padding-top: 14px;
     }
 
     #drawer-menu {
@@ -149,6 +166,41 @@
     }
 
     .header-actions { display: flex; gap: 6px; }
+
+    .filter-bar {
+      display: flex;
+      gap: 6px;
+      padding: 10px 14px;
+      background: rgba(15, 15, 15, 0.45);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .filter-tab {
+      flex: 1;
+      padding: 7px 10px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: rgba(0, 0, 0, 0.5);
+      color: #bbb;
+      font-size: 13px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .filter-tab.active {
+      background: #007acc;
+      border-color: #0099ff;
+      color: #fff;
+    }
+
+    .empty-filter-msg {
+      padding: 24px 16px;
+      text-align: center;
+      color: #999;
+      font-size: 14px;
+    }
+
     #list { flex: 1; overflow-y: auto; }
 
     #left-touch-zone {
@@ -179,12 +231,29 @@
     .item {
       display: flex;
       align-items: center;
-      padding: 12px 16px;
+      padding: 12px 14px 12px 16px;
       cursor: pointer;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
     .item:active, .item.active { background: rgba(255, 255, 255, 0.2); }
     .item img { width: 40px; height: 40px; object-fit: contain; margin-right: 12px; background: #000; border-radius: 6px; flex-shrink: 0; }
+
+    .fav-btn {
+      background: transparent;
+      border: none;
+      color: #777;
+      font-size: 20px;
+      line-height: 1;
+      padding: 6px 8px;
+      margin-left: 6px;
+      border-radius: 6px;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: color 0.15s ease, transform 0.15s ease;
+    }
+    .fav-btn:hover { color: #ffd43b; }
+    .fav-btn.active { color: #ffd43b; }
+    .fav-btn:active { transform: scale(1.2); }
     
     .item-info { display: flex; flex-direction: column; overflow: hidden; flex: 1; }
     .item-name { font-weight: bold; font-size: 15px; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -234,6 +303,10 @@
           <button class="ui-btn pin-btn active" id="pin-btn" title="Blocca/Sblocca barra">📌</button>
         </div>
       </div>
+      <div class="filter-bar">
+        <button type="button" class="filter-tab active" id="filter-all">Tutti</button>
+        <button type="button" class="filter-tab" id="filter-favs">★ Preferiti</button>
+      </div>
       <div id="list">Caricamento...</div>
     </div>
 
@@ -245,12 +318,17 @@
 
       <div id="welcome-message">
         <h2>Benvenuto nella TV di Stefano</h2>
-        <div class="instruction-step"><span>1</span><p><strong>Comandi al volante:</strong> Usa i tasti traccia avanti/indietro del volante dell'auto per cambiare canale, aggiornare il logo sul cockpit e visualizzare le informazioni.</p></div>
-        <div class="instruction-step"><span>2</span><p><strong>Seleziona un canale</strong> dalla barra o fai uno <strong>swipe da sinistra a destra</strong> sullo schermo per aprirla (e da destra a sinistra per chiuderla).</p></div>
-        <div class="instruction-step"><span>3</span><p><strong>Swipe in alto o in basso</strong> sul video per cambiare canale (su = indietro, giù = avanti).</p></div>
-        <div class="instruction-step"><span>4</span><p><strong>Doppio click o doppio tap</strong> sullo schermo per attivare o uscire dalla modalità a tutto schermo.</p></div>
-        <div class="instruction-step"><span>5</span><p><strong>Gestisci la barra:</strong> Togli la spunta (📌) per nasconderla. Si riattiva con uno swipe da sinistra o tenendo premuto 1s sul bordo.</p></div>
-        <div class="instruction-step"><span>6</span><p>Il pulsante (❓) ti permette di ritornare a questo messaggio</p></div>
+        <div class="instruction-step"><span>1</span><p><strong>Cambia canale:</strong> Dalla lista, con <strong>swipe su/giù</strong> sul video, rotella o <strong>comandi al volante</strong>.</p></div>
+        <div class="instruction-step"><span>2</span><p><strong>Apri / chiudi barra:</strong> <strong>Swipe destra</strong> per aprire, <strong>swipe sinistra</strong> per chiudere (o pressione 1s sul bordo sinistro).</p></div>
+        <div class="instruction-step"><span>3</span><p><strong>Preferiti:</strong> Clicca la stella ⭐ per aggiungere/rimuovere un canale e filtrali dalla scheda <strong>Preferiti</strong>.</p></div>
+        <div class="instruction-step"><span>4</span><p><strong>Schermo intero:</strong> <strong>Doppio tap / doppio click</strong> sullo schermo.</p></div>
+        <div class="instruction-step"><span>5</span><p><strong>Spunta (📌):</strong> Fissa la barra; facendo swipe a sinistra si chiude e toglie la spunta.</p></div>
+        <div class="instruction-step"><span>6</span><p><strong>Aiuto (❓):</strong> Riapre questo messaggio.</p></div>
+
+        <div class="disclaimer-box">
+          <strong>Disclaimer:</strong> Questo modo di vedere la TV è illegale. Proseguendo nella visione ti assumi ogni responsabilità.
+        </div>
+
         <div class="footer-text">Buona visione !</div>
       </div>
 
@@ -262,10 +340,13 @@
   <script>
     const M3U_URL = "https://raw.githubusercontent.com/mrsoon-1/IPTV/refs/heads/main/tv2.m3u";
     const EPG_URL = "https://raw.githubusercontent.com/mrsoon-1/IPTV/refs/heads/main/epg.json";
+    const FAVS_STORAGE_KEY = "iptv_stefano_favorites_v1";
 
     const $ = id => document.getElementById(id);
     const video = $('video');
     const listEl = $('list');
+    const filterAllBtn = $('filter-all');
+    const filterFavsBtn = $('filter-favs');
     const appContainer = $('app-container');
     const container = $('player-container');
     const drawerMenu = $('drawer-menu');
@@ -281,6 +362,33 @@
     let currentIndex = -1;
     let closeTimer = null, holdTimer = null, osdTimer = null;
     let isPinned = true, isTouchDevice = false;
+    let onlyFavorites = false;
+
+    function loadFavorites() {
+      try {
+        const raw = localStorage.getItem(FAVS_STORAGE_KEY);
+        const parsed = raw ? JSON.parse(raw) : [];
+        return new Set(Array.isArray(parsed) ? parsed : []);
+      } catch {
+        return new Set();
+      }
+    }
+
+    function saveFavorites() {
+      try {
+        localStorage.setItem(FAVS_STORAGE_KEY, JSON.stringify([...favorites]));
+      } catch {}
+    }
+
+    let favorites = loadFavorites();
+
+    function getChannelKey(ch) {
+      return (ch.tvgId && ch.tvgId.trim()) ? ch.tvgId.trim() : `${ch.name}::${ch.url}`;
+    }
+
+    function isChannelFavorite(ch) {
+      return favorites.has(getChannelKey(ch));
+    }
 
     window.addEventListener('touchstart', () => { isTouchDevice = true; }, { once: true });
 
@@ -339,6 +447,15 @@
       drawerMenu.classList.remove('open');
     }
 
+    function unpinAndCloseDrawer() {
+      isPinned = false;
+      clearTimeout(closeTimer);
+      clearTimeout(holdTimer);
+      appContainer.classList.remove('pinned');
+      pinBtn.classList.remove('active');
+      drawerMenu.classList.remove('open');
+    }
+
     function startTouchCloseTimer() {
       if (isPinned || !isTouchDevice) return;
       clearTimeout(closeTimer);
@@ -367,10 +484,71 @@
     drawerMenu.addEventListener('touchstart', () => { if (isTouchDevice) startTouchCloseTimer(); }, { passive: true });
     drawerMenu.addEventListener('wheel', e => e.stopPropagation(), { passive: true });
 
+    let drawerSwipeStartX = 0, drawerSwipeStartY = 0;
+    drawerMenu.addEventListener('touchstart', e => {
+      if (e.target.closest('button')) return;
+      drawerSwipeStartX = e.changedTouches[0].screenX;
+      drawerSwipeStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    drawerMenu.addEventListener('touchend', e => {
+      if (e.target.closest('button')) return;
+      const diffX = e.changedTouches[0].screenX - drawerSwipeStartX;
+      const diffY = e.changedTouches[0].screenY - drawerSwipeStartY;
+      if (diffX < -50 && Math.abs(diffX) > Math.abs(diffY)) {
+        unpinAndCloseDrawer();
+      }
+    }, { passive: true });
+
+    function setFavoriteFilter(favOnly) {
+      onlyFavorites = favOnly;
+      filterAllBtn.classList.toggle('active', !onlyFavorites);
+      filterFavsBtn.classList.toggle('active', onlyFavorites);
+      applyChannelFilter();
+    }
+
+    filterAllBtn.addEventListener('click', () => setFavoriteFilter(false));
+    filterFavsBtn.addEventListener('click', () => setFavoriteFilter(true));
+
+    function applyChannelFilter() {
+      let visibleCount = 0;
+      channels.forEach((ch, index) => {
+        const el = channelElements[index];
+        if (!el) return;
+        const matches = !onlyFavorites || isChannelFavorite(ch);
+        el.style.display = matches ? 'flex' : 'none';
+        if (matches) visibleCount++;
+      });
+
+      let emptyMsg = listEl.querySelector('.empty-filter-msg');
+      if (visibleCount === 0 && channels.length > 0 && onlyFavorites) {
+        if (!emptyMsg) {
+          emptyMsg = document.createElement('div');
+          emptyMsg.className = 'empty-filter-msg';
+          emptyMsg.textContent = 'Nessun canale preferito salvato.';
+          listEl.appendChild(emptyMsg);
+        }
+      } else if (emptyMsg) {
+        emptyMsg.remove();
+      }
+    }
+
+    function getSteppableIndices() {
+      if (!onlyFavorites) return channels.map((_, idx) => idx);
+      const favIndices = channels
+        .map((ch, idx) => (isChannelFavorite(ch) ? idx : -1))
+        .filter(idx => idx !== -1);
+      return favIndices.length > 0 ? favIndices : channels.map((_, idx) => idx);
+    }
+
     function stepChannel(delta) {
       if (!channels.length || currentIndex === -1) return;
-      const next = (currentIndex + delta + channels.length) % channels.length;
-      selectAndPlay(next);
+      const pool = getSteppableIndices();
+      const pos = pool.indexOf(currentIndex);
+      const nextPos = pos === -1
+        ? 0
+        : (pos + delta + pool.length) % pool.length;
+      selectAndPlay(pool[nextPos]);
     }
 
     container.addEventListener('wheel', e => {
@@ -415,8 +593,8 @@
         if (Math.abs(diffX) > Math.abs(diffY)) {
           if (diffX > 50) {
             openDrawer();
-          } else if (diffX < -50 && !isPinned) {
-            closeDrawerInstant();
+          } else if (diffX < -50) {
+            unpinAndCloseDrawer();
           }
         } else {
           stepChannel(diffY > 0 ? -1 : 1);
@@ -451,7 +629,36 @@
       });
     }
 
+    function toggleFavorite(index, btnEl) {
+      const ch = channels[index];
+      if (!ch) return;
+      const key = getChannelKey(ch);
+      const nowFav = !favorites.has(key);
+      if (nowFav) {
+        favorites.add(key);
+      } else {
+        favorites.delete(key);
+      }
+      saveFavorites();
+      if (btnEl) {
+        btnEl.classList.toggle('active', nowFav);
+        btnEl.textContent = nowFav ? '★' : '☆';
+        btnEl.title = nowFav ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti';
+      }
+      if (onlyFavorites) {
+        applyChannelFilter();
+      }
+    }
+
     listEl.addEventListener('click', e => {
+      const favBtn = e.target.closest('.fav-btn');
+      if (favBtn) {
+        e.stopPropagation();
+        const item = favBtn.closest('.item');
+        if (item) toggleFavorite(Number(item.dataset.index), favBtn);
+        return;
+      }
+
       const item = e.target.closest('.item');
       if (!item) return;
       e.stopPropagation();
@@ -459,7 +666,6 @@
       if (!isPinned) closeDrawerInstant();
     });
 
-    // Calcolo del programma in corso e del programma successivo (senza orario per il successivo)
     function getActiveProgramData(programsArray) {
       if (!programsArray || !Array.isArray(programsArray) || programsArray.length === 0) {
         return { start: '', end: '', title: 'In diretta', percent: 0, nextTitle: 'N/D' };
@@ -562,6 +768,7 @@
       channels.forEach((ch, index) => {
         const epgData = getActiveProgramData(ch.programs);
         ch.currentProgramTitle = epgData.title;
+        const fav = isChannelFavorite(ch);
         const div = document.createElement('div');
         div.className = 'item';
         div.dataset.index = index;
@@ -581,6 +788,7 @@
               <span>Succ: ${epgData.nextTitle}</span>
             </div>
           </div>
+          <button type="button" class="fav-btn ${fav ? 'active' : ''}" title="${fav ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti'}">${fav ? '★' : '☆'}</button>
         `;
         frag.appendChild(div);
         channelElements.push(div);
