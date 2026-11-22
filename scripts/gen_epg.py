@@ -12,7 +12,7 @@ PLUTO_XML_GZ_URL = "https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/i
 
 DTT_OUTPUT_FILE = "epg_dtt.json"
 SAMSUNG_OUTPUT_FILE = "epg_sumsungtvplus.json"
-PLUTO_OUTPUT_FILE = "epg_plutotv"
+PLUTO_OUTPUT_FILE = "epg_plutotv.json"
 
 ROME_TZ = ZoneInfo("Europe/Rome")
 
