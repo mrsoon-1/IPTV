@@ -22,10 +22,10 @@ jobs:
       - name: Esegui script di generazione EPG
         run: python scripts/gen_epg.py
 
-      - name: Commit e push dei file EPG aggiornati
+      - name: Commit e push del file EPG aggiornato
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add epg_dtt.json epg_samsungtvplus.json epg_plutotv.json
-          git commit -m "Aggiornamento automatico EPG DTT, Samsung TV e Pluto TV" || exit 0
+          git add epg_dtt.json
+          git commit -m "Aggiornamento automatico EPG DTT" || exit 0
           git push
