@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="it" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XPENG G6 Dashboard</title>
+    <meta name="application-name" content="XPENG G6 Dashboard">
+    <meta name="apple-mobile-web-app-title" content="XPENG G6 Dashboard">
+    <meta name="theme-color" content="#05080f">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Crect width='128' height='128' rx='28' fill='%2305080f'/%3E%3Crect x='6' y='6' width='116' height='116' rx='22' fill='none' stroke='%2300e5ff' stroke-opacity='0.45' stroke-width='3'/%3E%3Cpath d='M24 82 A44 44 0 1 1 104 82' fill='none' stroke='%231e293b' stroke-width='10' stroke-linecap='round'/%3E%3Cpath d='M24 82 A44 44 0 0 1 86 30' fill='none' stroke='%2300e5ff' stroke-width='10' stroke-linecap='round'/%3E%3Cline x1='64' y1='68' x2='84' y2='44' stroke='%2334d399' stroke-width='7' stroke-linecap='round'/%3E%3Ccircle cx='64' cy='68' r='7' fill='%23f8fafc'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Crect width='128' height='128' rx='28' fill='%2305080f'/%3E%3Crect x='6' y='6' width='116' height='116' rx='22' fill='none' stroke='%2300e5ff' stroke-opacity='0.45' stroke-width='3'/%3E%3Cpath d='M24 82 A44 44 0 1 1 104 82' fill='none' stroke='%231e293b' stroke-width='10' stroke-linecap='round'/%3E%3Cpath d='M24 82 A44 44 0 0 1 86 30' fill='none' stroke='%2300e5ff' stroke-width='10' stroke-linecap='round'/%3E%3Cline x1='64' y1='68' x2='84' y2='44' stroke='%2334d399' stroke-width='7' stroke-linecap='round'/%3E%3Ccircle cx='64' cy='68' r='7' fill='%23f8fafc'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#05080f',
+                        cardbg: '#0c1322',
+                        lightbg: '#dce4ee',
+                        lightcard: '#ffffff',
+                        accent: '#00e5ff',
+                        accentdark: '#0284c7'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html, body {
+            height: 100dvh;
+            width: 100vw;
+            margin: 0;
+            overflow: hidden;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .dashboard-panel {
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+        }
+        .speed-fluid {
+            font-size: clamp(2.75rem, 6.8vh, 5.5rem);
+            line-height: 0.95;
+        }
+        .hero-temp-fluid {
+            font-size: clamp(2.25rem, 5.4vh, 4.25rem);
+            line-height: 1;
+        }
+        .trip-val-fluid {
+            font-size: clamp(1.05rem, 2.3vh, 1.55rem);
+            line-height: 1.05;
+        }
+        .sensor-val-fluid {
+            font-size: clamp(1rem, 2.2vh, 1.45rem);
+            line-height: 1.1;
+        }
+    </style>
+</head>
+<body class="bg-lightbg dark:bg-darkbg text-slate-950 dark:text-slate-50 h-dvh w-screen overflow-hidden flex flex-col justify-between p-2 gap-2 select-none transition-colors duration-200">
+
+    <!-- Top Bar XPENG G6 Dashboard -->
+    <header class="dashboard-panel flex justify-between items-center gap-2 bg-lightcard dark:bg-cardbg border border-slate-300 dark:border-cyan-500/25 rounded-2xl px-3.5 py-1.5 shadow-md shrink-0">
+        <div class="flex items-center gap-2.5 min-w-0">
+            <div class="flex items-center gap-2 shrink-0 bg-slate-900 dark:bg-cyan-500/10 text-cyan-300 border border-cyan-500/35 px-2.5 py-1 rounded-xl">
+                <span id="net-dot" class="w-3 h-3 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
+                <span class="text-xs lg:text-sm font-black tracking-widest uppercase font-mono">XPENG G6</span>
+            </div>
+            <div class="min-w-0">
+                <div id="location-name" class="text-base lg:text-xl font-black truncate leading-tight">Localizzazione...</div>
+                <div id="header-sub" class="text-xs lg:text-sm font-mono font-bold text-slate-600 dark:text-slate-300 truncate leading-tight">In attesa GPS...</div>
+            </div>
+        </div>
+
+        <div id="clock" class="text-2xl lg:text-4xl font-mono font-black text-accentdark dark:text-accent px-2 tracking-wider shrink-0">00:00:00</div>
+
+        <div class="flex items-center gap-1.5 lg:gap-2 shrink-0">
+            <span id="gps-badge" class="text-xs lg:text-sm font-mono font-extrabold px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-500/40">GPS --</span>
+            <button onclick="cycleThemeMode()" id="theme-btn" class="px-3 py-1 rounded-xl text-sm lg:text-base font-black bg-slate-200 dark:bg-slate-800/90 hover:bg-slate-300 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 transition">
+                🌓 Auto
+            </button>
+            <button onclick="toggleFullScreen()" class="px-3 py-1 rounded-xl text-sm lg:text-base font-black bg-slate-200 dark:bg-slate-800/90 hover:bg-slate-300 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 transition">
+                ⛶ Schermo
+            </button>
+        </div>
+    </header>
+
+    <!-- Griglia Dashboard 2x2 adattiva a una singola schermata -->
+    <main class="grid grid-cols-2 grid-rows-2 gap-2 flex-1 min-h-0">
+
+        <!-- 1. MARCIA, ROTTA & VIA -->
+        <section class="dashboard-panel bg-lightcard dark:bg-cardbg border border-slate-300 dark:border-cyan-500/20 rounded-2xl p-2.5 lg:p-3.5 flex flex-col justify-between shadow-md min-h-0 overflow-hidden">
+            <div class="flex items-center justify-between gap-2 shrink-0">
+                <span class="text-xs lg:text-sm font-black uppercase tracking-wider text-accentdark dark:text-accent">Marcia & Rotta</span>
+                <span id="road-pill" class="text-xs lg:text-base font-mono font-black px-2.5 py-0.5 rounded-xl bg-slate-100 dark:bg-slate-900/90 border border-slate-200 dark:border-cyan-500/20 truncate max-w-[68%]">Via: --</span>
+            </div>
+
+            <div class="flex items-center justify-between gap-2 my-0.5 flex-1 min-h-0">
+                <div class="flex items-center gap-2.5 lg:gap-3">
+                    <div>
+                        <div id="speed" class="speed-fluid font-black font-mono tracking-tight">0</div>
+                        <div class="text-xs lg:text-sm font-extrabold text-slate-600 dark:text-slate-400 mt-0.5">km/h</div>
+                    </div>
+                    <div id="speed-limit-sign" class="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-white border-[5px] border-red-600 flex items-center justify-center shadow shrink-0" title="Limite stimato OSM">
+                        <span id="speed-limit" class="text-slate-950 font-black font-mono text-lg lg:text-2xl">--</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-2.5 bg-slate-100 dark:bg-slate-900/85 border border-slate-200 dark:border-slate-800 rounded-2xl px-2.5 py-1.5 lg:px-3.5 lg:py-2 min-w-0">
+                    <div class="relative w-14 h-14 lg:w-16 lg:h-16 rounded-full border-2 border-slate-300 dark:border-cyan-500/35 flex items-center justify-center shrink-0">
+                        <span class="absolute top-0.5 text-[10px] font-black text-rose-500">N</span>
+                        <span class="absolute bottom-0.5 text-[10px] font-bold text-slate-500">S</span>
+                        <span class="absolute left-1 text-[10px] font-bold text-slate-500">W</span>
+                        <span class="absolute right-1 text-[10px] font-bold text-slate-500">E</span>
+                        <div id="compass-needle" class="w-1.5 h-6 lg:h-7 bg-accentdark dark:bg-accent rounded-full origin-bottom -translate-y-1/2 transition-transform duration-200"></div>
+                        <div class="w-2 h-2 rounded-full bg-slate-950 dark:bg-white z-10"></div>
+                    </div>
+                    <div class="text-xs lg:text-base font-mono leading-tight">
+                        <div class="font-black text-lg lg:text-2xl text-accentdark dark:text-accent"><span id="heading-deg">0°</span> <span id="cardinal-dir">N</span></div>
+                        <div class="text-slate-700 dark:text-slate-200">Alt: <strong id="altitude" class="text-sm lg:text-lg">--</strong> m</div>
+                        <div class="text-slate-700 dark:text-slate-200">Pend: <strong id="slope-val" class="text-sm lg:text-lg">0%</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-1.5 lg:gap-2 pt-1.5 border-t border-slate-200 dark:border-slate-800 font-mono shrink-0">
+                <div class="bg-slate-100 dark:bg-slate-900/75 rounded-xl px-2.5 py-1">
+                    <span class="text-[11px] text-slate-500 dark:text-slate-400 block font-sans font-bold leading-none">Ascesa</span>
+                    <strong id="elev-gain" class="sensor-val-fluid text-emerald-700 dark:text-emerald-400">+0m</strong>
+                </div>
+                <div class="bg-slate-100 dark:bg-slate-900/75 rounded-xl px-2.5 py-1">
+                    <span class="text-[11px] text-slate-500 dark:text-slate-400 block font-sans font-bold leading-none">Discesa</span>
+                    <strong id="elev-loss" class="sensor-val-fluid text-amber-700 dark:text-amber-400">-0m</strong>
+                </div>
+                <div class="bg-slate-100 dark:bg-slate-900/75 rounded-xl px-2.5 py-1">
+                    <span class="text-[11px] text-slate-500 dark:text-slate-400 block font-sans font-bold leading-none">Prec. GPS</span>
+                    <strong id="gps-accuracy" class="sensor-val-fluid">--m</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. TRIP A & TRIP B -->
+        <section class="dashboard-panel bg-lightcard dark:bg-cardbg border border-slate-300 dark:border-cyan-500/20 rounded-2xl p-2.5 lg:p-3.5 flex flex-col justify-between shadow-md min-h-0 overflow-hidden">
+            <div class="flex items-center justify-between gap-2 mb-1 shrink-0">
+                <span class="text-xs lg:text-sm font-black uppercase tracking-wider text-accentdark dark:text-accent">Trip A & Trip B</span>
+                <div class="flex gap-1.5">
+                    <button onclick="resetAllTrip('A')" class="text-xs lg:text-sm font-black px-2.5 py-0.5 rounded-lg bg-slate-200 dark:bg-slate-800 hover:bg-rose-500/20 hover:text-rose-500 transition">Reset A</button>
+                    <button onclick="resetAllTrip('B')" class="text-xs lg:text-sm font-black px-2.5 py-0.5 rounded-lg bg-slate-200 dark:bg-slate-800 hover:bg-rose-500/20 hover:text-rose-500 transition">Reset B</button>
+                    <button onclick="resetAllTrip('ALL')" class="text-xs lg:text-sm font-black px-2.5 py-0.5 rounded-lg bg-rose-500/20 text-rose-700 dark:text-rose-300 hover:bg-rose-500/30 transition">Tutti</button>
+                </div>
+            </div>
+
+            <div id="trips-container" class="grid grid-cols-2 gap-2 flex-1 min-h-0 overflow-hidden"></div>
+        </section>
+
+        <!-- 3. METEO, ARIA & EFFEMERIDI -->
+        <section class="dashboard-panel bg-lightcard dark:bg-cardbg border border-slate-300 dark:border-cyan-500/20 rounded-2xl p-2.5 lg:p-3.5 flex flex-col justify-between shadow-md min-h-0 overflow-hidden">
+            <div class="flex items-center justify-between gap-2 shrink-0">
+                <span class="text-xs lg:text-sm font-black uppercase tracking-wider text-accentdark dark:text-accent">Meteo & Aria</span>
+                <span id="sun-status" class="text-xs lg:text-base font-mono font-black text-amber-700 dark:text-amber-300 truncate">☀️ --:-- · 🌙 --:--</span>
+            </div>
+
+            <div class="flex items-center justify-between gap-2 my-0.5 flex-1 min-h-0">
+                <div class="flex items-center gap-2.5 min-w-0">
+                    <span id="weather-icon" class="text-4xl lg:text-5xl shrink-0">⛅</span>
+                    <div class="min-w-0">
+                        <div class="flex items-baseline gap-2">
+                            <span id="temp" class="hero-temp-fluid font-black font-mono tracking-tight">--°</span>
+                            <span id="feels-like" class="text-sm lg:text-lg font-mono font-black text-slate-600 dark:text-slate-300">Perc. --°</span>
+                        </div>
+                        <div id="weather-desc" class="text-sm lg:text-lg font-extrabold text-slate-700 dark:text-slate-200 capitalize truncate">In attesa...</div>
+                    </div>
+                </div>
+                <div class="text-right text-xs lg:text-base font-mono font-black space-y-0.5 shrink-0">
+                    <div>Umid: <span id="humidity">--%</span></div>
+                    <div>Press: <span id="press-val">----</span></div>
+                    <div>Pioggia: <span id="precip-val">0.0mm</span></div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-1.5 lg:gap-2 pt-1.5 border-t border-slate-200 dark:border-slate-800 font-mono shrink-0">
+                <div class="bg-slate-100 dark:bg-slate-900/75 rounded-xl px-2.5 py-1">
+                    <span class="text-[11px] text-slate-500 dark:text-slate-400 block font-sans font-bold leading-none">Vento</span>
+                    <strong id="wind-detail" class="text-sm lg:text-lg font-black truncate block">--</strong>
+                </div>
+                <div class="bg-slate-100 dark:bg-slate-900/75 rounded-xl px-2.5 py-1">
+                    <span class="text-[11px] text-slate-500 dark:text-slate-400 block font-sans font-bold leading-none">Aria EAQI</span>
+                    <strong id="aqi-detail" class="sensor-val-fluid font-black block">--</strong>
+                </div>
+                <div class="bg-slate-100 dark:bg-slate-900/75 rounded-xl px-2.5 py-1">
+                    <span class="text-[11px] text-slate-500 dark:text-slate-400 block font-sans font-bold leading-none">UV / PM2.5</span>
+                    <strong id="uv-pm-detail" class="text-sm lg:text-lg font-black truncate block">--</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. DATI SENZA OBD & DIAGNOSTICA API -->
+        <section class="dashboard-panel bg-lightcard dark:bg-cardbg border border-slate-300 dark:border-cyan-500/20 rounded-2xl p-2.5 lg:p-3.5 flex flex-col justify-between shadow-md min-h-0 overflow-hidden">
+            <div class="flex items-center justify-between gap-2 mb-1 shrink-0">
+                <span class="text-xs lg:text-sm font-black uppercase tracking-wider text-accentdark dark:text-accent">Sensori & API Browser</span>
+                <div class="flex items-center gap-1.5">
+                    <span id="ble-status-pill" class="text-xs font-mono font-black px-2.5 py-0.5 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300">WebBLE: Check...</span>
+                    <span id="recirc-pill" class="text-xs font-black px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-700 dark:text-emerald-300">Aria OK</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 grid-rows-2 gap-1.5 lg:gap-2 flex-1 min-h-0 font-mono">
+                <div class="bg-slate-100 dark:bg-slate-900/75 border border-slate-200 dark:border-slate-800 rounded-xl px-2.5 py-1.5 flex flex-col justify-center min-w-0">
+                    <span class="text-[11px] text-slate-500 dark:text-slate-400 font-sans font-bold leading-none">Accel. Long / Lat</span>
+                    <strong id="accel-val" class="sensor-val-fluid font-black mt-0.5 truncate">0.00 / 0.00 g</strong>
+                </div>
+                <div class="bg-slate-100 dark:bg-slate-900/75 border border-slate-200 dark:border-slate-800 rounded-xl px-2.5 py-1.5 flex flex-col justify-center min-w-0">
+                    <span class="text-[11px] text-slate-500 dark:text-slate-400 font-sans font-bold leading-none">Rollio / Beccheggio</span>
+                    <strong id="tilt-val" class="sensor-val-fluid font-black mt-0.5 truncate">0° / 0°</strong>
+                </div>
+                <div class="bg-slate-100 dark:bg-slate-900/75 border border-slate-200 dark:border-slate-800 rounded-xl px-2.5 py-1.5 flex flex-col justify-center min-w-0">
+                    <span class="text-[11px] text-slate-500 dark:text-slate-400 font-sans font-bold leading-none">Sessione / Rete</span>
+                    <strong id="session-net-val" class="text-sm lg:text-lg font-black mt-0.5 truncate">00:00:00 · Online</strong>
+                </div>
+                <div class="bg-slate-100 dark:bg-slate-900/75 border border-slate-200 dark:border-slate-800 rounded-xl px-2.5 py-1.5 flex flex-col justify-center min-w-0">
+                    <span id="api-diag-label" class="text-[11px] text-slate-500 dark:text-slate-400 font-sans font-bold leading-none truncate">API & Coordinate</span>
+                    <strong id="coords" class="text-sm lg:text-base font-black mt-0.5 truncate">--</strong>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // --- DIAGNOSTICA WEB BLUETOOTH & API BROWSER ---
+        (function checkBrowserCapabilities() {
+            const blePill = document.getElementById('ble-status-pill');
+            const diagLabel = document.getElementById('api-diag-label');
+            const hasBle = 'bluetooth' in navigator && typeof navigator.bluetooth?.requestDevice === 'function';
+            const hasMotion = 'DeviceMotionEvent' in window;
+            const hasOrient = 'DeviceOrientationEvent' in window;
+
+            if (hasBle) {
+                blePill.innerText = 'WebBLE: OK';
+                blePill.className = 'text-xs font-mono font-black px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-700 dark:text-emerald-300';
+            } else {
+                blePill.innerText = 'WebBLE: No';
+                blePill.className = 'text-xs font-mono font-black px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-700 dark:text-amber-300';
+            }
+
+            const sensorFlags = [
+                hasMotion ? 'Mot:SI' : 'Mot:NO',
+                hasOrient ? 'Ori:SI' : 'Ori:NO',
+                hasBle ? 'BLE:SI' : 'BLE:NO'
+            ].join(' · ');
+            diagLabel.innerText = `Coord (${sensorFlags})`;
+        })();
+
+        // --- TEMA AUTO (ALBA/TRAMONTO) / SCURO / CHIARO ---
+        const THEME_MODES = ['auto', 'dark', 'light'];
+        let themeMode = localStorage.getItem('xpeng_theme_mode') || 'auto';
+        let sunriseMinutes = null;
+        let sunsetMinutes = null;
+
+        function parseHHMMToMinutes(hhmm) {
+            if (!hhmm || !hhmm.includes(':')) return null;
+            const [h, m] = hhmm.split(':').map(Number);
+            if (isNaN(h) || isNaN(m)) return null;
+            return h * 60 + m;
+        }
+
+        function computeIsDaytime() {
+            const now = new Date();
+            const nowMin = now.getHours() * 60 + now.getMinutes();
+            if (sunriseMinutes !== null && sunsetMinutes !== null) {
+                return nowMin >= sunriseMinutes && nowMin < sunsetMinutes;
+            }
+            const month = now.getMonth() + 1;
+            const defaultRise = (month >= 4 && month <= 9) ? 6 * 60 : 7 * 60 + 30;
+            const defaultSet = (month >= 4 && month <= 9) ? 20 * 60 + 30 : 17 * 60 + 15;
+            return nowMin >= defaultRise && nowMin < defaultSet;
+        }
+
+        function applyEffectiveTheme() {
+            const html = document.documentElement;
+            const btn = document.getElementById('theme-btn');
+            let useDark = true;
+
+            if (themeMode === 'dark') {
+                useDark = true;
+                btn.innerText = '🌙 Scuro';
+            } else if (themeMode === 'light') {
+                useDark = false;
+                btn.innerText = '☀️ Chiaro';
+            } else {
+                const isDay = computeIsDaytime();
+                useDark = !isDay;
+                btn.innerText = isDay ? '🌓 Auto (☀️)' : '🌓 Auto (🌙)';
+            }
+
+            html.classList.toggle('dark', useDark);
+        }
+
+        function cycleThemeMode() {
+            const idx = THEME_MODES.indexOf(themeMode);
+            themeMode = THEME_MODES[(idx + 1) % THEME_MODES.length];
+            localStorage.setItem('xpeng_theme_mode', themeMode);
+            applyEffectiveTheme();
+        }
+
+        applyEffectiveTheme();
+        setInterval(applyEffectiveTheme, 60000);
+
+        // --- OROLOGIO, SESSIONE & RETE ---
+        const sessionStart = Date.now();
+        let netLabel = navigator.onLine ? 'Online' : 'Offline';
+
+        function updateNetworkStatus() {
+            const online = navigator.onLine;
+            const dot = document.getElementById('net-dot');
+            const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+            const type = conn?.effectiveType ? conn.effectiveType.toUpperCase() : '';
+            dot.className = `w-3 h-3 rounded-full shrink-0 ${online ? 'bg-emerald-400 animate-pulse' : 'bg-rose-500'}`;
+            netLabel = online ? (type || 'Online') : 'Offline';
+            renderSessionNet();
+        }
+
+        function renderSessionNet() {
+            const s = Math.floor((Date.now() - sessionStart) / 1000);
+            const hh = String(Math.floor(s / 3600)).padStart(2, '0');
+            const mm = String(Math.floor((s % 3600) / 60)).padStart(2, '0');
+            const ss = String(s % 60).padStart(2, '0');
+            document.getElementById('session-net-val').innerText = `${hh}:${mm}:${ss} · ${netLabel}`;
+        }
+
+        setInterval(() => {
+            document.getElementById('clock').innerText = new Date().toTimeString().split(' ')[0];
+            renderSessionNet();
+        }, 1000);
+
+        window.addEventListener('online', updateNetworkStatus);
+        window.addEventListener('offline', updateNetworkStatus);
+        updateNetworkStatus();
+
+        // --- WAKELOCK ---
+        let wakeLock = null;
+        async function requestWakeLock() {
+            if ('wakeLock' in navigator) {
+                try { wakeLock = await navigator.wakeLock.request('screen'); } catch {}
+            }
+        }
+        requestWakeLock();
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'visible') requestWakeLock();
+        });
+
+        // --- TRIP A & TRIP B ---
+        function defaultTrip(id) {
+            return { id, movingSec: 0, stoppedSec: 0, totalSec: 0, distKm: 0, maxSpeed: 0, speedSamplesSum: 0, speedSamplesCount: 0 };
+        }
+        function loadTrip(id) {
+            try {
+                const raw = localStorage.getItem(`xpeng_trip_${id}`);
+                return raw ? { ...defaultTrip(id), ...JSON.parse(raw) } : defaultTrip(id);
+            } catch {
+                return defaultTrip(id);
+            }
+        }
+        const trips = { A: loadTrip('A'), B: loadTrip('B') };
+
+        function saveTrip(id) {
+            localStorage.setItem(`xpeng_trip_${id}`, JSON.stringify(trips[id]));
+        }
+        function formatHMS(sec) {
+            const h = Math.floor(sec / 3600);
+            const m = Math.floor((sec % 3600) / 60);
+            const s = Math.floor(sec % 60);
+            if (h > 0) return `${h}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+            return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+        }
+        function resetTripField(id, field) {
+            const t = trips[id];
+            if (field === 'moving') t.movingSec = 0;
+            if (field === 'total') t.totalSec = 0;
+            if (field === 'stopped') t.stoppedSec = 0;
+            if (field === 'dist') t.distKm = 0;
+            if (field === 'avg') { t.speedSamplesSum = 0; t.speedSamplesCount = 0; }
+            if (field === 'max') t.maxSpeed = 0;
+            saveTrip(id);
+            renderTrips();
+        }
+        function resetAllTrip(target) {
+            if (target === 'A' || target === 'ALL') { trips.A = defaultTrip('A'); saveTrip('A'); }
+            if (target === 'B' || target === 'ALL') { trips.B = defaultTrip('B'); saveTrip('B'); }
+            renderTrips();
+        }
+        function renderTrips() {
+            const container = document.getElementById('trips-container');
+            container.innerHTML = ['A', 'B'].map(id => {
+                const t = trips[id];
+                const avgSpeed = t.movingSec > 5 && t.distKm > 0.01
+                    ? (t.distKm / (t.movingSec / 3600)).toFixed(1)
+                    : (t.speedSamplesCount > 0 ? (t.speedSamplesSum / t.speedSamplesCount).toFixed(1) : '0.0');
+
+                const row = (label, val, field) => `
+                    <div class="flex items-center justify-between py-[1px] border-b border-slate-200/70 dark:border-slate-800/90 last:border-0 gap-1 min-h-0">
+                        <span class="text-xs lg:text-sm font-extrabold text-slate-600 dark:text-slate-300 truncate">${label}</span>
+                        <div class="flex items-center gap-1 shrink-0">
+                            <strong class="trip-val-fluid font-mono font-black">${val}</strong>
+                            <button onclick="resetTripField('${id}','${field}')" title="Azzera ${label}" class="text-xs lg:text-sm font-black px-1.5 py-[1px] rounded bg-slate-200 dark:bg-slate-800 hover:bg-rose-500/20 hover:text-rose-500">↺</button>
+                        </div>
+                    </div>`;
+
+                return `
+                    <div class="bg-slate-100 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 rounded-xl p-2 flex flex-col justify-between min-h-0 min-w-0">
+                        <div class="flex items-center justify-between pb-0.5 border-b border-slate-200 dark:border-slate-800 shrink-0">
+                            <span class="text-sm lg:text-base font-black text-accentdark dark:text-accent">TRIP ${id}</span>
+                            <span class="text-sm lg:text-lg font-mono font-black">${t.distKm.toFixed(1)} km</span>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-evenly min-h-0">
+                            ${row('Marcia', formatHMS(t.movingSec), 'moving')}
+                            ${row('Totale', formatHMS(t.totalSec), 'total')}
+                            ${row('Fermo', formatHMS(t.stoppedSec), 'stopped')}
+                            ${row('Km', t.distKm.toFixed(2), 'dist')}
+                            ${row('Media', avgSpeed, 'avg')}
+                            ${row('Max', Math.round(t.maxSpeed), 'max')}
+                        </div>
+                    </div>`;
+            }).join('');
+        }
+        renderTrips();
+
+        // --- MARCIA & GPS ---
+        let currentSpeed = 0;
+        let currentSpeedLimit = null;
+        let lastLat = null, lastLon = null, lastAlt = null;
+        let elevGain = parseFloat(localStorage.getItem('xpeng_elev_gain')) || 0;
+        let elevLoss = parseFloat(localStorage.getItem('xpeng_elev_loss')) || 0;
+        let lastApiFetch = 0;
+        let lastGeoFetch = 0;
+
+        document.getElementById('elev-gain').innerText = `+${Math.round(elevGain)}m`;
+        document.getElementById('elev-loss').innerText = `-${Math.round(elevLoss)}m`;
+
+        setInterval(() => {
+            const isMoving = currentSpeed > 2;
+            ['A', 'B'].forEach(id => {
+                const t = trips[id];
+                t.totalSec++;
+                if (isMoving) {
+                    t.movingSec++;
+                    t.speedSamplesSum += currentSpeed;
+                    t.speedSamplesCount++;
+                } else {
+                    t.stoppedSec++;
+                }
+                saveTrip(id);
+            });
+            renderTrips();
+        }, 1000);
+
+        function calcDistance(lat1, lon1, lat2, lon2) {
+            const R = 6371;
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat / 2) ** 2 + Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLon / 2) ** 2;
+            return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        }
+
+        function getCardinalShort(deg) {
+            const dirs = ['N', 'NE', 'E', 'SE', 'S', 'SO', 'O', 'NO'];
+            return dirs[Math.round(((deg % 360) + 360) % 360 / 45) % 8];
+        }
+
+        if ('geolocation' in navigator) {
+            navigator.geolocation.watchPosition((pos) => {
+                const { latitude: lat, longitude: lon, speed, altitude: alt, heading, accuracy } = pos.coords;
+                currentSpeed = speed !== null && !isNaN(speed) ? Math.max(0, Math.round(speed * 3.6)) : 0;
+
+                const speedEl = document.getElementById('speed');
+                speedEl.innerText = currentSpeed;
+                speedEl.className = (currentSpeedLimit && currentSpeed > currentSpeedLimit + 3)
+                    ? 'speed-fluid font-black font-mono tracking-tight text-rose-500'
+                    : 'speed-fluid font-black font-mono tracking-tight';
+
+                document.getElementById('gps-accuracy').innerText = accuracy ? `±${Math.round(accuracy)}m` : '--';
+                document.getElementById('coords').innerText = `${lat.toFixed(4)}, ${lon.toFixed(4)}`;
+                document.getElementById('gps-badge').innerText = 'GPS OK';
+                document.getElementById('gps-badge').className = 'text-xs lg:text-sm font-mono font-extrabold px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 border border-emerald-500/40';
+
+                const hdg = heading !== null && !isNaN(heading) ? Math.round(heading) : 0;
+                document.getElementById('heading-deg').innerText = `${hdg}°`;
+                document.getElementById('cardinal-dir').innerText = getCardinalShort(hdg);
+                document.getElementById('compass-needle').style.transform = `translateY(-50%) rotate(${hdg}deg)`;
+
+                let stepDist = 0;
+                if (lastLat !== null && lastLon !== null) {
+                    const d = calcDistance(lastLat, lastLon, lat, lon);
+                    if (d > 0.004 && d < 2) {
+                        stepDist = d;
+                        ['A', 'B'].forEach(id => {
+                            trips[id].distKm += d;
+                            if (currentSpeed > trips[id].maxSpeed) trips[id].maxSpeed = currentSpeed;
+                            saveTrip(id);
+                        });
+                    }
+                }
+                lastLat = lat;
+                lastLon = lon;
+
+                if (alt !== null && !isNaN(alt)) {
+                    document.getElementById('altitude').innerText = Math.round(alt);
+                    if (lastAlt !== null) {
+                        const diff = alt - lastAlt;
+                        if (Math.abs(diff) >= 2 && Math.abs(diff) < 60) {
+                            if (diff > 0) {
+                                elevGain += diff;
+                                localStorage.setItem('xpeng_elev_gain', elevGain);
+                                document.getElementById('elev-gain').innerText = `+${Math.round(elevGain)}m`;
+                            } else {
+                                elevLoss += Math.abs(diff);
+                                localStorage.setItem('xpeng_elev_loss', elevLoss);
+                                document.getElementById('elev-loss').innerText = `-${Math.round(elevLoss)}m`;
+                            }
+                            if (stepDist > 0.02) {
+                                document.getElementById('slope-val').innerText = `${((diff / (stepDist * 1000)) * 100).toFixed(1)}%`;
+                            }
+                            lastAlt = alt;
+                        }
+                    } else {
+                        lastAlt = alt;
+                    }
+                }
+
+                const now = Date.now();
+                if (now - lastApiFetch > 300000) {
+                    lastApiFetch = now;
+                    fetchWeatherAndAir(lat, lon);
+                }
+                if (now - lastGeoFetch > 15000) {
+                    lastGeoFetch = now;
+                    fetchRoadAndCity(lat, lon);
+                }
+            }, () => {
+                document.getElementById('gps-badge').innerText = 'GPS Off';
+                document.getElementById('gps-badge').className = 'text-xs lg:text-sm font-mono font-extrabold px-2.5 py-1 rounded-full bg-rose-500/20 text-rose-700 dark:text-rose-300 border border-rose-500/40';
+            }, { enableHighAccuracy: true, maximumAge: 1000, timeout: 10000 });
+        }
+
+        // --- SENSORI ---
+        window.addEventListener('devicemotion', (e) => {
+            const acc = e.acceleration || e.accelerationIncludingGravity;
+            if (!acc) return;
+            const lonG = ((acc.y || 0) / 9.81).toFixed(2);
+            const latG = ((acc.x || 0) / 9.81).toFixed(2);
+            document.getElementById('accel-val').innerText = `${lonG} / ${latG} g`;
+        });
+        window.addEventListener('deviceorientation', (e) => {
+            if (e.gamma === null || e.beta === null) return;
+            document.getElementById('tilt-val').innerText = `${Math.round(e.gamma)}° / ${Math.round(e.beta)}°`;
+        });
+
+        // --- METEO & ARIA ---
+        async function fetchWeatherAndAir(lat, lon) {
+            try {
+                const wRes = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,apparent_temperature,relative_humidity_2m,surface_pressure,precipitation,weather_code,wind_speed_10m,wind_direction_10m&daily=sunrise,sunset&timezone=auto`);
+                const w = await wRes.json();
+                if (w?.current) {
+                    document.getElementById('temp').innerText = `${Math.round(w.current.temperature_2m)}°`;
+                    document.getElementById('feels-like').innerText = `Perc. ${Math.round(w.current.apparent_temperature)}°`;
+                    document.getElementById('humidity').innerText = `${w.current.relative_humidity_2m}%`;
+                    document.getElementById('press-val').innerText = `${Math.round(w.current.surface_pressure)}`;
+                    document.getElementById('precip-val').innerText = `${(w.current.precipitation || 0).toFixed(1)}mm`;
+                    document.getElementById('wind-detail').innerText = `${Math.round(w.current.wind_speed_10m)} km/h ${getCardinalShort(w.current.wind_direction_10m || 0)}`;
+                    document.getElementById('weather-desc').innerText = getWeatherDesc(w.current.weather_code);
+                    document.getElementById('weather-icon').innerText = getWeatherIcon(w.current.weather_code);
+                }
+                if (w?.daily?.sunrise?.[0] && w?.daily?.sunset?.[0]) {
+                    const sr = w.daily.sunrise[0].split('T')[1];
+                    const ss = w.daily.sunset[0].split('T')[1];
+                    sunriseMinutes = parseHHMMToMinutes(sr);
+                    sunsetMinutes = parseHHMMToMinutes(ss);
+                    document.getElementById('sun-status').innerText = `☀️ ${sr} · 🌙 ${ss}`;
+                    applyEffectiveTheme();
+                }
+
+                const aRes = await fetch(`https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${lat}&longitude=${lon}&current=european_aqi,pm2_5,uv_index`);
+                const a = await aRes.json();
+                if (a?.current) {
+                    const aqi = Math.round(a.current.european_aqi ?? 0);
+                    const uv = (a.current.uv_index ?? 0).toFixed(1);
+                    const pm25 = (a.current.pm2_5 ?? 0).toFixed(1);
+                    document.getElementById('aqi-detail').innerText = `${aqi}`;
+                    document.getElementById('uv-pm-detail').innerText = `${uv} / ${pm25}`;
+
+                    const pill = document.getElementById('recirc-pill');
+                    if (aqi <= 40) {
+                        pill.innerText = 'Aria OK';
+                        pill.className = 'text-xs font-black px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-700 dark:text-emerald-300';
+                    } else if (aqi <= 60) {
+                        pill.innerText = 'Filtro Attivo';
+                        pill.className = 'text-xs font-black px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-700 dark:text-amber-300';
+                    } else {
+                        pill.innerText = 'Ricircolo Consigliato';
+                        pill.className = 'text-xs font-black px-2.5 py-0.5 rounded-full bg-rose-500/20 text-rose-700 dark:text-rose-300';
+                    }
+                }
+            } catch {}
+        }
+
+        // --- VIA & LIMITE OSM ---
+        async function fetchRoadAndCity(lat, lon) {
+            try {
+                const nomRes = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}&zoom=16`);
+                const nom = await nomRes.json();
+                if (nom?.address) {
+                    const addr = nom.address;
+                    const city = addr.city || addr.town || addr.village || addr.municipality || '';
+                    const road = addr.road || addr.highway || 'Strada non classificata';
+                    document.getElementById('location-name').innerText = city || 'In viaggio';
+                    document.getElementById('header-sub').innerText = road;
+                    document.getElementById('road-pill').innerText = `Via: ${road}`;
+                }
+
+                const query = `[out:json][timeout:5];way(around:25,${lat},${lon})["highway"]["maxspeed"];out tags 1;`;
+                const ovRes = await fetch('https://overpass-api.de/api/interpreter', {
+                    method: 'POST',
+                    body: 'data=' + encodeURIComponent(query)
+                });
+                const ov = await ovRes.json();
+                const parsed = ov?.elements?.[0]?.tags?.maxspeed ? parseInt(ov.elements[0].tags.maxspeed) : NaN;
+                if (!isNaN(parsed)) {
+                    currentSpeedLimit = parsed;
+                    document.getElementById('speed-limit').innerText = parsed;
+                } else {
+                    currentSpeedLimit = null;
+                    document.getElementById('speed-limit').innerText = '--';
+                }
+            } catch {}
+        }
+
+        function getWeatherDesc(code) {
+            const map = { 0: 'Sereno', 1: 'Preval. sereno', 2: 'Parz. nuvoloso', 3: 'Nuvoloso', 45: 'Nebbia', 51: 'Pioviggine', 61: 'Pioggia', 71: 'Neve', 95: 'Temporale' };
+            return map[code] || 'Variabile';
+        }
+        function getWeatherIcon(code) {
+            if (code === 0) return '☀️';
+            if (code <= 3) return '⛅';
+            if (code <= 48) return '🌫️';
+            if (code <= 67) return '🌧️';
+            if (code <= 77) return '❄️';
+            if (code >= 95) return '⚡';
+            return '☁️';
+        }
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) document.documentElement.requestFullscreen?.();
+            else document.exitFullscreen?.();
+        }
+    </script>
+</body>
+</html>
